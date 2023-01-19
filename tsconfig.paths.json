@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": "./",
-    "paths": { //경로 변경시마다 체크
+    "paths": { 
       "images/*": ["src/assets/images/*"],
       "pages/*": ["src/pages/*"],
       "components/*": ["src/components/*"],
