@@ -7,7 +7,7 @@ import {} from 'firebase/firestore';
 function App() {
   return (
     <div className='App'>
-      
+      <p>TypeScript 테스트 중...</p>
     </div>
   );
 }

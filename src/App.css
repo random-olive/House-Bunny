@@ -24,6 +24,11 @@
   text-align: center;
 }
 
+p {
+  font-family: 'KyoboHand';
+  font-size: xx-large;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
