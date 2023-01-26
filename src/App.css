@@ -22,10 +22,10 @@
 
 .App {
   text-align: center;
+  font-family: 'KyoboHand';
 }
 
 p {
-  font-family: 'KyoboHand';
   font-size: xx-large;
 }
 
