@@ -2,10 +2,11 @@ import { DefaultTheme } from 'styled-components';
 
 const myTheme: DefaultTheme = {
   color: {
-    '--text-top': '#e1c5bb',
+    '--white': '#ffffff',
+
     '--text': '#b8907c',
 
-    '--menu-selected': '#e1c5bb', //+ line, submenu text
+    '--menu-selected': '#e1c5bb', //+ unselected-menu line, submenu text
     '--menu-selected-light': '#f0e1da',
     '--menu-selected-line': '#b79585',
     '--menu-text': '#9a7977',

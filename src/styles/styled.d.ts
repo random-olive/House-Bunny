@@ -4,7 +4,8 @@ import 'styled-components';
 declare module 'styled-components' {
   export interface DefaultTheme {
     color: {
-      '--text-top': string;
+      '--white': string;
+
       '--text': string;
 
       '--menu-selected': string; //+ line, submenu text
