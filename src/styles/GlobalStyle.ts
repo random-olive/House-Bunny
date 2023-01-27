@@ -6,6 +6,8 @@ import reset from 'styled-reset';
 // };
 
 export const GlobalStyle = createGlobalStyle`
-${reset};
-color:red;
+body {
+    font-family: 'KyonboHand';
+    background: 'red'
+}
 `;

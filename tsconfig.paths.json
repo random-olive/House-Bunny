@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
     "baseUrl": "./",
-    "paths": { 
+    "paths": {
       "images/*": ["src/assets/images/*"],
       "pages/*": ["src/pages/*"],
       "components/*": ["src/components/*"],
-      "buttons/*": ["src/components/buttons/*"]
+      "buttons/*": ["src/components/buttons/*"],
+      "styles/*": ["src/styles/*"]
     }
   }
 }
