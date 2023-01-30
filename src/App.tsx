@@ -3,22 +3,37 @@ import logo from 'images/logo.svg';
 import './App.css';
 import {} from 'firebase/firestore';
 
-import { Main } from 'components/buttons/MenuButtons';
+import { Main, MainWithSlide } from 'components/buttons/MenuButtons';
+import { data } from './constants/data/menu';
 
 function App() {
   return (
     <>
       <div className='App'>
-        <Main>당근</Main>
-        <Main>가계부</Main>
-        <Main>결혼육아</Main>
-        <Main>레시피</Main>
-        <Main>건 강</Main>
-        <Main>취 미</Main>
-        <Main>파 티</Main>
-        <Main>여 행</Main>
-        <Main>커뮤니티</Main>
-        <Main>Shop</Main>
+        <div className='GNB'>
+          <div className='select'>
+            <Main>carrot</Main>
+            {/* <div className='LNB'>
+              {data[0].list.map((el) => (
+                <MainWithSlide>{el.title}</MainWithSlide>
+              ))}
+            </div> */}
+            {/* hover하면 메뉴 나오게*/}
+          </div>
+
+          <div className='select'>
+            <Main>결혼육아</Main>
+            {/* <div className='LNB'>
+              {data[1].list.map((el) => (
+                <MainWithSlide>{el.title}</MainWithSlide>
+              ))}
+            </div> */}
+          </div>
+
+          {data[2].list.map((el) => (
+            <Main>{el.title}</Main>
+          ))}
+        </div>
       </div>
     </>
   );

@@ -4,12 +4,12 @@ const myTheme: DefaultTheme = {
   color: {
     '--white': '#ffffff',
 
-    '--text': '#b8907c',
+    '--text': '#bd9682',
 
     '--menu-selected': '#e1c5bb', //+ unselected-menu line, submenu text
     '--menu-selected-light': '#f0e1da',
     '--menu-selected-line': '#b79585',
-    '--menu-text': '#9a7977',
+    '--menu-text': '#c8a4a3',
 
     '--logo-sub': '#e1c5bb',
     '--logo-main': '#b79686',
