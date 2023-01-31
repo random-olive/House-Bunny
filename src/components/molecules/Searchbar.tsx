@@ -9,7 +9,7 @@ const Searchbar = () => {
       <SearchPart>
         <Input />
       </SearchPart>
-      <Square />
+      <Square>Q</Square>
     </Horizontal>
   );
 };

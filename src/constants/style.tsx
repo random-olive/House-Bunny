@@ -10,7 +10,7 @@ export const BUTTON = {
 
   //Square & Circle
   SQUARE_SIZE: '47px',
-  CIRCLE_SIZE: '50px',
+  CIRCLE_SIZE: '55px',
 } as const;
 
 export const BAR = {

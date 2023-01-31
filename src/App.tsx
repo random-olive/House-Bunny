@@ -3,10 +3,17 @@ import logo from 'images/logo.svg';
 import './App.css';
 import {} from 'firebase/firestore';
 
-import { Main, MainWithSlide, Square } from 'components/atoms/Buttons';
+import {
+  Main,
+  MainWithSlide,
+  Member,
+  Square,
+  Sticky,
+} from 'components/atoms/Buttons';
 import Searchbar from 'components/molecules/Searchbar';
 
 import { data } from './constants/data/menu';
+import { Section } from 'components/atoms/Sections';
 
 function App() {
   return (
@@ -37,6 +44,9 @@ function App() {
           ))}
         </div>
         <Searchbar />
+        <Section></Section>
+        <Sticky></Sticky>
+        <Member></Member>
       </div>
     </>
   );

@@ -12,8 +12,9 @@ export const Base = styled.button`
 `;
 
 export const Circle = styled.button`
-  height: ${BUTTON.SQUARE_SIZE};
-  width: ${BUTTON.SQUARE_SIZE};
+  border-radius: 100%;
+  height: ${BUTTON.CIRCLE_SIZE};
+  width: ${BUTTON.CIRCLE_SIZE};
 `;
 
 export const Main = styled(Base)`
@@ -21,7 +22,7 @@ export const Main = styled(Base)`
   color: ${(props) => props.theme.color['--menu-text']};
   &:hover {
     background: ${(props) => props.theme.color['--menu-selected']};
-    color: ${(props) => props.theme.color['--text']};
+    color: ${(props) => props.theme.color['--text-cream']};
     cursor: pointer;
   }
 `;
@@ -42,6 +43,16 @@ export const Square = styled(Base)`
   width: ${BUTTON.SQUARE_SIZE};
   height: ${BUTTON.SQUARE_SIZE};
   background: ${(props) => props.theme.color['--searchbar-line']};
+  color: ${(props) => props.theme.color['--searchbar-icon']};
+  font-weight: 900;
 `;
 
-export const Sticky = styled(Circle)``;
+export const Sticky = styled(Circle)`
+  background: ${(props) => props.theme.color['--sticky-body']};
+  border: 5px solid ${(props) => props.theme.color['--sticky-line']};
+`;
+
+export const Member = styled(Circle)`
+  background: ${(props) => props.theme.color['--member-icon-body']};
+  border: 5px solid ${(props) => props.theme.color['--member-icon-line']};
+`;

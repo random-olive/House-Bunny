@@ -5,6 +5,7 @@ const myTheme: DefaultTheme = {
     '--white': '#ffffff',
 
     '--text': '#bd9682',
+    '--text-cream': '#bd973d',
 
     '--menu-selected': '#e1c5bb', //+ unselected-menu line, submenu text
     '--menu-selected-light': '#f0e1da',
