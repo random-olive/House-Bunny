@@ -1,19 +1,19 @@
 import styled from 'styled-components';
-import { BUTTON } from '../../constants/style';
+import { DEFAULT, BUTTON } from '../../constants/style';
 
 export const Base = styled.button`
   font-family: 'KyoboHand';
   border: none;
   /* border: 3px solid ${(props) => props.theme.color['--menu-selected']}; */
-  font-weight: ${BUTTON.FONT_WEIGHT};
-  border-radius: ${BUTTON.BORDER_RADIUS};
-  width: ${BUTTON.WIDTH};
-  height: ${BUTTON.HEIGHT};
+  font-weight: ${DEFAULT.FONT_WEIGHT};
+  border-radius: ${DEFAULT.BORDER_RADIUS};
+  width: ${BUTTON.BASIC_WIDTH};
+  height: ${BUTTON.BASIC_HEIGHT};
 `;
 
 export const Circle = styled.button`
-  height: ${BUTTON.SC};
-  width: ${BUTTON.SC};
+  height: ${BUTTON.SQUARE_SIZE};
+  width: ${BUTTON.SQUARE_SIZE};
 `;
 
 export const Main = styled(Base)`
@@ -32,15 +32,15 @@ export const MainWithSlide = styled(Base)`
   &:hover {
     /* border-bottom: 3px solid ${(props) =>
       props.theme.color['--menu-selected-line']}; */
-    border-radius: 0px;
+    /* border-radius: 0px; */
     color: ${(props) => props.theme.color['--text']};
     cursor: pointer;
   }
 `;
 
 export const Square = styled(Base)`
-  height: ${BUTTON.SC};
-  width: ${BUTTON.SC};
+  width: ${BUTTON.SQUARE_SIZE};
+  height: ${BUTTON.SQUARE_SIZE};
   background: ${(props) => props.theme.color['--searchbar-line']};
 `;
 

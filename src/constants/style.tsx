@@ -1,10 +1,25 @@
+export const DEFAULT = {
+  BORDER_RADIUS: '3px',
+  FONT_WEIGHT: '600',
+};
+
 export const BUTTON = {
   //Basic
-  FONT_WEIGHT: '600',
-  BORDER_RADIUS: '6px',
-  WIDTH: '83px',
-  HEIGHT: '50px',
+  BASIC_WIDTH: '83px',
+  BASIC_HEIGHT: '50px',
 
   //Square & Circle
-  SC: '45px', //width & height
+  SQUARE_SIZE: '47px',
+  CIRCLE_SIZE: '50px',
 } as const;
+
+export const BAR = {
+  //Searchbar
+  SEARCH_WIDTH: '500px',
+  SEARCH_HEIGHT: '40px',
+
+  //Input
+  INPUT_WIDTH: '480px',
+  INPUT_HEIGHT: 'fit-content',
+  INPUT_MARGIN: '0 0 0 10px'
+};
