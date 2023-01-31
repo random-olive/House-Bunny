@@ -3,7 +3,9 @@ import logo from 'images/logo.svg';
 import './App.css';
 import {} from 'firebase/firestore';
 
-import { Main, MainWithSlide } from 'components/buttons/MenuButtons';
+import { Main, MainWithSlide, Square } from 'components/atoms/Buttons';
+import Searchbar from 'components/molecules/Searchbar';
+
 import { data } from './constants/data/menu';
 
 function App() {
@@ -22,7 +24,7 @@ function App() {
           </div>
 
           <div className='select'>
-            <Main>결혼육아</Main>
+            <Main>wed&baby</Main>
             {/* <div className='LNB'>
               {data[1].list.map((el) => (
                 <MainWithSlide>{el.title}</MainWithSlide>
@@ -30,10 +32,11 @@ function App() {
             </div> */}
           </div>
 
-          {data[2].list.map((el) => (
-            <Main>{el.title}</Main>
+          {data[2].list.map((el, idx) => (
+            <Main key={idx}>{el.title}</Main>
           ))}
         </div>
+        <Searchbar />
       </div>
     </>
   );

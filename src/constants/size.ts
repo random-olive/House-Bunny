@@ -1,8 +1,8 @@
 import React from 'react';
 
 const ButtonSize = {
-  width: '60px',
-  height: '40px;',
+  width: '83px',
+  height: '50px;',
 } as const;
 
 export default ButtonSize

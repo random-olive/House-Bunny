@@ -11,6 +11,11 @@ export const Base = styled.button`
   width: 83px;
 `;
 
+export const Circle = styled.button`
+  height: 50px;
+  width: 50px;
+`;
+
 export const Main = styled(Base)`
   background: ${(props) => props.theme.color['--white']};
   color: ${(props) => props.theme.color['--menu-text']};
@@ -25,9 +30,20 @@ export const MainWithSlide = styled(Base)`
   background: ${(props) => props.theme.color['--white']};
   color: ${(props) => props.theme.color['--menu-text']};
   &:hover {
-    /* border-bottom: 3px solid ${(props) => props.theme.color['--menu-selected-line']}; */
+    /* border-bottom: 3px solid ${(props) =>
+      props.theme.color['--menu-selected-line']}; */
     border-radius: 0px;
     color: ${(props) => props.theme.color['--text']};
     cursor: pointer;
   }
+`;
+
+export const Square = styled(Base)`
+  height: 45px;
+  width: 45px;
+  background: ${(props) => props.theme.color['--searchbar-line']};
+`;
+
+export const Sticky = styled(Circle)`
+  background: 'red';
 `;
