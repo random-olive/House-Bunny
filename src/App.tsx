@@ -2,6 +2,7 @@ import React from 'react';
 import logo from 'images/logo.svg';
 import './App.css';
 import {} from 'firebase/firestore';
+import styled from 'styled-components';
 
 import {
   Main,
@@ -19,6 +20,11 @@ function App() {
   return (
     <>
       <div className='App'>
+        <Tie>
+          <Logo>로고</Logo>
+          <Searchbar />
+        </Tie>
+
         <div className='GNB'>
           <div className='select'>
             <Main>carrot</Main>
@@ -43,13 +49,76 @@ function App() {
             <Main key={idx}>{el.title}</Main>
           ))}
         </div>
-        <Searchbar />
+
         <Section></Section>
         <Sticky></Sticky>
         <Member></Member>
+        <Check>
+          <div className='text'>로그아웃</div>
+          <div className='icon'></div>
+        </Check>
+        <Title>
+          <div className='icon'>HOT </div>
+        </Title>
+        <Loading></Loading>
       </div>
     </>
   );
 }
 
 export default App;
+
+const Check = styled.div`
+  display: flex;
+  flex-direction: column;
+  .text {
+    font-size: 1.2rem;
+  }
+  .icon {
+    width: 30px;
+    height: 30px;
+    background: ${(props) => props.theme.color['--carrot-body']};
+  }
+`;
+
+const Title = styled.div`
+  .icon {
+    width: 25px;
+    height: 25px;
+    background: ${(props) => props.theme.color['--carrot-body']};
+  }
+  position: absolute;
+  top: 135px;
+  left: 470px;
+  /* border: 1px solid red; */
+  background-color: white;
+  color: ${(props) => props.theme.color['--section-line']};
+  width: 70px;
+  height: 30px;
+  font-size: 1.6rem;
+  font-size: 20px;
+  font-weight: 700;
+`;
+
+const Loading = styled.div`
+  position: absolute;
+  top: 300px;
+  left: 700px;
+  width: 100px;
+  height: 80px;
+  background: bisque;
+`;
+
+const Tie = styled.div`
+  display: flex;
+`;
+
+const Logo = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  width: 150px;
+  height: 80px;
+  margin: 0 20px 0 0;
+`;
