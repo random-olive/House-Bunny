@@ -4,9 +4,9 @@
     "paths": {
       "images/*": ["src/assets/images/*"],
       "pages/*": ["src/pages/*"],
+      "styles/*": ["src/styles/*"],
       "components/*": ["src/components/*"],
-      "buttons/*": ["src/components/buttons/*"],
-      "styles/*": ["src/styles/*"]
+      "constants/*": ["src/constants/*"]
     }
   }
 }
