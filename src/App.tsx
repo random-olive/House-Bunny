@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from 'images/logo.svg';
 import './App.css';
 import {} from 'firebase/firestore';
 import styled from 'styled-components';
@@ -15,6 +14,7 @@ import Searchbar from 'components/molecules/Searchbar';
 
 import { data } from './constants/data/menu';
 import { Section } from 'components/atoms/Sections';
+import iconPath from './assets/icons.png';
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
           <Logo>로고</Logo>
           <Searchbar />
         </Tie>
-
+        <Img />
         <div className='GNB'>
           <div className='select'>
             <Main>carrot</Main>
@@ -121,4 +121,14 @@ const Logo = styled.div`
   width: 150px;
   height: 80px;
   margin: 0 20px 0 0;
+`;
+
+const Img = styled.div`
+  position: absolute;
+
+  background: url(${iconPath});
+
+  width: 150px;
+  height: 80px;
+  background-position: -10px 20px;
 `;
