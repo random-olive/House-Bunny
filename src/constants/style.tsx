@@ -1,6 +1,7 @@
 export const DEFAULT = {
   BORDER_RADIUS: '3px',
   FONT_WEIGHT: '600',
+  MARGIN: '30px 0 30px 0',
 };
 
 export const BUTTON = {
@@ -21,5 +22,5 @@ export const BAR = {
   //Input
   INPUT_WIDTH: '480px',
   INPUT_HEIGHT: 'fit-content',
-  INPUT_MARGIN: '0 0 0 10px'
+  INPUT_MARGIN: '0 0 0 10px',
 };

@@ -29,6 +29,8 @@ export const data = [
     title: 'main',
     href: '/home',
     list: [
+      { title: 'carrot', href: '/address' },
+      { title: 'wed&baby', href: '/address' },
       { title: '레시피', href: '/address' },
       { title: '취 미', href: '/address' },
       { title: '파 티', href: '/address' },

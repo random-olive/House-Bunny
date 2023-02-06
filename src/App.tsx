@@ -27,7 +27,7 @@ function App() {
         <Img />
         <div className='GNB'>
           <div className='select'>
-            <Main>carrot</Main>
+            {/* <Main>carrot</Main> */}
             {/* <div className='LNB'>
               {data[0].list.map((el) => (
                 <MainWithSlide>{el.title}</MainWithSlide>
@@ -37,7 +37,7 @@ function App() {
           </div>
 
           <div className='select'>
-            <Main>wed&baby</Main>
+            {/* <Main>wed&baby</Main> */}
             {/* <div className='LNB'>
               {data[1].list.map((el) => (
                 <MainWithSlide>{el.title}</MainWithSlide>
@@ -57,9 +57,7 @@ function App() {
           <div className='text'>로그아웃</div>
           <div className='icon'></div>
         </Check>
-        <Title>
-          <div className='icon'>HOT </div>
-        </Title>
+    
         <Loading></Loading>
       </div>
     </>
@@ -102,8 +100,8 @@ const Title = styled.div`
 
 const Loading = styled.div`
   position: absolute;
-  top: 300px;
-  left: 700px;
+  top: 50%;
+  left: 50%;
   width: 100px;
   height: 80px;
   background: bisque;
