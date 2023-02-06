@@ -24,3 +24,10 @@ export const BAR = {
   INPUT_HEIGHT: 'fit-content',
   INPUT_MARGIN: '0 0 0 10px',
 };
+
+export const LOGO = {
+  //HomeLogo
+  HOME_WIDTH: '150px',
+  HOME_HEIGHT: '80px',
+  HOME_MARGIN: '0 20px 0 0',
+};

@@ -11,6 +11,7 @@ import {
   Sticky,
 } from 'components/atoms/Buttons';
 import Searchbar from 'components/molecules/Searchbar';
+import { HomeLogo } from 'components/atoms/Logos';
 
 import { data } from './constants/data/menu';
 import { Section } from 'components/atoms/Sections';
@@ -21,8 +22,7 @@ function App() {
     <>
       <div className='App'>
         <Tie>
-          <Logo>로고</Logo>
-          <Searchbar />
+          <HomeLogo/>
         </Tie>
         <Img />
         <div className='GNB'>
@@ -111,15 +111,7 @@ const Tie = styled.div`
   display: flex;
 `;
 
-const Logo = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid red;
-  width: 150px;
-  height: 80px;
-  margin: 0 20px 0 0;
-`;
+
 
 const Img = styled.div`
   position: absolute;
