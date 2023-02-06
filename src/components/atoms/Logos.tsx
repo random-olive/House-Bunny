@@ -7,7 +7,7 @@ const Base = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   background: '';
   background-position: 0px;
   width: 0;

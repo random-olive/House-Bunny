@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import {} from 'firebase/firestore';
 import styled from 'styled-components';
-
+import LogoAndSearch from './organisms/LogoAndSearch';
 import {
   Main,
   MainWithSlide,
@@ -21,9 +21,7 @@ function App() {
   return (
     <>
       <div className='App'>
-        <Tie>
-          <HomeLogo/>
-        </Tie>
+        <LogoAndSearch />
         <Img />
         <div className='GNB'>
           <div className='select'>
@@ -57,7 +55,7 @@ function App() {
           <div className='text'>로그아웃</div>
           <div className='icon'></div>
         </Check>
-    
+
         <Loading></Loading>
       </div>
     </>
@@ -110,8 +108,6 @@ const Loading = styled.div`
 const Tie = styled.div`
   display: flex;
 `;
-
-
 
 const Img = styled.div`
   position: absolute;
