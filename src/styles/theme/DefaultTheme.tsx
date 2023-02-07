@@ -5,9 +5,10 @@ const myTheme: DefaultTheme = {
     '--white': '#ffffff',
 
     '--text': '#bd9682',
-    '--text-cream': '#bd973d',
+    '--text-cream': '#9b7877',
 
-    '--menu-selected': '#e1c5bb', //+ unselected-menu line, submenu text
+    '--search-bar': '#e1c5bb',
+    '--menu-selected': '#fce1de', //+ unselected-menu line, submenu text
     '--menu-selected-light': '#f0e1da',
     '--menu-selected-line': '#b79585',
     '--menu-text': '#c8a4a3',

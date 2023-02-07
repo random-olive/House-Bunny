@@ -17,6 +17,7 @@ const BaseLogo = styled.div`
 
 export const HomeLogo = styled(BaseLogo)`
   background: url(${iconPath});
+  /* border: 1px solid red; */
   background-position: 1px 0px;
   width: ${LOGO.HOME_WIDTH};
   height: ${LOGO.HOME_HEIGHT};

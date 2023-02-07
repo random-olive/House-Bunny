@@ -4,7 +4,7 @@ interface MenuList {
   //   list: { title: string; href: string }[];
 }
 
-export const data = [
+export const menuData = [
   {
     title: 'carrot',
     href: '/housework',

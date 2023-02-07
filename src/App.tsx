@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import {} from 'firebase/firestore';
 import styled from 'styled-components';
-import LogoAndSearch from './organisms/LogoAndSearch';
+import LogoAndSearch from './components/organisms/LogoAndSearch';
 import {
   Main,
   MainWithSlide,
@@ -13,16 +13,17 @@ import {
 import Searchbar from 'components/molecules/Searchbar';
 import { HomeLogo } from 'components/atoms/Logos';
 
-import { data } from './constants/data/menu';
+import { menuData } from 'constants/data';
 import { Section } from 'components/atoms/Sections';
 import iconPath from './assets/icons.png';
+import { Basic } from 'components/templates/Layouts';
 
 function App() {
   return (
     <>
       <div className='App'>
-        <LogoAndSearch />
-        <Img />
+        <Basic/>
+        {/* <Img /> */}
         <div className='GNB'>
           <div className='select'>
             {/* <Main>carrot</Main> */}
@@ -43,9 +44,7 @@ function App() {
             </div> */}
           </div>
 
-          {data[2].list.map((el, idx) => (
-            <Main key={idx}>{el.title}</Main>
-          ))}
+         
         </div>
 
         <Section></Section>

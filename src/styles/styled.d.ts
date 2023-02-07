@@ -9,6 +9,7 @@ declare module 'styled-components' {
       '--text': string;
       '--text-cream': string;
 
+      '--search-bar': string;
       '--menu-selected': string; //+ line, submenu text
       '--menu-selected-light': string;
       '--menu-selected-line': string;

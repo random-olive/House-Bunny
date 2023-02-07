@@ -1,10 +1,15 @@
 import { Outlet } from 'react-router-dom';
 import PATH from 'constants/routePath';
+import LogoAndSearch from '../organisms/LogoAndSearch';
+import { MainBar, SubBar } from 'components/molecules/Menubar';
 
 export const Basic = () => {
   return (
     <>
-      {/*header,
+      {/*member*/}
+      <LogoAndSearch />
+      <MainBar />
+      {/*menu
         main
         footer*/}
     </>
@@ -16,6 +21,5 @@ export const Landing = () => {
 };
 
 export const Contents = () => {
-    return <>{/*컨텐츠 */}</>;
-  };
-  
+  return <>{/*컨텐츠 */}</>;
+};
