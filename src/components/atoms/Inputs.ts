@@ -3,11 +3,14 @@ import { DEFAULT, BAR } from '../../constants/style';
 
 export const Input = styled.input`
   font-family: 'KyoboHand';
-  /* font-weight: ${DEFAULT.FONT_WEIGHT}; */
+  font-weight: ${DEFAULT.FONT_WEIGHT};
   color: ${(props) => props.theme.color['--searchbar-icon']};
   border: none;
   outline: none;
   width: ${BAR.INPUT_WIDTH};
   height: ${BAR.INPUT_HEIGHT};
   margin: ${BAR.INPUT_MARGIN};
+  ::selection{
+      background: ${(props)=>props.theme.color['--search-selected']}
+  }
 `;

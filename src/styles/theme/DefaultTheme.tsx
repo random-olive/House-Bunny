@@ -5,10 +5,14 @@ const myTheme: DefaultTheme = {
     '--white': '#ffffff',
 
     '--text': '#bd9682',
-    '--text-cream': '#9b7877',
+    '--text-selected': '#a88675',
 
     '--search-bar': '#e1c5bb',
-    '--menu-selected': '#fce1de', //+ unselected-menu line, submenu text
+    '--search-selected': '#fce1de', //+ unselected-menu line, submenu text
+    
+    '--menu':'#e1c5bb',
+    '--menu-selected': '#edd3ca',
+
     '--menu-selected-light': '#f0e1da',
     '--menu-selected-line': '#b79585',
     '--menu-text': '#c8a4a3',

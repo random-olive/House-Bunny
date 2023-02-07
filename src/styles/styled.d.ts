@@ -7,9 +7,12 @@ declare module 'styled-components' {
       '--white': string;
 
       '--text': string;
-      '--text-cream': string;
+      '--text-selected': string;
 
       '--search-bar': string;
+      '--search-selected': string;
+      
+      '--menu': string;
       '--menu-selected': string; //+ line, submenu text
       '--menu-selected-light': string;
       '--menu-selected-line': string;

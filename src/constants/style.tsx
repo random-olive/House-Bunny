@@ -6,7 +6,7 @@ export const DEFAULT = {
 
 export const BUTTON = {
   //Basic
-  BASIC_WIDTH: '83px',
+  BASIC_WIDTH: '76px',
   BASIC_HEIGHT: '50px',
 
   //Square & Circle
@@ -16,7 +16,7 @@ export const BUTTON = {
 
 export const BAR = {
   //Searchbar
-  SEARCH_WIDTH: '500px',
+  SEARCH_WIDTH: '555px',
   SEARCH_HEIGHT: '40px',
 
   //Input

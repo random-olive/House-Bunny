@@ -2,12 +2,15 @@ import { Outlet } from 'react-router-dom';
 import PATH from 'constants/routePath';
 import LogoAndSearch from '../organisms/LogoAndSearch';
 import { MainBar, SubBar } from 'components/molecules/Menubar';
+import styled from 'styled-components';
 
 export const Basic = () => {
   return (
     <>
       {/*member*/}
-      <LogoAndSearch />
+      <Div>
+        <LogoAndSearch />
+      </Div>
       <MainBar />
       {/*menu
         main
@@ -23,3 +26,7 @@ export const Landing = () => {
 export const Contents = () => {
   return <>{/*컨텐츠 */}</>;
 };
+
+const Div = styled.div`
+  margin-left: -157px;
+`;
