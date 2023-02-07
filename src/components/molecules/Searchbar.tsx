@@ -2,6 +2,8 @@ import { SearchPart } from 'components/atoms/Bars';
 import { Square } from 'components/atoms/Buttons';
 import { Horizontal } from 'components/atoms/Bindings';
 import { Input } from 'components/atoms/Inputs';
+import { SearchIcon } from 'components/atoms/Icons';
+import styled from 'styled-components';
 
 const Searchbar = () => {
   return (
@@ -9,7 +11,10 @@ const Searchbar = () => {
       <SearchPart>
         <Input />
       </SearchPart>
-      <Square>Q</Square>
+
+      <Square>
+        <SearchIcon />
+      </Square>
     </Horizontal>
   );
 };

@@ -105,13 +105,10 @@ const Loading = styled.div`
   background: bisque;
 `;
 
-const Tie = styled.div`
-  display: flex;
-`;
+
 
 const Img = styled.div`
   position: absolute;
-
   background: url(${iconPath});
 
   width: 150px;

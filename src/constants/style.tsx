@@ -1,7 +1,7 @@
 export const DEFAULT = {
   BORDER_RADIUS: '3px',
   FONT_WEIGHT: '600',
-  MARGIN: '30px 0 30px 0',
+  MARGIN: '10px 0 10px 0',
 };
 
 export const BUTTON = {

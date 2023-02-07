@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import iconPath from '../../assets/icons.png';
 //homeLogo
 
-const Base = styled.div`
+const BaseLogo = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +15,7 @@ const Base = styled.div`
   margin: 0;
 `;
 
-export const HomeLogo = styled(Base)`
+export const HomeLogo = styled(BaseLogo)`
   background: url(${iconPath});
   background-position: 1px 0px;
   width: ${LOGO.HOME_WIDTH};
