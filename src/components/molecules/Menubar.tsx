@@ -12,9 +12,9 @@ export const Menubar = () => {
           <Main key={idx}>
             {el.title}
             <div className='sub'>
-              {subMenuIdx.map((i) => idx === i && subMenu[i].list.map((menu, key) => 
-              (<div key={key}>{menu.title}</div>))
-              )}
+              {subMenuIdx.map((i) => idx === i && subMenu[i].list.map(
+                (menu, key) => (<div key={key}>{menu.title}</div>)
+              ))}
             </div>
           </Main>
         ))}

@@ -2,7 +2,7 @@ export const DEFAULT = {
   BORDER_RADIUS: '3px',
   FONT_WEIGHT: '600',
   MARGIN: '10px 0 10px 0',
-  TRANSITION: 'all 0.3s'
+  TRANSITION: 'all 0.3s',
 };
 
 export const BUTTON = {
@@ -31,4 +31,14 @@ export const LOGO = {
   HOME_WIDTH: '150px',
   HOME_HEIGHT: '80px',
   HOME_MARGIN: '0 10px 0 0',
+};
+
+export const SECTION = {
+  BORDER: '4px solid',
+  WIDTH: '600px',
+  MARGIN: '20px 0 0 0',
+
+  MAIN_HEIGHT: '400px',
+  ADV_HEIGHT: '150px',
+  MORE_HEIGHT: '200px',
 };

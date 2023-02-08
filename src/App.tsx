@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 import { Member, Sticky } from 'components/atoms/Buttons';
 
-import { Section } from 'components/atoms/Sections';
+
 import iconPath from './assets/icons.png';
 import { Basic } from 'components/templates/Layouts';
 
@@ -15,7 +15,7 @@ function App() {
       <div className='App'>
         <Basic />
 
-        <Section></Section>
+       
         <Sticky></Sticky>
         <Member></Member>
         <Check>
