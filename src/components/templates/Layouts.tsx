@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import PATH from 'constants/routePath';
 import LogoAndSearch from '../organisms/LogoAndSearch';
-import { MainBar, SubBar } from 'components/molecules/Menubar';
+import { Menubar } from 'components/molecules/Menubar';
 import styled from 'styled-components';
 
 export const Basic = () => {
@@ -11,7 +11,7 @@ export const Basic = () => {
       <Div>
         <LogoAndSearch />
       </Div>
-      <MainBar />
+      <Menubar />
       {/*menu
         main
         footer*/}

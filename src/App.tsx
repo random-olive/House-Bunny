@@ -2,18 +2,9 @@ import React from 'react';
 import './App.css';
 import {} from 'firebase/firestore';
 import styled from 'styled-components';
-import LogoAndSearch from './components/organisms/LogoAndSearch';
-import {
-  Main,
-  MainWithSlide,
-  Member,
-  Square,
-  Sticky,
-} from 'components/atoms/Buttons';
-import Searchbar from 'components/molecules/Searchbar';
-import { HomeLogo } from 'components/atoms/Logos';
 
-import { menuData } from 'constants/data';
+import { Member, Sticky } from 'components/atoms/Buttons';
+
 import { Section } from 'components/atoms/Sections';
 import iconPath from './assets/icons.png';
 import { Basic } from 'components/templates/Layouts';
@@ -22,30 +13,7 @@ function App() {
   return (
     <>
       <div className='App'>
-        <Basic/>
-        {/* <Img /> */}
-        <div className='GNB'>
-          <div className='select'>
-            {/* <Main>carrot</Main> */}
-            {/* <div className='LNB'>
-              {data[0].list.map((el) => (
-                <MainWithSlide>{el.title}</MainWithSlide>
-              ))}
-            </div> */}
-            {/* hover하면 메뉴 나오게*/}
-          </div>
-
-          <div className='select'>
-            {/* <Main>wed&baby</Main> */}
-            {/* <div className='LNB'>
-              {data[1].list.map((el) => (
-                <MainWithSlide>{el.title}</MainWithSlide>
-              ))}
-            </div> */}
-          </div>
-
-         
-        </div>
+        <Basic />
 
         <Section></Section>
         <Sticky></Sticky>
@@ -65,6 +33,7 @@ export default App;
 
 const Check = styled.div`
   display: flex;
+  cursor: pointer;
   flex-direction: column;
   .text {
     font-size: 1.2rem;
@@ -104,12 +73,9 @@ const Loading = styled.div`
   background: bisque;
 `;
 
-
-
 const Img = styled.div`
   position: absolute;
   background: url(${iconPath});
-
   width: 150px;
   height: 80px;
   background-position: -10px 20px;

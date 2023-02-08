@@ -7,12 +7,14 @@ const BaseLogo = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor:pointer;
   /* border: 1px solid red; */
   background: '';
   background-position: 0px;
   width: 0;
   height: 0;
   margin: 0;
+ 
 `;
 
 export const HomeLogo = styled(BaseLogo)`

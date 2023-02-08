@@ -2,19 +2,22 @@ import { DefaultTheme } from 'styled-components';
 
 const myTheme: DefaultTheme = {
   color: {
-    '--white': '#ffffff',
+    '--white': '#fffaf8',
 
     '--text': '#bd9682',
     '--text-selected': '#a88675',
 
+    '--text-light-orange': '#ecbbaf',
+    '--text-orange': '#f0ae9e',
+
     '--search-bar': '#e1c5bb',
-    '--search-selected': '#fce1de', //+ unselected-menu line, submenu text
+    '--pink-selected': '#fce1de', //+ unselected-menu line, submenu text
     
     '--menu':'#e1c5bb',
     '--menu-selected': '#edd3ca',
 
     '--menu-selected-light': '#f0e1da',
-    '--menu-selected-line': '#b79585',
+    '--menu-selected-line': '#cdab9c',
     '--menu-text': '#c8a4a3',
 
     '--logo-sub': '#e1c5bb',

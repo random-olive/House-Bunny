@@ -1,10 +1,26 @@
 interface MenuList {
   // title: string;
-  //   href: string;
-  //   list: { title: string; href: string }[];
+  // href: string;
+  // list: { title: string; href: string }[];
 }
+export const mainMenu = [
+  {
+    title: 'main',
+    href: '/home',
+    list: [
+      { title: 'carrot', href: '/address' },
+      { title: 'w&b', href: '/address' },
+      { title: '레시피', href: '/address' },
+      { title: '취 미', href: '/address' },
+      { title: '파 티', href: '/address' },
+      { title: '여 행', href: '/address' },
+      { title: '커뮤니티', href: '/address' },
+      { title: 'Store', href: '/address' },
+    ],
+  },
+];
 
-export const menuData = [
+export const subMenu = [
   {
     title: 'carrot',
     href: '/housework',
@@ -23,20 +39,6 @@ export const menuData = [
     list: [
       { title: '💍', href: '/address' },
       { title: '👶🏻', href: '/address' },
-    ],
-  },
-  {
-    title: 'main',
-    href: '/home',
-    list: [
-      { title: 'carrot', href: '/address' },
-      { title: 'w&b', href: '/address' },
-      { title: '레시피', href: '/address' },
-      { title: '취 미', href: '/address' },
-      { title: '파 티', href: '/address' },
-      { title: '여 행', href: '/address' },
-      { title: '커뮤니티', href: '/address' },
-      { title: 'Store', href: '/address' },
     ],
   },
 ];

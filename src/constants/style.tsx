@@ -2,6 +2,7 @@ export const DEFAULT = {
   BORDER_RADIUS: '3px',
   FONT_WEIGHT: '600',
   MARGIN: '10px 0 10px 0',
+  TRANSITION: 'all 0.3s'
 };
 
 export const BUTTON = {

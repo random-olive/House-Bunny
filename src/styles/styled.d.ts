@@ -8,10 +8,12 @@ declare module 'styled-components' {
 
       '--text': string;
       '--text-selected': string;
+      '--text-light-orange': string;
+      '--text-orange': string;
 
       '--search-bar': string;
-      '--search-selected': string;
-      
+      '--pink-selected': string;
+
       '--menu': string;
       '--menu-selected': string; //+ line, submenu text
       '--menu-selected-light': string;
