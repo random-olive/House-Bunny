@@ -3,6 +3,8 @@ import { Main } from 'components/atoms/Buttons';
 import { Horizontal } from 'components/atoms/Bindings';
 
 export const Menubar = () => {
+  const subMenuIdx = Array.from(Array(subMenu.length), (_, i) => i);
+
   return (
     <>
       <Horizontal>
@@ -10,14 +12,9 @@ export const Menubar = () => {
           <Main key={idx}>
             {el.title}
             <div className='sub'>
-
-            
-
-              {idx === 0 &&
-                subMenu[0].list.map((el, i) => <div key={i}>{el.title}</div>)}
-
-              {idx === 1 &&
-                subMenu[1].list.map((el, i) => <div key={i}>{el.title}</div>)}
+              {subMenuIdx.map((i) => idx === i && subMenu[i].list.map((menu, key) => 
+              (<div key={key}>{menu.title}</div>))
+              )}
             </div>
           </Main>
         ))}
