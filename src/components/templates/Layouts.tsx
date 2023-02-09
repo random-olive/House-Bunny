@@ -4,25 +4,29 @@ import LogoAndSearch from '../organisms/LogoAndSearch';
 import { Menubar } from 'components/molecules/Menubar';
 import styled from 'styled-components';
 import { LandingBody } from 'components/organisms/LandingBody';
+import Footer from 'components/atoms/Footer';
+import { Vertical } from 'components/atoms/Bindings';
 
-export const Basic = () => {
+export const Basic = ({ body: any }) => {
   return (
     <>
       {/*member*/}
       <Div>
         <LogoAndSearch />
       </Div>
-      <Menubar /> {/*Outlet 넣어서 제대로 바꾸기*/ }
-      <LandingBody></LandingBody>
-      {/*menu
-        main
-        footer*/}
+      <Menubar />
+      {body}
+      <Footer />
     </>
   );
 };
 
 export const Landing = () => {
-  return <>{/*랜딩 */}</>;
+  return (
+    <>
+      <Basic body={dd}></Basic>
+    </>
+  );
 };
 
 export const Contents = () => {

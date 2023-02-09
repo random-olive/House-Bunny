@@ -7,7 +7,7 @@ import {
 export const HotSection = () => {
   return (
     <>
-      <HotSectionFrame>d</HotSectionFrame>
+      <HotSectionFrame>Hot 내용</HotSectionFrame>
     </>
   );
 };
@@ -15,7 +15,7 @@ export const HotSection = () => {
 export const AdvSection = () => {
   return (
     <>
-      <AdvSectionFrame>d</AdvSectionFrame>
+      <AdvSectionFrame>이미지</AdvSectionFrame>
     </>
   );
 };
@@ -23,7 +23,7 @@ export const AdvSection = () => {
 export const MoreSection = () => {
   return (
     <>
-      <MoreSectionFrame>d</MoreSectionFrame>
+      <MoreSectionFrame>더보기 내용</MoreSectionFrame>
     </>
   );
 };

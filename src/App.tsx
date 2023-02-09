@@ -1,29 +1,27 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import {} from 'firebase/firestore';
 import styled from 'styled-components';
 
 import { Member, Sticky } from 'components/atoms/Buttons';
 
-
 import iconPath from './assets/icons.png';
-import { Basic } from 'components/templates/Layouts';
+import { Basic, Landing } from 'components/templates/Layouts';
+import PATH from 'constants/routePath';
 
 function App() {
   return (
     <>
       <div className='App'>
-        <Basic />
-
-       
-        <Sticky></Sticky>
-        <Member></Member>
-        <Check>
-          <div className='text'>로그아웃</div>
-          <div className='icon'></div>
-        </Check>
-
-        <Loading></Loading>
+        <Suspense fallback={<img src={iconPath} />}>
+          {/* <Routes>
+            <Route element={<Basic />}>
+            
+            </Route>
+          </Routes> */}
+        </Suspense>
+        <Landing />
       </div>
     </>
   );
