@@ -2,6 +2,7 @@ import { DEFAULT, SECTION } from 'constants/style';
 import styled from 'styled-components';
 
 export const Frame = styled.div`
+  position: relative;
   border: 3px solid ${(props) => props.theme.color['--section-line']};
   width: ${SECTION.WIDTH};
   height: ${SECTION.MAIN_HEIGHT};

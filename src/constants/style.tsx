@@ -44,3 +44,12 @@ export const SECTION = {
   ADV_HEIGHT: '150px',
   MORE_HEIGHT: '200px',
 };
+
+export const ICON_SIZE = {
+  SEARCH: '47px',
+  HOT_WIDTH: '80px',
+  HOT_HEIGHT: '27px',
+
+  MORE_WIDTH: '95px',
+  MORE_HEIGHT: '30px'
+}

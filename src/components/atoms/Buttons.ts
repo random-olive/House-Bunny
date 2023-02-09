@@ -44,6 +44,7 @@ export const Main = styled(Base)`
     background: ${(props) => props.theme.color['--white']};
     transition: all 0.3s ease-out;
     color: ${(props) => props.theme.color['--text-light-orange']};
+    z-index: 1000;
     div {
       display: flex;
       justify-content: center;
