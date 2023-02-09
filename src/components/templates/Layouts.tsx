@@ -5,9 +5,14 @@ import { Menubar } from 'components/molecules/Menubar';
 import styled from 'styled-components';
 import { LandingBody } from 'components/organisms/LandingBody';
 import Footer from 'components/atoms/Footer';
-import { Vertical } from 'components/atoms/Bindings';
+import { ReactNode } from 'react';
 
-export const Basic = ({ body: any }) => {
+
+interface Props {
+  body: ReactNode;
+}
+
+export const Basic: React.FC<Props> = ({ body }) => {
   return (
     <>
       {/*member*/}
@@ -24,13 +29,18 @@ export const Basic = ({ body: any }) => {
 export const Landing = () => {
   return (
     <>
-      <Basic body={dd}></Basic>
+      <Basic body={<LandingBody />}></Basic>
     </>
   );
 };
 
 export const Contents = () => {
-  return <>{/*컨텐츠 */}</>;
+  return (
+    <>
+      {' '}
+      <Basic body={'컨텐츠 페이지'}></Basic>
+    </>
+  );
 };
 
 const Div = styled.div`

@@ -7,7 +7,7 @@ import styled from 'styled-components';
 import { Member, Sticky } from 'components/atoms/Buttons';
 
 import iconPath from './assets/icons.png';
-import { Basic, Landing } from 'components/templates/Layouts';
+import { Basic, Contents, Landing } from 'components/templates/Layouts';
 import PATH from 'constants/routePath';
 
 function App() {
@@ -21,7 +21,8 @@ function App() {
             </Route>
           </Routes> */}
         </Suspense>
-        <Landing />
+        {/* <Contents /> */}
+        <Landing></Landing>
       </div>
     </>
   );

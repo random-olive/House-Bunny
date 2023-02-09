@@ -30,6 +30,10 @@
   font-family: 'KyoboHand';
 }
 
+::selection {
+  background: #fce1de;
+}
+
 p {
   font-size: xx-large;
 }

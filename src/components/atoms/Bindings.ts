@@ -13,3 +13,4 @@ export const Vertical = styled(Horizontal)`
   flex-direction: column;
   margin: 0;
 `;
+

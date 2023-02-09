@@ -10,7 +10,4 @@ export const Input = styled.input`
   width: ${BAR.INPUT_WIDTH};
   height: ${BAR.INPUT_HEIGHT};
   margin: ${BAR.INPUT_MARGIN};
-  ::selection{
-      background: ${(props)=>props.theme.color['--pink-selected']}
-  }
 `;
