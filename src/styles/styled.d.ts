@@ -25,7 +25,7 @@ declare module 'styled-components' {
 
       '--section-line': string;
       '--section-header': string;
-      '--section-body': string;
+      '--font': string;
 
       '--icon-heart-warm': string;
       '--icon-heart-cool': string;

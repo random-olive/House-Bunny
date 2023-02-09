@@ -1,4 +1,3 @@
-import { DEFAULT, FOOTER, SECTION } from 'constants/style';
 import styled from 'styled-components';
 
 const Footer = () => {
@@ -12,6 +11,10 @@ const Footer = () => {
 export default Footer;
 
 const BackGround = styled.div`
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,5 +22,4 @@ const BackGround = styled.div`
   height: 2rem;
   background: ${(props) => props.theme.color['--menu']};
   color: ${(props) => props.theme.color['--white']};
-  margin: ${FOOTER.MARGIN};
 `;

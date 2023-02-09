@@ -38,12 +38,9 @@ export const SECTION = {
   WIDTH: '600px',
   MARGIN: '20px 0 0 0',
   MORE_MARGIN: '20px 0 25px 0',
+  END_MARGIN: '20px 0 60px 0',
 
   MAIN_HEIGHT: '350px',
   ADV_HEIGHT: '150px',
   MORE_HEIGHT: '200px',
 };
-
-export const FOOTER = {
-  MARGIN: '30px 0 0 0'
-}

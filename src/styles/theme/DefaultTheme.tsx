@@ -25,7 +25,7 @@ const myTheme: DefaultTheme = {
 
     '--section-line': '#f2c2bd',
     '--section-header': '#b79585',
-    '--section-body': '#987b6d',
+    '--font': '#987b6d',
 
     '--icon-heart-warm': '#e48a8a',
     '--icon-heart-cool': '#f3c3be',

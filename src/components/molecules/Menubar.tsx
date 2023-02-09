@@ -7,7 +7,7 @@ export const Menubar = () => {
 
   return (
     <>
-      <Horizontal>
+      <Horizontal margin={'-10px 0 10px 0'}>
         {mainMenu[0].list.map((el, idx) => (
           <Main key={idx}>
             {el.title}

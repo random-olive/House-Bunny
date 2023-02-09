@@ -19,5 +19,5 @@ export const AdvSectionFrame = styled(Frame)`
 export const MoreSectionFrame = styled(Frame)`
   border-radius: ${DEFAULT.BORDER_RADIUS};
   height: ${SECTION.MORE_HEIGHT};
-  margin: ${SECTION.MORE_MARGIN};
+  margin: ${SECTION.END_MARGIN};
 `;

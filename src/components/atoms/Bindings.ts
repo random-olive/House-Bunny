@@ -1,11 +1,15 @@
 import styled from 'styled-components';
 import { DEFAULT } from 'constants/style';
 
-export const Horizontal = styled.div`
+type BindingType = {
+  margin?: string;
+};
+
+export const Horizontal = styled.div<BindingType>`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: ${DEFAULT.MARGIN};
+  margin: ${(props) => props.margin || DEFAULT.MARGIN};
 `;
 
 export const Vertical = styled(Horizontal)`
@@ -13,4 +17,3 @@ export const Vertical = styled(Horizontal)`
   flex-direction: column;
   margin: 0;
 `;
-
