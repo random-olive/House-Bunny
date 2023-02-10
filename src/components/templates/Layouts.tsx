@@ -1,47 +1,25 @@
 import { Outlet } from 'react-router-dom';
-import PATH from 'constants/routePath';
 import LogoAndSearch from '../organisms/LogoAndSearch';
 import { Menubar } from 'components/molecules/Menubar';
 import styled from 'styled-components';
-import { LandingBody } from 'components/organisms/LandingBody';
 import Footer from 'components/atoms/Footer';
-import { ReactNode } from 'react';
 
 
-interface Props {
-  body: ReactNode;
-}
-
-export const Basic: React.FC<Props> = ({ body }) => {
+export const BasicLayout = () => {
   return (
     <>
-      {/*member*/}
+      {/*member 관련 컴포넌트*/}
       <Div>
         <LogoAndSearch />
       </Div>
       <Menubar />
-      {body}
+      <Outlet />
       <Footer />
     </>
   );
 };
 
-export const Landing = () => {
-  return (
-    <>
-      <Basic body={<LandingBody />}></Basic>
-    </>
-  );
-};
-
-export const Contents = () => {
-  return (
-    <>
-      {' '}
-      <Basic body={'컨텐츠 페이지'}></Basic>
-    </>
-  );
-};
+//카테고리 내부 클릭시 템플릿(컨텐츠 페이지의 템플릿) : +세부메뉴바, (x정리탭x), +컨텐츠
 
 const Div = styled.div`
   margin-left: -157px;

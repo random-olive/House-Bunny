@@ -1,3 +1,5 @@
+import { ReactNode } from 'react';
+
 import {
   AdvSectionFrame,
   HotSectionFrame,
@@ -5,6 +7,12 @@ import {
 } from 'components/atoms/SectionFrame';
 
 import { HotTitle, MoreTitle } from './TitleIcon';
+import { SECTION } from 'constants/style';
+
+interface Props {
+  img?: string;
+  body?: ReactNode;
+}
 
 export const HotSection = () => {
   return (
@@ -17,10 +25,18 @@ export const HotSection = () => {
   );
 };
 
-export const AdvSection = () => {
+export const AdvSection: React.FC<Props> = ({ img }) => {
   return (
     <>
-      <AdvSectionFrame>광고 이미지</AdvSectionFrame>
+      <AdvSectionFrame>
+        <img
+          alt='advertise'
+          style={{ border: '1px solid blue' }}
+          src={img}
+          width={SECTION.ADV_WIDTH}
+          height={SECTION.ADV_HEIGHT}
+        />
+      </AdvSectionFrame>
     </>
   );
 };

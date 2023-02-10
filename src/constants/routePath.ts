@@ -5,6 +5,7 @@ const PATH = {
   LOGIN: '/login',
   MYPAGE: '/mypage',
 
+  CONTENTS: '/contents',
   TEST:'/test/edit/:id'
 };
 

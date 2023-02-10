@@ -7,18 +7,20 @@ export const Frame = styled.div`
   width: ${SECTION.WIDTH};
   height: ${SECTION.MAIN_HEIGHT};
   margin: ${SECTION.MARGIN};
-`;
-
-export const HotSectionFrame = styled(Frame)`
+  padding: ${SECTION.PADDING};
   border-radius: ${DEFAULT.BORDER_RADIUS};
 `;
+
+export const HotSectionFrame = styled(Frame)``;
+
 export const AdvSectionFrame = styled(Frame)`
   border: 1px solid red;
+  width: ${SECTION.ADV_WIDTH};
   height: ${SECTION.ADV_HEIGHT};
+  padding: 0;
 `;
 
 export const MoreSectionFrame = styled(Frame)`
-  border-radius: ${DEFAULT.BORDER_RADIUS};
   height: ${SECTION.MORE_HEIGHT};
   margin: ${SECTION.END_MARGIN};
 `;

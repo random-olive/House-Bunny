@@ -35,8 +35,10 @@ export const LOGO = {
 
 export const SECTION = {
   BORDER: '3px solid',
-  WIDTH: '600px',
+  WIDTH: '565px',
+  ADV_WIDTH: '607px',
   MARGIN: '20px 0 0 0',
+  PADDING: '20px',
   MORE_MARGIN: '20px 0 25px 0',
   END_MARGIN: '20px 0 60px 0',
 
