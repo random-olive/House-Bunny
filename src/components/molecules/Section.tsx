@@ -31,7 +31,7 @@ export const AdvSection: React.FC<Props> = ({ img }) => {
       <AdvSectionFrame>
         <img
           alt='advertise'
-          style={{ border: '1px solid blue' }}
+          // style={{ border: '1px solid blue' }}
           src={img}
           width={SECTION.ADV_WIDTH}
           height={SECTION.ADV_HEIGHT}
