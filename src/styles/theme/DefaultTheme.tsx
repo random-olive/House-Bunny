@@ -11,7 +11,7 @@ const myTheme: DefaultTheme = {
     '--text-orange': '#f0ae9e',
 
     '--search-bar': '#e1c5bb',
-    '--pink-selected': '#fce1de', //+ unselected-menu line, submenu text
+    '--pink-selected': '#fce1de',
     
     '--menu':'#e1c5bb',
     '--menu-selected': '#edd3ca',

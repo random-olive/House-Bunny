@@ -12,6 +12,7 @@ import { SECTION } from 'constants/style';
 interface Props {
   img?: string;
   body?: ReactNode;
+  width?: string;
 }
 
 export const HotSection = () => {
@@ -33,8 +34,16 @@ export const AdvSection: React.FC<Props> = ({ img }) => {
           alt='advertise'
           // style={{ border: '1px solid blue' }}
           src={img}
-          width={SECTION.ADV_WIDTH}
-          height={SECTION.ADV_HEIGHT}
+          width={
+            window.outerWidth > 606
+              ? SECTION.ADV_WIDTH
+              : '100%'
+          }
+          height={
+            window.outerHeight > 149
+              ? SECTION.ADV_HEIGHT
+              : '100%'
+          }
         />
       </AdvSectionFrame>
     </>

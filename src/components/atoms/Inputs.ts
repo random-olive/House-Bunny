@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { DEFAULT, BAR } from '../../constants/style';
 
+
 export const Input = styled.input`
   font-family: 'KyoboHand';
   font-weight: ${DEFAULT.FONT_WEIGHT};
@@ -8,6 +9,7 @@ export const Input = styled.input`
   border: none;
   outline: none;
   width: ${BAR.INPUT_WIDTH};
+  width: 93%;
   height: ${BAR.INPUT_HEIGHT};
   margin: ${BAR.INPUT_MARGIN};
 `;

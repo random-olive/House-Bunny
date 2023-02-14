@@ -1,8 +1,12 @@
 import { LOGO } from 'constants/style';
 import styled from 'styled-components';
 import iconPath from '../../assets/icons.png';
-//homeLogo
 
+type logoType = {
+  margin?: string;
+}
+
+//homeLogo
 const BaseLogo = styled.div`
   display: flex;
   justify-content: center;
@@ -17,11 +21,12 @@ const BaseLogo = styled.div`
  
 `;
 
-export const HomeLogo = styled(BaseLogo)`
+export const HomeLogo = styled(BaseLogo)<logoType>`
   background: url(${iconPath});
   /* border: 1px solid red; */
   background-position: 1px 0px;
   width: ${LOGO.HOME_WIDTH};
   height: ${LOGO.HOME_HEIGHT};
-  margin: ${LOGO.HOME_MARGIN};
+  /* margin: ${LOGO.HOME_MARGIN}; */
+  margin: ${props=>props.margin || '0'}
 `;

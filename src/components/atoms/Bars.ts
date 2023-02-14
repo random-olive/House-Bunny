@@ -10,4 +10,9 @@ export const SearchPart = styled.div`
   border-radius: ${DEFAULT.BORDER_RADIUS};
   width: ${BAR.SEARCH_WIDTH};
   height: ${BAR.SEARCH_HEIGHT};
+
+ 
+  @media screen and (max-width: 767px) {
+    width: 89vw;
+  }
 `;

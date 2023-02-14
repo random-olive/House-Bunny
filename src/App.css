@@ -29,7 +29,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 30px 0 0 0;
   font-family: 'KyoboHand';
   color: #987b6d;
 }
@@ -38,54 +37,11 @@
   background: #fce1de;
 }
 
-p {
-  font-size: xx-large;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-.GNB {
-  display: flex;
-  justify-content: center;
-}
-.select {
-  display: flex;
-  flex-direction: column;
-}
-.LNB {
-  display: flex;
-  flex-direction: column;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
   }
 }

@@ -1,7 +1,7 @@
 export const DEFAULT = {
   BORDER_RADIUS: '3px',
   FONT_WEIGHT: '600',
-  MARGIN: '10px 0 10px 0',
+  MARGIN: '0 0 10px 0',
   TRANSITION: 'all 0.3s',
 };
 
@@ -24,6 +24,10 @@ export const BAR = {
   INPUT_WIDTH: '480px',
   INPUT_HEIGHT: 'fit-content',
   INPUT_MARGIN: '0 0 0 10px',
+
+  //media query
+  SEARCH_WIDTH_PHONE: '100%',
+
 };
 
 export const LOGO = {
@@ -45,6 +49,13 @@ export const SECTION = {
   MAIN_HEIGHT: '350px',
   ADV_HEIGHT: '150px',
   MORE_HEIGHT: '200px',
+
+  //media query
+
+  WIDTH_PHONE: '90%',
+
+
+
 };
 
 export const ICON_SIZE = {
@@ -54,4 +65,9 @@ export const ICON_SIZE = {
 
   MORE_WIDTH: '95px',
   MORE_HEIGHT: '30px'
+}
+
+export const RESPONSIVE = {
+  PX_SMALL:767,
+  HEADER_MARGIN:'30px 0 0 0'
 }

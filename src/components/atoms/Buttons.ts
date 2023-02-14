@@ -22,6 +22,7 @@ export const Main = styled(Base)`
   background: ${(props) => props.theme.color['--menu']};
   color: ${(props) => props.theme.color['--text-selected']};
   border-radius: 1px;
+  margin: 5px 0 0 0;
 
   &:hover {
     background: ${(props) => props.theme.color['--menu-selected']};
@@ -34,7 +35,6 @@ export const Main = styled(Base)`
   .sub {
     display: none;
   }
-
   &:hover .sub {
     display: block;
     position: absolute;
