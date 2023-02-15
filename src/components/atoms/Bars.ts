@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { DEFAULT, BAR } from '../../constants/style';
+import { DEFAULT, BAR, RESPONSIVE } from '../../constants/styleConstants';
 
 export const SearchPart = styled.div`
   display: flex;
@@ -11,8 +11,7 @@ export const SearchPart = styled.div`
   width: ${BAR.SEARCH_WIDTH};
   height: ${BAR.SEARCH_HEIGHT};
 
- 
-  @media screen and (max-width: 767px) {
-    width: 89vw;
+  @media screen and (max-width: ${RESPONSIVE.SMALL_PX}) {
+    width: ${RESPONSIVE.SEARCH_WIDTH};
   }
 `;

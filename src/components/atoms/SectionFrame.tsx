@@ -1,4 +1,4 @@
-import { DEFAULT, SECTION } from 'constants/style';
+import { DEFAULT, SECTION, RESPONSIVE } from 'constants/styleConstants';
 import styled from 'styled-components';
 
 export const Frame = styled.div`
@@ -10,8 +10,8 @@ export const Frame = styled.div`
   padding: ${SECTION.PADDING};
   border-radius: ${DEFAULT.BORDER_RADIUS};
 
-  @media screen and (max-width: 767px) {
-    width: ${SECTION.WIDTH_PHONE};
+  @media screen and (max-width: ${RESPONSIVE.SMALL_PX}) {
+    width: ${RESPONSIVE.SECTION_WIDTH};
   }
 `;
 
@@ -23,8 +23,8 @@ export const AdvSectionFrame = styled(Frame)`
   height: ${SECTION.ADV_HEIGHT};
   padding: 0;
 
-  @media screen and (max-width: 767px) {
-    width: 100%;
+  @media screen and (max-width: ${RESPONSIVE.SMALL_PX}) {
+    width: ${RESPONSIVE.ADV_WIDTH};
     height: 100%;
   }
 `;

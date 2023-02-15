@@ -1,5 +1,5 @@
 import { BackIcon, HotIcon, MoreIcon } from 'components/atoms/Icons';
-import { ICON_SIZE } from 'constants/style';
+import { ICON_SIZE } from 'constants/styleConstants';
 
 export const HotTitle = () => {
   return (

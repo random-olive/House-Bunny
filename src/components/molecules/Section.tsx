@@ -7,9 +7,9 @@ import {
 } from 'components/atoms/SectionFrame';
 
 import { HotTitle, MoreTitle } from './TitleIcon';
-import { SECTION } from 'constants/style';
+import { SECTION, CONDITION } from 'constants/styleConstants';
 
-interface Props {
+interface SectionProps {
   img?: string;
   body?: ReactNode;
   width?: string;
@@ -26,24 +26,16 @@ export const HotSection = () => {
   );
 };
 
-export const AdvSection: React.FC<Props> = ({ img }) => {
+export const AdvSection: React.FC<SectionProps> = ({ img }) => {
   return (
     <>
       <AdvSectionFrame>
         <img
           alt='advertise'
-          // style={{ border: '1px solid blue' }}
+          style={{ border: '1px solid blue' }}
           src={img}
-          width={
-            window.outerWidth > 606
-              ? SECTION.ADV_WIDTH
-              : '100%'
-          }
-          height={
-            window.outerHeight > 149
-              ? SECTION.ADV_HEIGHT
-              : '100%'
-          }
+          width={CONDITION.SMALL ? '100%' : SECTION.ADV_WIDTH}
+          height={SECTION.ADV_HEIGHT}
         />
       </AdvSectionFrame>
     </>

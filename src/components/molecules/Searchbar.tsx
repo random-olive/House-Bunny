@@ -4,7 +4,7 @@ import { Input } from 'components/atoms/Inputs';
 import { Square } from 'components/atoms/Buttons';
 import { SearchIcon } from 'components/atoms/Icons';
 
-const Searchbar = () => {
+const SearchBar = () => {
   return (
     <Horizontal>
       <SearchPart>
@@ -18,4 +18,4 @@ const Searchbar = () => {
   );
 };
 
-export default Searchbar;
+export default SearchBar;

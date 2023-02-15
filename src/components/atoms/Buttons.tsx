@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { DEFAULT, BUTTON } from '../../constants/style';
+import { DEFAULT, BUTTON, RESPONSIVE } from '../../constants/styleConstants';
 
 export const Base = styled.button`
   font-family: 'KyoboHand';
@@ -29,6 +29,25 @@ export const Main = styled(Base)`
     color: ${(props) => props.theme.color['--text']};
     cursor: pointer;
     transition: all 0.3s ease-out;
+  }
+
+  @media screen and (max-width: ${RESPONSIVE.SMALL_PX}) {
+    position: relative;
+    /* top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 100vw;
+    z-index: 1000;
+    margin: 0 0 0 0;
+    background: ${(props) => props.theme.color['--white']};
+    color: ${(props) => props.theme.color['--section-line']};
+
+    box-shadow: ${DEFAULT.BOX_SHADOW};
+    &:hover {
+      background: ${(props) => props.theme.color['--pink-back-light']};
+      color: ${(props) => props.theme.color['--pink-menu-selected']};
+    }
   }
 
   //sub 메뉴가 존재하는 경우

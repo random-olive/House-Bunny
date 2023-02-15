@@ -1,13 +1,14 @@
 import { Horizontal, Vertical } from 'components/atoms/Bindings';
 import { HomeLogo } from 'components/atoms/Logos';
-import Searchbar from 'components/molecules/Searchbar';
-import { RESPONSIVE } from 'constants/style';
+import Searchbar from 'components/molecules/SearchBar';
+import { RESPONSIVE } from 'constants/styleConstants';
+import { LogoSlideStyle } from 'components/atoms/ChangingStyle';
+import { MenuBar, SmallMenuBar } from 'components/molecules/MenuBar';
 
 export const Header = () => {
   return (
     <Horizontal>
       <HomeLogo />
-      {/*메뉴 슬라이딩 되게 + 상수 정리*/}
       <Searchbar />
     </Horizontal>
   );
@@ -16,13 +17,12 @@ export const Header = () => {
 export const SmallHeader = () => {
   return (
     <Vertical>
-      <HomeLogo
-        margin={
-          window.outerWidth > RESPONSIVE.PX_SMALL
-            ? RESPONSIVE.HEADER_MARGIN
-            : '0'
-        }
-      />
+      <LogoSlideStyle>
+        <HomeLogo
+          margin={window.outerWidth < 768 ? '0' : RESPONSIVE.HEADER_MARGIN}
+        />
+      </LogoSlideStyle>
+      {window.outerWidth < 768 ? <SmallMenuBar /> : ''}
       <Searchbar />
     </Vertical>
   );

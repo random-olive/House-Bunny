@@ -1,8 +1,11 @@
+import { myTheme } from 'styles/theme/DefaultTheme';
+
 export const DEFAULT = {
   BORDER_RADIUS: '3px',
   FONT_WEIGHT: '600',
   MARGIN: '0 0 10px 0',
   TRANSITION: 'all 0.3s',
+  BOX_SHADOW: `1px 1px 2px ${myTheme.color['--shadow']}`,
 };
 
 export const BUTTON = {
@@ -24,10 +27,6 @@ export const BAR = {
   INPUT_WIDTH: '480px',
   INPUT_HEIGHT: 'fit-content',
   INPUT_MARGIN: '0 0 0 10px',
-
-  //media query
-  SEARCH_WIDTH_PHONE: '100%',
-
 };
 
 export const LOGO = {
@@ -39,35 +38,40 @@ export const LOGO = {
 
 export const SECTION = {
   BORDER: '3px solid',
-  WIDTH: '565px',
-  ADV_WIDTH: '607px',
   MARGIN: '20px 0 0 0',
   PADDING: '20px',
+
+  WIDTH: '565px',
+
+  ADV_WIDTH: '607px',
+  ADV_HEIGHT: '150px',
+
   MORE_MARGIN: '20px 0 25px 0',
   END_MARGIN: '20px 0 60px 0',
 
   MAIN_HEIGHT: '350px',
-  ADV_HEIGHT: '150px',
+
   MORE_HEIGHT: '200px',
-
-  //media query
-
-  WIDTH_PHONE: '90%',
-
-
-
 };
 
 export const ICON_SIZE = {
   SEARCH: '47px',
   HOT_WIDTH: '80px',
   HOT_HEIGHT: '27px',
-
   MORE_WIDTH: '95px',
-  MORE_HEIGHT: '30px'
-}
+  MORE_HEIGHT: '30px',
+};
 
 export const RESPONSIVE = {
-  PX_SMALL:767,
-  HEADER_MARGIN:'30px 0 0 0'
-}
+  SMALL_PX: '767px',
+  HEADER_MARGIN: '30px 0 0 0',
+
+  MENU_WIDTH: '98vw',
+  SEARCH_WIDTH: '87vw',
+  SECTION_WIDTH: '89vw',
+  ADV_WIDTH: '99vw',
+};
+
+export const CONDITION = {
+  SMALL: 'window.outerWidth < 768',
+};

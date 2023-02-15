@@ -3,9 +3,14 @@ import { DefaultTheme } from 'styled-components';
 const myTheme: DefaultTheme = {
   color: {
     '--white': '#fffaf8',
+    '--shadow': '#d5afb3',
 
     '--text': '#bd9682',
     '--text-selected': '#a88675',
+    
+    '--pink-back-light':'#fae6e6',
+    '--pink-menu-back':'#fedddd',
+    '--pink-menu-selected':'#eea3a3',
 
     '--text-light-orange': '#ecbbaf',
     '--text-orange': '#f0ae9e',
@@ -15,6 +20,7 @@ const myTheme: DefaultTheme = {
     
     '--menu':'#e1c5bb',
     '--menu-selected': '#edd3ca',
+    '--menu-pick':'#fde1d5 ', //#c5f4c8 //#fdd5e0 //#fde8d5 //#fde1d5
 
     '--menu-selected-light': '#f0e1da',
     '--menu-selected-line': '#cdab9c',

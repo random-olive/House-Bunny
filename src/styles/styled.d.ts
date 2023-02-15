@@ -5,9 +5,15 @@ declare module 'styled-components' {
   export interface DefaultTheme {
     color: {
       '--white': string;
+      '--shadow':string;
 
       '--text': string;
       '--text-selected': string;
+
+      '--pink-back-light':string;
+      '--pink-menu-back':string;
+      '--pink-menu-selected':string,
+
       '--text-light-orange': string;
       '--text-orange': string;
 
@@ -16,6 +22,8 @@ declare module 'styled-components' {
 
       '--menu': string;
       '--menu-selected': string; //+ line, submenu text
+      '--menu-pick': string;
+
       '--menu-selected-light': string;
       '--menu-selected-line': string;
       '--menu-text': string;
