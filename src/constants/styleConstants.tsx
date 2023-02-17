@@ -5,7 +5,8 @@ export const DEFAULT = {
   FONT_WEIGHT: '600',
   MARGIN: '0 0 10px 0',
   TRANSITION: 'all 0.3s',
-  BOX_SHADOW: `1px 1px 2px ${myTheme.color['--shadow']}`,
+  BOX_SHADOW: `1px 2px 1px ${myTheme.color['--shadow']}`,
+  MENU_MARGIN: '-10px 0 10px 0',
 };
 
 export const BUTTON = {
@@ -66,6 +67,8 @@ export const RESPONSIVE = {
   SMALL_PX: '767px',
   HEADER_MARGIN: '30px 0 0 0',
 
+  MENU_POSITION_TOP: '88px',
+  MENU_POSITION_LEFT: '0px',
   MENU_WIDTH: '98vw',
   SEARCH_WIDTH: '87vw',
   SECTION_WIDTH: '89vw',

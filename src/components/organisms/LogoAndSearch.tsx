@@ -1,9 +1,14 @@
 import { Horizontal, Vertical } from 'components/atoms/Bindings';
 import { HomeLogo } from 'components/atoms/Logos';
+import { LogoContainer } from 'components/atoms/Container';
 import Searchbar from 'components/molecules/SearchBar';
 import { RESPONSIVE } from 'constants/styleConstants';
-import { LogoSlideStyle } from 'components/atoms/ChangingStyle';
-import { MenuBar, SmallMenuBar } from 'components/molecules/MenuBar';
+import { DropdownBar } from 'components/molecules/MenuBar';
+import { useState } from 'react';
+
+interface ClickProp {
+  onClick?: () => void;
+}
 
 export const Header = () => {
   return (
@@ -14,15 +19,24 @@ export const Header = () => {
   );
 };
 
-export const SmallHeader = () => {
+export const DropdownHeader: React.FC<ClickProp> = () => {
+  const [menuActive, setMenuActive] = useState<boolean>(false);
+  const toggle = () => {
+    setMenuActive(!menuActive);
+  };
+
   return (
     <Vertical>
-      <LogoSlideStyle>
+      <LogoContainer onClick={toggle}>
         <HomeLogo
           margin={window.outerWidth < 768 ? '0' : RESPONSIVE.HEADER_MARGIN}
         />
-      </LogoSlideStyle>
-      {window.outerWidth < 768 ? <SmallMenuBar /> : ''}
+        {window.outerWidth < 768 ? (
+          <DropdownBar display={menuActive ? 'block' : 'none'} />
+        ) : (
+          ''
+        )}
+      </LogoContainer>
       <Searchbar />
     </Vertical>
   );

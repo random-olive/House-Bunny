@@ -6,7 +6,6 @@ type BindingType = {
 };
 
 export const Horizontal = styled.div<BindingType>`
-  /* position: relative; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +13,6 @@ export const Horizontal = styled.div<BindingType>`
 `;
 
 export const Vertical = styled(Horizontal)`
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   margin: 0;

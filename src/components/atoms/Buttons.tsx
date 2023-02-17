@@ -32,22 +32,21 @@ export const Main = styled(Base)`
   }
 
   @media screen and (max-width: ${RESPONSIVE.SMALL_PX}) {
-    position: relative;
-    /* top: 0;
     display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
     width: 100vw;
-    z-index: 1000;
     margin: 0 0 0 0;
     background: ${(props) => props.theme.color['--white']};
     color: ${(props) => props.theme.color['--section-line']};
 
     box-shadow: ${DEFAULT.BOX_SHADOW};
+    /* border-top:1px solid red; */
     &:hover {
       background: ${(props) => props.theme.color['--pink-back-light']};
       color: ${(props) => props.theme.color['--pink-menu-selected']};
     }
+
   }
 
   //sub 메뉴가 존재하는 경우

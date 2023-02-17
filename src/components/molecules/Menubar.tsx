@@ -1,13 +1,18 @@
 import { mainMenu, subMenu } from 'constants/data';
 import { Main } from 'components/atoms/Buttons';
 import { Horizontal, Vertical } from 'components/atoms/Bindings';
-import styled from 'styled-components';
+import { MenuContainer } from 'components/atoms/Container';
+import { DEFAULT } from 'constants/styleConstants';
+
+interface BarProp {
+  display?: string;
+}
+
 export const MenuBar = () => {
   const subMenuIdx = Array.from(Array(subMenu.length), (_, i) => i);
-
   return (
     <>
-      <Horizontal margin={'-10px 0 10px 0'}>
+      <Horizontal margin={DEFAULT.MENU_MARGIN}>
         {mainMenu[0].list.map((el, idx) => (
           <Main key={idx}>
             {el.title}
@@ -27,14 +32,14 @@ export const MenuBar = () => {
   );
 };
 
-export const SmallMenuBar = () => {
+export const DropdownBar: React.FC<BarProp> = ({ display }) => {
   return (
     <Vertical>
-      {mainMenu[0].list.map((el, idx) => (
-        <Main key={idx}>{el.title}</Main>
-      ))}
-  
+      <MenuContainer display={display}>
+        {mainMenu[0].list.map((el, idx) => (
+          <Main key={idx}>{el.title}</Main>
+        ))}
+      </MenuContainer>
     </Vertical>
   );
 };
-

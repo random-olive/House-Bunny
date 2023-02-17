@@ -3,7 +3,7 @@
 
 # 2. Stacks
 - TypeScript, Firebase, (React-Query)
-- Craco
+- Craco (absolute path)
 
 # 3. 특징
 - 기초 보일러 플레이팅 [x]
@@ -18,9 +18,10 @@
 
 - 반응형 화면 [ ]-> 모바일 / 데스크탑 (768)
 // 상수 정리 [x]
-// 메뉴 슬라이드, 
-// adv 이미지 교체 + 수정
-// useState
+// 메뉴 드롭다운 [x]
+// useState [x]
+// dynamic import [ ]
+// adv 이미지 교체 + 수정 [ ]
 
 
 - 컨텐츠 페이지 : 메뉴, 아이콘, 서브메뉴 등 + 상세페이지
