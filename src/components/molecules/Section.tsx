@@ -13,6 +13,7 @@ interface SectionProps {
   img?: string;
   body?: ReactNode;
   width?: string;
+  height?:string;
 }
 
 export const HotSection = () => {
@@ -32,7 +33,7 @@ export const AdvSection: React.FC<SectionProps> = ({ img }) => {
       <AdvSectionFrame>
         <img
           alt='advertise'
-          style={{ border: '1px solid blue' }}
+          // style={{ border: '1px solid blue' }}
           src={img}
           width={CONDITION.SMALL ? '100%' : SECTION.ADV_WIDTH}
           height={SECTION.ADV_HEIGHT}

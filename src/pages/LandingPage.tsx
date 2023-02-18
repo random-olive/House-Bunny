@@ -3,14 +3,14 @@ import {
   AdvSection,
   MoreSection,
 } from 'components/molecules/Section';
-import advPath from '../assets/icons.png';
+import advPath from '../assets/adv.png';
 
 
 const LandingPage = () => {
   return (
     <>
       <HotSection></HotSection>
-      <AdvSection img={advPath} width={window.outerWidth>767? '700px':'100%'}/>
+      <AdvSection img={advPath} width={window.outerWidth>767? '700px':'100%'} />
       <MoreSection></MoreSection>
     </>
   );

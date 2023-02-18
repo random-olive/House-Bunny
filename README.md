@@ -22,7 +22,6 @@
 // useState [x]
 // 화면 사이즈 바뀔때마다 자동 새로고침 및 resize [x]
 // JS deep dive : 이벤트 + debounce 관련 내용 정리 [ ]
-// dynamic import [ ]
 // adv 이미지 교체 + 수정 [ ]
 
 

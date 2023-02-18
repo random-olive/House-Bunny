@@ -18,14 +18,12 @@ export const Frame = styled.div`
 export const HotSectionFrame = styled(Frame)``;
 
 export const AdvSectionFrame = styled(Frame)`
-  border: 1px solid red;
   width: ${SECTION.ADV_WIDTH};
   height: ${SECTION.ADV_HEIGHT};
   padding: 0;
-
+  border: 2px solid ${(props) => props.theme.color['--section-line']};
   @media screen and (max-width: ${RESPONSIVE.SMALL_PX}) {
     width: ${RESPONSIVE.ADV_WIDTH};
-    height: 100%;
   }
 `;
 
