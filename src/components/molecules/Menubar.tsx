@@ -1,5 +1,5 @@
 import { mainMenu, subMenu } from 'constants/data';
-import { Main } from 'components/atoms/Buttons';
+import { Main, Sub } from 'components/atoms/Buttons';
 import { Horizontal, Vertical } from 'components/atoms/Bindings';
 import { MenuContainer } from 'components/atoms/Container';
 import { DEFAULT } from 'constants/styleConstants';
@@ -26,6 +26,18 @@ export const MenuBar = () => {
               )}
             </div>
           </Main>
+        ))}
+      </Horizontal>
+    </>
+  );
+};
+
+export const SubMenuBar = () => {
+  return (
+    <>
+      <Horizontal margin={DEFAULT.MENU_MARGIN}>
+        {subMenu[0].list.map((el, idx) => (
+          <Sub key={idx}>{el.title}</Sub>
         ))}
       </Horizontal>
     </>

@@ -31,3 +31,7 @@ export const MoreSectionFrame = styled(Frame)`
   height: ${SECTION.MORE_HEIGHT};
   margin: ${SECTION.END_MARGIN};
 `;
+
+export const ContentSectionFrame = styled(Frame)`
+  margin: ${SECTION.END_MARGIN};
+`;

@@ -1,9 +1,11 @@
 import { ReactNode } from 'react';
+import advPath from '../../assets/adv.png';
 
 import {
   AdvSectionFrame,
   HotSectionFrame,
   MoreSectionFrame,
+  ContentSectionFrame,
 } from 'components/atoms/SectionFrame';
 
 import { HotTitle, MoreTitle } from './TitleIcon';
@@ -13,7 +15,7 @@ interface SectionProps {
   img?: string;
   body?: ReactNode;
   width?: string;
-  height?:string;
+  height?: string;
 }
 
 export const HotSection = () => {
@@ -27,14 +29,14 @@ export const HotSection = () => {
   );
 };
 
-export const AdvSection: React.FC<SectionProps> = ({ img }) => {
+export const AdvSection = () => {
   return (
     <>
       <AdvSectionFrame>
         <img
           alt='advertise'
           // style={{ border: '1px solid blue' }}
-          src={img}
+          src={advPath}
           width={CONDITION.SMALL ? '100%' : SECTION.ADV_WIDTH}
           height={SECTION.ADV_HEIGHT}
         />
@@ -50,6 +52,14 @@ export const MoreSection = () => {
         <MoreTitle />
         더보기 내용이 여기에 들어감~~
       </MoreSectionFrame>
+    </>
+  );
+};
+
+export const ContentSection = () => {
+  return (
+    <>
+      <ContentSectionFrame>컨텐츠 내용</ContentSectionFrame>
     </>
   );
 };

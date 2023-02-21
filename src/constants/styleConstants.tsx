@@ -65,6 +65,8 @@ export const ICON_SIZE = {
 
 export const RESPONSIVE = {
   SMALL_PX: '767px',
+  MENU_PX:'496px',
+ 
   HEADER_MARGIN: '30px 0 0 0',
 
   MENU_POSITION_TOP: '88px',

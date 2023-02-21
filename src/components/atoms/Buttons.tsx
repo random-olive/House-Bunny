@@ -46,7 +46,6 @@ export const Main = styled(Base)`
       background: ${(props) => props.theme.color['--pink-back-light']};
       color: ${(props) => props.theme.color['--pink-menu-selected']};
     }
-
   }
 
   //sub 메뉴가 존재하는 경우
@@ -75,6 +74,24 @@ export const Main = styled(Base)`
         color: ${(props) => props.theme.color['--text-orange']};
       }
     }
+  }
+`;
+
+export const Sub = styled(Base)`
+  margin: 10px 0 0 5px;
+  height: 40px;
+  background: ${(props) => props.theme.color['--white']};
+  border-radius: ${DEFAULT.BORDER_RADIUS};
+
+  transition: all 0.3s ease-out;
+  color: ${(props) => props.theme.color['--text-light-orange']};
+
+  &:hover {
+    background: ${(props) => props.theme.color['--pink-selected']};
+    color: ${(props) => props.theme.color['--text-orange']};
+  }
+  @media screen and (max-width: ${RESPONSIVE.MENU_PX}) {
+    width: 65px;
   }
 `;
 

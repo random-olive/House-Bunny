@@ -13,7 +13,9 @@ import PATH from 'constants/routePath';
 import { LoadingBunny } from 'components/atoms/Loading';
 import { debounce } from 'lodash';
 
+
 const LandingPage = lazy(() => import('pages/LandingPage'));
+const ContentsPage = lazy(()=>import('pages/ContentsPage'));
 
 function App() {
   const [windowSize, setWindowSize] = useState<number>(window.outerWidth);
@@ -32,12 +34,11 @@ function App() {
   return (
     <>
       <div className='App'>
-        {windowSize}
         <Suspense fallback={<LoadingBunny />}>
           <Routes>
             <Route element={<BasicLayout />}>
               <Route path={PATH.MAIN} element={<LandingPage />} />
-              {/* <Route path={PATH.CONTENTS} element={<Contents />} /> */}
+              <Route path={PATH.CONTENTS} element={<ContentsPage />} />
             </Route>
           </Routes>
         </Suspense>
