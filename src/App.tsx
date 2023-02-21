@@ -2,6 +2,7 @@ import { Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import {} from 'firebase/firestore';
+
 import styled from 'styled-components';
 import { useState, useEffect } from 'react';
 import { Member, Sticky } from 'components/atoms/Buttons';
@@ -10,13 +11,17 @@ import { BasicLayout } from 'components/templates/Layouts';
 
 import PATH from 'constants/routePath';
 import { LoadingBunny } from 'components/atoms/Loading';
+import { debounce } from 'lodash';
+
 const LandingPage = lazy(() => import('pages/LandingPage'));
 
 function App() {
   const [windowSize, setWindowSize] = useState<number>(window.outerWidth);
-  const handleResize = () => {
+
+  const handleResize = debounce(() => {
     setWindowSize(window.outerWidth);
-  };
+  }, 1000);
+
   useEffect(() => {
     window.addEventListener('resize', handleResize);
     return () => {
@@ -27,7 +32,7 @@ function App() {
   return (
     <>
       <div className='App'>
-    
+        {windowSize}
         <Suspense fallback={<LoadingBunny />}>
           <Routes>
             <Route element={<BasicLayout />}>
