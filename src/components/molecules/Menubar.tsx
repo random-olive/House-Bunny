@@ -6,7 +6,7 @@ import {
   HorizontalFlex,
 } from 'components/atoms/Bindings';
 import { subMenuIdx } from 'constants/dataTxt';
-import { MenuContainer } from 'components/atoms/Container';
+import { MenuContainer, LinkContainer } from 'components/atoms/Container';
 import { DEFAULT } from 'constants/styleConstants';
 
 interface BarProp {
@@ -25,7 +25,11 @@ export const MenuBar = () => {
                 (i) =>
                   idx === i &&
                   subMenu[i].list.map((menu, key) => (
-                    <div key={key}>{menu.title}</div>
+                    <>
+                      <LinkContainer to={menu.href}>
+                        <div key={key}>{menu.title}</div>
+                      </LinkContainer>
+                    </>
                   ))
               )}
             </div>
@@ -77,7 +81,9 @@ export const DropdownBar: React.FC<BarProp> = ({ display }) => {
     <Vertical>
       <MenuContainer display={display}>
         {mainMenu[0].list.map((el, idx) => (
-          <Main key={idx}>{el.title}</Main>
+          <LinkContainer to={el.href}>
+            <Main key={idx}>{el.title}</Main>
+          </LinkContainer>
         ))}
       </MenuContainer>
     </Vertical>

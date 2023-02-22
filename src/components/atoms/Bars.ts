@@ -15,3 +15,4 @@ export const SearchPart = styled.div`
     width: ${RESPONSIVE.SEARCH_WIDTH};
   }
 `;
+

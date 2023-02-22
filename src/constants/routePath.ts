@@ -5,7 +5,7 @@ const PATH = {
   LOGIN: '/login',
   MYPAGE: '/mypage',
 
-  CONTENTS: '/contents',
+  HOUSE_WORK: '/housework',
   TEST:'/test/edit/:id'
 };
 

@@ -1,5 +1,6 @@
 import { RESPONSIVE, SECTION } from 'constants/styleConstants';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 type ContainerType = {
   display?: string;
@@ -43,4 +44,9 @@ export const SubMenuContainer = styled.div`
       width: ${RESPONSIVE.ADV_WIDTH};
     }
   }
+`;
+
+export const LinkContainer = styled(Link)`
+  text-decoration: none;
+  color:inherit;
 `;

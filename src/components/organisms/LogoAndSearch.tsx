@@ -6,6 +6,7 @@ import { RESPONSIVE } from 'constants/styleConstants';
 import { DropdownBar } from 'components/molecules/MenuBar';
 import { useState } from 'react';
 
+import { Link } from 'react-router-dom';
 interface ClickProp {
   onClick?: () => void;
 }
@@ -31,6 +32,7 @@ export const DropdownHeader: React.FC<ClickProp> = () => {
         <HomeLogo
           margin={window.outerWidth < 768 ? '0' : RESPONSIVE.HEADER_MARGIN}
         />
+
         {window.outerWidth < 768 ? (
           <DropdownBar display={menuActive ? 'block' : 'none'} />
         ) : (

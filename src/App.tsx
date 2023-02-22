@@ -38,7 +38,7 @@ function App() {
           <Routes>
             <Route element={<BasicLayout />}>
               <Route path={PATH.MAIN} element={<LandingPage />} />
-              <Route path={PATH.CONTENTS} element={<ContentsPage />} />
+              <Route path={PATH.HOUSE_WORK} element={<ContentsPage />} />
             </Route>
           </Routes>
         </Suspense>
