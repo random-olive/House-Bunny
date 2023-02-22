@@ -3,6 +3,8 @@ import { DEFAULT } from 'constants/styleConstants';
 
 type BindingType = {
   margin?: string;
+  wrap?: string;
+  justifyContent?: string;
 };
 
 export const Horizontal = styled.div<BindingType>`
@@ -10,6 +12,11 @@ export const Horizontal = styled.div<BindingType>`
   justify-content: center;
   align-items: center;
   margin: ${(props) => props.margin || DEFAULT.MARGIN};
+`;
+
+export const HorizontalFlex = styled(Horizontal)`
+  flex-wrap: wrap;
+  justify-content: left;
 `;
 
 export const Vertical = styled(Horizontal)`

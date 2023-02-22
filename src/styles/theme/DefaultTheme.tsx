@@ -5,6 +5,9 @@ const myTheme: DefaultTheme = {
     '--white': '#fffaf8',
     '--shadow': '#d5afb3',
 
+    '--sub-selected':'#f9ece4',
+    '--sub-selected2':'#f0f8fc',
+
     '--text': '#bd9682',
     '--text-selected': '#a88675',
     

@@ -5,14 +5,17 @@ declare module 'styled-components' {
   export interface DefaultTheme {
     color: {
       '--white': string;
-      '--shadow':string;
+      '--shadow': string;
+
+      '--sub-selected': string;
+      '--sub-selected2': string;
 
       '--text': string;
       '--text-selected': string;
 
-      '--pink-back-light':string;
-      '--pink-menu-back':string;
-      '--pink-menu-selected':string,
+      '--pink-back-light': string;
+      '--pink-menu-back': string;
+      '--pink-menu-selected': string;
 
       '--text-light-orange': string;
       '--text-orange': string;

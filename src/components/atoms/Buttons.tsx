@@ -91,9 +91,26 @@ export const Sub = styled(Base)`
     color: ${(props) => props.theme.color['--text-orange']};
   }
   @media screen and (max-width: ${RESPONSIVE.MENU_PX}) {
-    width: 65px;
+    width: 60px;
   }
 `;
+
+export const Sub2 = styled(Sub)`
+  background: white;
+  height: 30px;
+  &:hover {
+    background: ${(props) => props.theme.color['--sub-selected']};
+    color: ${(props) => props.theme.color['--text-orange']};
+  }
+`;
+
+export const Sub3 = styled(Sub2)`
+height: 25px;
+&:hover {
+    background: ${(props) => props.theme.color['--sub-selected2']};
+    color: ${(props) => props.theme.color['--text-orange']};
+  }
+`
 
 export const Square = styled(Base)`
   width: ${BUTTON.SQUARE_SIZE};

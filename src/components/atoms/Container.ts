@@ -1,4 +1,4 @@
-import { RESPONSIVE } from 'constants/styleConstants';
+import { RESPONSIVE, SECTION } from 'constants/styleConstants';
 import styled from 'styled-components';
 
 type ContainerType = {
@@ -30,4 +30,17 @@ export const MenuContainer = styled.div<ContainerType>`
   left: ${RESPONSIVE.MENU_POSITION_LEFT};
   z-index: 1000;
   transition: all 0.3s ease-in-out;
+`;
+
+export const SubMenuContainer = styled.div`
+  display: flex;
+  .part {
+    display: flex;
+    width: ${SECTION.ADV_WIDTH};
+  }
+  @media screen and (max-width: ${RESPONSIVE.SMALL_PX}) {
+    .part {
+      width: ${RESPONSIVE.ADV_WIDTH};
+    }
+  }
 `;

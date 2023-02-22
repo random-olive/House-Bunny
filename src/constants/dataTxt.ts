@@ -3,6 +3,7 @@ interface MenuList {
   // href: string;
   // list: { title: string; href: string }[];
 }
+
 export const mainMenu = [
   {
     title: 'main',
@@ -42,3 +43,25 @@ export const subMenu = [
     ],
   },
 ];
+
+export const subMenuIdx = Array.from(Array(subMenu.length), (_, i) => i);
+
+export const itemList = [
+  {
+    title: '거실',
+    list: [{ item: 'TV' }, { item: '에어컨' }, { item: '실링팬' }],
+  },
+  {
+    title: '주방',
+    list: [{ item: '밥솥' }, { item: '냉장고' }],
+  },
+];
+
+export const contentList = [
+  {
+    title: '에어컨',
+    list: [{ content: '사용 팁' }, { content: '관리' }, { content: '청소' }],
+  },
+];
+
+//만약 관리 내 컨텐츠가 많으면 세분화

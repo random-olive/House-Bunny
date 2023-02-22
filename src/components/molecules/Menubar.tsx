@@ -1,6 +1,11 @@
-import { mainMenu, subMenu } from 'constants/data';
-import { Main, Sub } from 'components/atoms/Buttons';
-import { Horizontal, Vertical } from 'components/atoms/Bindings';
+import { mainMenu, subMenu, itemList, contentList } from 'constants/dataTxt';
+import { Main, Sub, Sub2, Sub3 } from 'components/atoms/Buttons';
+import {
+  Horizontal,
+  Vertical,
+  HorizontalFlex,
+} from 'components/atoms/Bindings';
+import { subMenuIdx } from 'constants/dataTxt';
 import { MenuContainer } from 'components/atoms/Container';
 import { DEFAULT } from 'constants/styleConstants';
 
@@ -9,7 +14,6 @@ interface BarProp {
 }
 
 export const MenuBar = () => {
-  const subMenuIdx = Array.from(Array(subMenu.length), (_, i) => i);
   return (
     <>
       <Horizontal margin={DEFAULT.MENU_MARGIN}>
@@ -35,11 +39,35 @@ export const MenuBar = () => {
 export const SubMenuBar = () => {
   return (
     <>
-      <Horizontal margin={DEFAULT.MENU_MARGIN}>
+      <HorizontalFlex margin={DEFAULT.MENU_MARGIN}>
         {subMenu[0].list.map((el, idx) => (
           <Sub key={idx}>{el.title}</Sub>
         ))}
-      </Horizontal>
+      </HorizontalFlex>
+    </>
+  );
+};
+
+export const ItemListMenuBar = () => {
+  return (
+    <>
+      <HorizontalFlex margin={DEFAULT.MENU_MARGIN}>
+        {itemList[0].list.map((el, idx) => (
+          <Sub2 key={idx}>{el.item}</Sub2>
+        ))}
+      </HorizontalFlex>
+    </>
+  );
+};
+
+export const ContentMenuBar = () => {
+  return (
+    <>
+      <HorizontalFlex margin={DEFAULT.MENU_MARGIN}>
+        {contentList[0].list.map((el, idx) => (
+          <Sub3 key={idx}>{el.content}</Sub3>
+        ))}
+      </HorizontalFlex>
     </>
   );
 };
