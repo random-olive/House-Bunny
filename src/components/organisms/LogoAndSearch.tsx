@@ -5,6 +5,7 @@ import Searchbar from 'components/molecules/SearchBar';
 import { RESPONSIVE } from 'constants/styleConstants';
 import { DropdownBar } from 'components/molecules/MenuBar';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 interface ClickProp {
   onClick?: () => void;
@@ -24,18 +25,23 @@ export const DropdownHeader: React.FC<ClickProp> = () => {
   const toggle = () => {
     setMenuActive(!menuActive);
   };
+  const inActivate = () => {
+    setMenuActive(false);
+  };
 
   return (
     <Vertical>
-      <LogoContainer onClick={toggle}>
-        <HomeLogo
-          margin={window.outerWidth < 768 ? '0' : RESPONSIVE.HEADER_MARGIN}
-        />
-        
-        <MenuLogo />
+      <LogoContainer>
+        <Link to='/'>
+          <HomeLogo
+            margin={window.outerWidth < 768 ? '0' : RESPONSIVE.HEADER_MARGIN}
+          />
+        </Link>
+
+        <MenuLogo onClick={toggle} />
 
         {window.outerWidth < 768 ? (
-          <DropdownBar display={menuActive ? 'block' : 'none'} />
+          <DropdownBar display={menuActive ? 'block' : 'none'} inActivate={inActivate} />
         ) : (
           ''
         )}

@@ -23,10 +23,9 @@
 // 화면 사이즈 바뀔때마다 자동 새로고침 및 resize [x] + debounce [x]
 // adv 이미지 교체 + 수정 [x]
 
-- 컨텐츠 페이지 : 메뉴, 아이콘, 서브메뉴 등 + 상세페이지
-// sticky 버튼 : +home, question 분리 + home : Link 연결
-// menu state 지정 + react-query 도입
-// state 저장해서 내용 띄우기로.
+- sticky 버튼 : question [ ]
+- 컨텐츠 페이지 : 메뉴, 아이콘, 서브메뉴 등 + 상세페이지 [ ]
+// menu state 지정 + react-query 도입 (state 저장해서 내용 띄우기로) [ ]
 - 스켈레톤 로더 [ ]
 - 다국어 지원 [ ] : 한, 영, 일, 중, 베트남, 태국
 

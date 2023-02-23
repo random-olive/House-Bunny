@@ -32,6 +32,7 @@ export const MenuContainer = styled.div<ContainerType>`
   left: ${RESPONSIVE.MENU_POSITION_LEFT};
   z-index: 1000;
   transition: all 0.3s ease-in-out;
+
 `;
 
 export const SubMenuContainer = styled.div`

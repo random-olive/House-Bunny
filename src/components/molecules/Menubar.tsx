@@ -1,5 +1,6 @@
 import { mainMenu, subMenu, itemList, contentList } from 'constants/dataTxt';
 import { Main, Sub, Sub2, Sub3 } from 'components/atoms/Buttons';
+
 import {
   Horizontal,
   Vertical,
@@ -11,6 +12,8 @@ import { DEFAULT } from 'constants/styleConstants';
 
 interface BarProp {
   display?: string;
+  onClick?: () => void;
+  inActivate?: () => void;
 }
 
 export const MenuBar = () => {
@@ -25,11 +28,9 @@ export const MenuBar = () => {
                 (i) =>
                   idx === i &&
                   subMenu[i].list.map((menu, key) => (
-                    <>
-                      <LinkContainer to={menu.href}>
-                        <div key={key}>{menu.title}</div>
-                      </LinkContainer>
-                    </>
+                    <LinkContainer key={key} to={menu.href}>
+                      <div>{menu.title}</div>
+                    </LinkContainer>
                   ))
               )}
             </div>
@@ -76,12 +77,12 @@ export const ContentMenuBar = () => {
   );
 };
 
-export const DropdownBar: React.FC<BarProp> = ({ display }) => {
+export const DropdownBar: React.FC<BarProp> = ({ display, inActivate }) => {
   return (
     <Vertical>
       <MenuContainer display={display}>
         {mainMenu[0].list.map((el, idx) => (
-          <LinkContainer key={idx} to={el.href}>
+          <LinkContainer key={idx} to={el.href} onClick={inActivate}>
             <Main>{el.title}</Main>
           </LinkContainer>
         ))}
