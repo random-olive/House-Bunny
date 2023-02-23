@@ -13,6 +13,7 @@ export const LogoContainer = styled.div`
   height: 100%;
 
   @media screen and (max-width: ${RESPONSIVE.SMALL_PX}) {
+    justify-content: space-between;
     width: ${RESPONSIVE.MENU_WIDTH};
     background: ${(props) => props.theme.color['--pink-back-light']};
     border: 4px solid ${(props) => props.theme.color['--pink-back-light']};

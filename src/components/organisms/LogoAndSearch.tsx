@@ -1,12 +1,11 @@
 import { Horizontal, Vertical } from 'components/atoms/Bindings';
-import { HomeLogo } from 'components/atoms/Logos';
+import { HomeLogo, MenuLogo } from 'components/atoms/Logos';
 import { LogoContainer } from 'components/atoms/Container';
 import Searchbar from 'components/molecules/SearchBar';
 import { RESPONSIVE } from 'constants/styleConstants';
 import { DropdownBar } from 'components/molecules/MenuBar';
 import { useState } from 'react';
 
-import { Link } from 'react-router-dom';
 interface ClickProp {
   onClick?: () => void;
 }
@@ -32,6 +31,8 @@ export const DropdownHeader: React.FC<ClickProp> = () => {
         <HomeLogo
           margin={window.outerWidth < 768 ? '0' : RESPONSIVE.HEADER_MARGIN}
         />
+        
+        <MenuLogo />
 
         {window.outerWidth < 768 ? (
           <DropdownBar display={menuActive ? 'block' : 'none'} />

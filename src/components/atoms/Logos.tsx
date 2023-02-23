@@ -1,4 +1,4 @@
-import { LOGO } from 'constants/styleConstants';
+import { LOGO, RESPONSIVE } from 'constants/styleConstants';
 import styled from 'styled-components';
 import iconPath from '../../assets/icons.png';
 
@@ -29,4 +29,20 @@ export const HomeLogo = styled(BaseLogo)<logoType>`
   height: ${LOGO.HOME_HEIGHT};
   /* margin: ${LOGO.HOME_MARGIN}; */
   margin: ${(props) => props.margin || '0'};
+  @media screen and (max-width: ${RESPONSIVE.SMALL_PX}) {
+    width: 50px;
+    height: 50px;
+    background-position: 0 -17px;
+  }
+`;
+
+export const MenuLogo = styled(HomeLogo)<logoType>`
+  display: none;
+  @media screen and (max-width: ${RESPONSIVE.SMALL_PX}) {
+    display: block;
+    left: -20px;
+    width: 98px;
+    height: 50px;
+    background-position: -47px -15px;
+  }
 `;

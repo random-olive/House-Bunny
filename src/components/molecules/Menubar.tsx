@@ -81,8 +81,8 @@ export const DropdownBar: React.FC<BarProp> = ({ display }) => {
     <Vertical>
       <MenuContainer display={display}>
         {mainMenu[0].list.map((el, idx) => (
-          <LinkContainer to={el.href}>
-            <Main key={idx}>{el.title}</Main>
+          <LinkContainer key={idx} to={el.href}>
+            <Main>{el.title}</Main>
           </LinkContainer>
         ))}
       </MenuContainer>
