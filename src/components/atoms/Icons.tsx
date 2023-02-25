@@ -50,3 +50,25 @@ export const MoreIcon = styled(TitleIcon)`
   height: ${ICON_SIZE.MORE_HEIGHT};
   background-position: -220px 88px;
 `;
+
+export const StickyIcon = styled(TitleIcon)`
+  position: fixed;
+  top: 85%;
+  left: 85%;
+  z-index: 1000;
+  width: 58px;
+  height: 58px;
+  cursor: pointer;
+  background-position: 195px 59px;
+  margin: 0 0 70px 0;
+`;
+
+export const HelpIcon = styled(StickyIcon)`
+  display: block;
+  top: 86%;
+  left: 90%;
+  width: 45px;
+  height: 53px;
+  background-position: 130px 55px;
+  margin: 0;
+`;

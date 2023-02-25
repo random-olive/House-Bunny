@@ -4,6 +4,7 @@ import { MenuBar } from 'components/molecules/MenuBar';
 import styled from 'styled-components';
 import Footer from 'components/atoms/Footer';
 import { SubMenuContainer } from 'components/atoms/Container';
+import { HelpIcon, StickyIcon } from 'components/atoms/Icons';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -16,6 +17,7 @@ export const BasicLayout = () => {
       <DropdownHeader />
       {window.outerWidth < 768 ? '' : <MenuBar />}
       <Outlet />
+      <StickyIcon />
       <Footer />
     </>
   );
