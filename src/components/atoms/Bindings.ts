@@ -24,3 +24,8 @@ export const Vertical = styled(Horizontal)`
   flex-direction: column;
   margin: 0;
 `;
+
+export const VerticalFlex = styled(Vertical)`
+flex-wrap:wrap;
+justify-content: left;
+`

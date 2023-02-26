@@ -5,7 +5,7 @@ export const Frame = styled.div`
   position: relative;
   border: 3px solid ${(props) => props.theme.color['--section-line']};
   width: ${SECTION.WIDTH};
-  height: ${SECTION.MAIN_HEIGHT};
+  height: fit-content;
   margin: ${SECTION.MARGIN};
   padding: ${SECTION.PADDING};
   border-radius: ${DEFAULT.BORDER_RADIUS};
@@ -15,7 +15,9 @@ export const Frame = styled.div`
   }
 `;
 
-export const HotSectionFrame = styled(Frame)``;
+export const HotSectionFrame = styled(Frame)`
+  height: ${SECTION.MAIN_HEIGHT};
+`;
 
 export const AdvSectionFrame = styled(Frame)`
   width: ${SECTION.ADV_WIDTH};
