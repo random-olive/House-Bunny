@@ -13,10 +13,9 @@ import {
 import { HorizontalFlex, VerticalFlex } from 'components/atoms/Bindings';
 import { ContentsLayout } from 'components/templates/Layouts';
 import { HotTitle, MoreTitle } from './TitleIcon';
-import { SECTION, CONDITION } from 'constants/styleConstants';
+import { SECTION, CONDITION, RESPONSIVE } from 'constants/styleConstants';
 import { Test } from '../../data/exampleData';
 import styled from 'styled-components';
-
 
 interface SectionProps {
   img?: string;
@@ -70,21 +69,18 @@ export const ContentSection = () => {
       {/* <VerticalFlex> */}
       <ContentSectionFrame>
         {/* <ContentsLayout /> */}
-        <h1>(아이콘) 밥솥</h1> 
+        <h1>(아이콘) 밥솥</h1>
         <div>괜찮으면 사진</div>
         <Div>
-        
-
           <Bind>
-            <h2>관리</h2> <h3>1주</h3>
+            <h2>관리</h2> <h3>매일</h3>
           </Bind>
 
           <Bind>
-            <h2>청소</h2> <h3>2주</h3>
+            <h2>청소</h2> <h3>1주</h3>
           </Bind>
         </Div>
         <HorizontalFlex>
-         
           {/* <h4>관리1</h4>
           어떻게 하냐구요? 매뉴얼을 보거나 검색을 하세요!
           <h4>관리2</h4>
@@ -94,34 +90,25 @@ export const ContentSection = () => {
           {/* <ReactMarkdown children={coocoo} /> */}
           <Test />
           {/* <>{coocoo}</> */}
+         
         </HorizontalFlex>
 
-        {/* <HorizontalFlex margin='0'>
-          <h2>사용 팁</h2>
-          <h3>주기가 어떻게 되는지</h3>
-        </HorizontalFlex>
-        <HorizontalFlex margin='0'>
-          <h2>관리</h2>
-          <h3>주기가 어떻게 되는지</h3>
-        </HorizontalFlex>
-        <HorizontalFlex>
-          <h2>청소</h2>
-          <h3>주기가 어떻게 되는지</h3>
-          <h4>넌 밥통이야</h4>
-          
-        </HorizontalFlex> */}
+      
       </ContentSectionFrame>
-      {/* </VerticalFlex> */}
+      
     </>
   );
 };
 
 const Div = styled.div`
   display: flex;
-h3 {
-  margin-top: 23px;
-  margin-right: 210px;
-}
+  h3 {
+    margin-top: 23px;
+    margin-right: 210px;
+    @media screen and (max-width: ${RESPONSIVE.SMALL_PX}) {
+      margin-right: 20vw;
+    }//자연스러운 반응형 컴포넌트
+  }
 `;
 
 const Bind = styled.div`
