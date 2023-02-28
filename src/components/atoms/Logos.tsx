@@ -22,6 +22,7 @@ const BaseLogo = styled.div`
 
 export const HomeLogo = styled(BaseLogo)<logoType>`
   position: relative;
+  top: 5px;
   background: url(${iconPath});
   /* border: 1px solid red; */
   background-position: 1px 0px;
@@ -40,9 +41,10 @@ export const MenuLogo = styled(HomeLogo)<logoType>`
   display: none;
   @media screen and (max-width: ${RESPONSIVE.SMALL_PX}) {
     display: block;
+    top: 5px;
     left: -20px;
     width: 98px;
-    height: 50px;
+    height: 60px;
     background-position: -47px -15px;
   }
 `;

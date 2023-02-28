@@ -39,7 +39,6 @@ export const DropdownHeader = (props: ClickProp) => {
         </Link>
 
         <MenuLogo onClick={toggle} />
-
         {window.outerWidth < 768 ? (
           <DropdownBar
             display={menuActive ? 'block' : 'none'}
