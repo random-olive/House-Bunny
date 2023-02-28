@@ -20,7 +20,7 @@ export const Header = () => {
   );
 };
 
-export const DropdownHeader: React.FC<ClickProp> = () => {
+export const DropdownHeader = (props: ClickProp) => {
   const [menuActive, setMenuActive] = useState<boolean>(false);
   const toggle = () => {
     setMenuActive(!menuActive);
@@ -41,7 +41,10 @@ export const DropdownHeader: React.FC<ClickProp> = () => {
         <MenuLogo onClick={toggle} />
 
         {window.outerWidth < 768 ? (
-          <DropdownBar display={menuActive ? 'block' : 'none'} inActivate={inActivate} />
+          <DropdownBar
+            display={menuActive ? 'block' : 'none'}
+            inActivate={inActivate}
+          />
         ) : (
           ''
         )}

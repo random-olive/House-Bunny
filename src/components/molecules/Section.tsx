@@ -58,7 +58,7 @@ export const MoreSection = () => {
   );
 };
 
-export const ContentSection: React.FC<SectionProps> = ({ item }) => {
+export const ContentSection = ({ item }:SectionProps) => {
   return (
     <>
       <ContentSectionFrame>

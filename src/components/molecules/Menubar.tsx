@@ -57,7 +57,7 @@ export const ItemListMenuBar = () => {
   return (
     <>
       <HorizontalFlex margin={DEFAULT.MENU_MARGIN}>
-        {itemList[0].list.map((el, idx) => (
+        {itemList[1].list.map((el, idx) => (
           <Sub2 key={idx}>{el.item}</Sub2>
         ))}
       </HorizontalFlex>
@@ -77,7 +77,7 @@ export const ContentMenuBar = () => {
   );
 };
 
-export const DropdownBar: React.FC<BarProp> = ({ display, inActivate }) => {
+export const DropdownBar = ({ display, inActivate }: BarProp) => {
   return (
     <Vertical>
       <MenuContainer display={display}>

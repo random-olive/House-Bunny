@@ -59,7 +59,11 @@ export const itemList = [
 
 export const contentList = [
   {
-    title: '에어컨',
+    title: '밥솥',
+    list: [{ content: '사용 팁' }, { content: '관리' }, { content: '청소' }],
+  },
+  {
+    title: '냉장고',
     list: [{ content: '사용 팁' }, { content: '관리' }, { content: '청소' }],
   },
 ];

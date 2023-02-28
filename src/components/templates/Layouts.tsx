@@ -29,7 +29,7 @@ export const BasicLayout = () => {
   );
 };
 
-export const SubMenuLayout: React.FC<LayoutProps> = (props: LayoutProps) => {
+export const SubMenuLayout = (props: LayoutProps) => {
   return (
     <>
       <SubMenuContainer>
@@ -39,7 +39,7 @@ export const SubMenuLayout: React.FC<LayoutProps> = (props: LayoutProps) => {
   );
 };
 
-export const ContentsLayout: React.FC<LayoutProps> = ({ item }) => {
+export const ContentsLayout = ({ item }: LayoutProps) => {
   return (
     <>
       <Tip>
@@ -69,7 +69,7 @@ const Contents = styled.div`
     margin-right: 210px;
     @media screen and (max-width: ${RESPONSIVE.SMALL_PX}) {
       margin-right: 20vw;
-    } //자연스러운 반응형 컴포넌트
+    } 
   }
 `;
 

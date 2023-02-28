@@ -28,10 +28,7 @@ export const ContentsBind = styled.div`
   }
 `;
 
-export const Paragraph: React.FC<ContentsBodyType> = ({
-  title,
-  contentsList,
-}) => {
+export const Paragraph = ({ title, contentsList }: ContentsBodyType) => {
   return (
     <ContentsBind>
       <h3>{title}</h3>
@@ -44,7 +41,7 @@ export const Paragraph: React.FC<ContentsBodyType> = ({
   );
 };
 
-export const ContentsBody: React.FC<ContentsBodyType> = ({ body1, body2 }) => {
+export const ContentsBody = ({ body1, body2 }: ContentsBodyType) => {
   return (
     <>
       <Paragraph title={menu[0]} contentsList={body1} />
