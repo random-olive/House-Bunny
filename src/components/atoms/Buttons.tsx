@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { DEFAULT, BUTTON, RESPONSIVE } from '../../constants/styleConstants';
+import { DEFAULT, BUTTON, RESPONSIVE } from '../../constants/styleText';
 
 export const Base = styled.button`
   font-family: 'KyoboHand';
@@ -128,4 +128,16 @@ export const Sticky = styled(Circle)`
 export const Member = styled(Circle)`
   background: ${(props) => props.theme.color['--member-icon-body']};
   border: 5px solid ${(props) => props.theme.color['--member-icon-line']};
+`;
+
+export const Tip = styled.div`
+  display: flex;
+  justify-content: right;
+  color: ${(props) => props.theme.color['--text-orange']};
+  div {
+    &:hover {
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
 `;

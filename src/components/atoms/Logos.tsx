@@ -1,4 +1,4 @@
-import { LOGO, RESPONSIVE } from 'constants/styleConstants';
+import { LOGO, RESPONSIVE } from 'constants/styleText';
 import styled from 'styled-components';
 import iconPath from '../../assets/icons.png';
 

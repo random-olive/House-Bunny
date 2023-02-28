@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { DEFAULT } from 'constants/styleConstants';
+import { DEFAULT } from 'constants/styleText';
 
 type BindingType = {
   margin?: string;
@@ -26,6 +26,7 @@ export const Vertical = styled(Horizontal)`
 `;
 
 export const VerticalFlex = styled(Vertical)`
-flex-wrap:wrap;
-justify-content: left;
-`
+  flex-wrap: wrap;
+  justify-content: left;
+`;
+

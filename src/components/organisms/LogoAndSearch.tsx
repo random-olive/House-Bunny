@@ -2,7 +2,7 @@ import { Horizontal, Vertical } from 'components/atoms/Bindings';
 import { HomeLogo, MenuLogo } from 'components/atoms/Logos';
 import { LogoContainer } from 'components/atoms/Container';
 import Searchbar from 'components/molecules/SearchBar';
-import { RESPONSIVE } from 'constants/styleConstants';
+import { RESPONSIVE } from 'constants/styleText';
 import { DropdownBar } from 'components/molecules/MenuBar';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';

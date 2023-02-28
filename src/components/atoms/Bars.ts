@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { DEFAULT, BAR, RESPONSIVE } from '../../constants/styleConstants';
+import { DEFAULT, BAR, RESPONSIVE } from '../../constants/styleText';
 
 export const SearchPart = styled.div`
   display: flex;

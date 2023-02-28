@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { DEFAULT, BAR } from '../../constants/styleConstants';
+import { DEFAULT, BAR } from '../../constants/styleText';
 
 
 export const Input = styled.input`

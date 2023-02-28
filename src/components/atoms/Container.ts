@@ -1,4 +1,4 @@
-import { RESPONSIVE, SECTION } from 'constants/styleConstants';
+import { RESPONSIVE, SECTION } from 'constants/styleText';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 

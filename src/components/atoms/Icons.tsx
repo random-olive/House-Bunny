@@ -1,6 +1,6 @@
 import iconPath from '../../assets/icons.png';
 import styled from 'styled-components';
-import { ICON_SIZE } from 'constants/styleConstants';
+import { ICON_SIZE } from 'constants/styleText';
 
 type BackType = {
   top?: string;

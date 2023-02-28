@@ -1,4 +1,4 @@
-import { mainMenu, subMenu, itemList, contentList } from 'constants/dataTxt';
+import { mainMenu, subMenu, itemList, contentList } from 'constants/menuText';
 import { Main, Sub, Sub2, Sub3 } from 'components/atoms/Buttons';
 
 import {
@@ -6,9 +6,9 @@ import {
   Vertical,
   HorizontalFlex,
 } from 'components/atoms/Bindings';
-import { subMenuIdx } from 'constants/dataTxt';
+import { subMenuIdx } from 'constants/menuText';
 import { MenuContainer, LinkContainer } from 'components/atoms/Container';
-import { DEFAULT } from 'constants/styleConstants';
+import { DEFAULT } from 'constants/styleText';
 
 interface BarProp {
   display?: string;

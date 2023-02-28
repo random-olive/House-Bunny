@@ -1,4 +1,4 @@
-import { DEFAULT, SECTION, RESPONSIVE } from 'constants/styleConstants';
+import { DEFAULT, SECTION, RESPONSIVE } from 'constants/styleText';
 import styled from 'styled-components';
 
 export const Frame = styled.div`
