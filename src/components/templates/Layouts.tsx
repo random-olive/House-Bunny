@@ -9,6 +9,7 @@ import { RESPONSIVE } from 'constants/styleText';
 import { HorizontalFlex } from 'components/atoms/Bindings';
 import { ContentsBody } from 'components/organisms/Contents';
 import { menu } from 'constants/itemText';
+import { H1 } from 'components/atoms/Text';
 import { HelpIcon, StickyIcon } from 'components/atoms/Icons';
 
 interface LayoutProps {
@@ -45,7 +46,7 @@ export const ContentsLayout = ({ item }: LayoutProps) => {
       <Tip>
         <div>기본 팁</div>
       </Tip>
-      <h1>{item.name}</h1>
+      <H1>{item.name}</H1>
       <Contents>
         <Part>
           <h2>{menu[0]}</h2> <h3>{item.cycle1}</h3>
