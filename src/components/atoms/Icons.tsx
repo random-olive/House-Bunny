@@ -57,7 +57,7 @@ export const StickyIcon = styled(TitleIcon)`
   left: 85%;
   z-index: 1000;
   width: 58px;
-  height: 58px;
+  height: 59px;
   cursor: pointer;
   background-position: 195px 59px;
   margin: 0 0 70px 0;

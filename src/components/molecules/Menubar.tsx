@@ -77,7 +77,7 @@ export const ContentMenuBar = () => {
   );
 };
 
-export const DropdownBar = ({ display, inActivate }: BarProp) => {
+export const DropdownBar =({ display, inActivate }:BarProp) => {
   return (
     <Vertical>
       <MenuContainer display={display}>

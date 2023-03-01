@@ -68,7 +68,7 @@ export const RESPONSIVE = {
  
   HEADER_MARGIN: '30px 0 0 0',
 
-  MENU_POSITION_TOP: '58px',
+  MENU_POSITION_TOP: '68px',
   MENU_POSITION_LEFT: '0px',
   MENU_WIDTH: '98vw',
   SEARCH_WIDTH: '87vw',

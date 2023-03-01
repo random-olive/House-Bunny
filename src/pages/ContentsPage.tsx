@@ -13,7 +13,7 @@ const ContentsPage = () => {
       ))}
       <AdvSection />
       <ContentSection item={riceCooker}/>
-      {/*상태에 따라 변경 */}
+      
     </>
   );
 };
