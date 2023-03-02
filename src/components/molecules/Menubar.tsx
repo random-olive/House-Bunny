@@ -1,10 +1,12 @@
 import { mainMenu, subMenu, itemList, contentList } from 'constants/menuText';
 import { Main, Sub, Sub2, Sub3 } from 'components/atoms/Buttons';
+import { useState } from 'react';
 
 import {
   Horizontal,
   Vertical,
   HorizontalFlex,
+  MenuBinding,
 } from 'components/atoms/Bindings';
 import { subMenuIdx } from 'constants/menuText';
 import { MenuContainer, LinkContainer } from 'components/atoms/Container';
@@ -12,8 +14,10 @@ import { DEFAULT } from 'constants/styleText';
 
 interface BarProp {
   display?: string;
-  onClick?: () => void;
   inActivate?: () => void;
+  onClick?: (() => void) | undefined;
+  selected?: string;
+  setSelected?: any;
 }
 
 export const MenuBar = () => {
@@ -41,43 +45,67 @@ export const MenuBar = () => {
   );
 };
 
-export const SubMenuBar = () => {
+export const SubMenuBar = ({ selected, setSelected }: BarProp) => {
   return (
     <>
-      <HorizontalFlex margin={DEFAULT.MENU_MARGIN}>
+      <MenuBinding margin={DEFAULT.MENU_MARGIN}>
         {subMenu[0].list.map((el, idx) => (
-          <Sub key={idx}>{el.title}</Sub>
+          <Sub
+            onClick={() => {
+              setSelected(el.title);
+            }}
+            key={idx}
+          >
+            {el.title}
+          </Sub>
         ))}
-      </HorizontalFlex>
+        <button onClick={() => console.log(selected)}>클릭하면</button>
+      </MenuBinding>
     </>
   );
 };
 
-export const ItemListMenuBar = () => {
+export const ItemListMenuBar = ({ selected, setSelected }: BarProp) => {
   return (
     <>
-      <HorizontalFlex margin={DEFAULT.MENU_MARGIN}>
+      <MenuBinding margin={DEFAULT.MENU_MARGIN}>
         {itemList[1].list.map((el, idx) => (
           <Sub2 key={idx}>{el.item}</Sub2>
         ))}
-      </HorizontalFlex>
+
+        <button onClick={() => console.log(selected)}>클릭</button>
+      </MenuBinding>
+      {itemList.map((el) => {
+        if (el.title === selected) console.log(el.list);
+      })}
     </>
   );
 };
 
-export const ContentMenuBar = () => {
+export const ContentMenuBar = ({ selected, setSelected }: BarProp) => {
   return (
     <>
-      <HorizontalFlex margin={DEFAULT.MENU_MARGIN}>
+      <MenuBinding margin={DEFAULT.MENU_MARGIN}>
         {contentList[0].list.map((el, idx) => (
           <Sub3 key={idx}>{el.content}</Sub3>
         ))}
-      </HorizontalFlex>
+        <button onClick={() => console.log(selected)}>클릭</button>
+      </MenuBinding>
     </>
   );
 };
 
-export const DropdownBar =({ display, inActivate }:BarProp) => {
+export const SubMenuBarSet = ({ selected, setSelected }: BarProp) => {
+  return (
+    <>
+      <SubMenuBar selected={selected} setSelected={setSelected} />
+      <ItemListMenuBar selected={selected} />
+      <ContentMenuBar selected={selected} />
+    </>
+  );
+};
+
+export const DropdownBar = ({ display, inActivate }: BarProp) => {
   return (
     <Vertical>
       <MenuContainer display={display}>

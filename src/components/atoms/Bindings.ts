@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { SECTION, RESPONSIVE } from 'constants/styleText';
 import { DEFAULT } from 'constants/styleText';
 
 type BindingType = {
@@ -30,3 +31,9 @@ export const VerticalFlex = styled(Vertical)`
   justify-content: left;
 `;
 
+export const MenuBinding = styled(HorizontalFlex)`
+  width: ${SECTION.ADV_WIDTH};
+  @media screen and (max-width: ${RESPONSIVE.SMALL_PX}) {
+    width: ${RESPONSIVE.ADV_WIDTH};
+  }
+`;

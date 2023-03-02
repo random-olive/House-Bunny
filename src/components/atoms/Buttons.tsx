@@ -86,10 +86,12 @@ export const Sub = styled(Base)`
   transition: all 0.3s ease-out;
   color: ${(props) => props.theme.color['--text-light-orange']};
 
+ 
   &:hover {
     background: ${(props) => props.theme.color['--pink-selected']};
     color: ${(props) => props.theme.color['--text-orange']};
   }
+  
   @media screen and (max-width: ${RESPONSIVE.MENU_PX}) {
     width: 60px;
   }
