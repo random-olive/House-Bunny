@@ -16,7 +16,8 @@ interface BarProp {
   display?: string;
   inActivate?: () => void;
   onClick?: (() => void) | undefined;
-  selected?: string;
+  // selected?: string;
+  selected?: any;
   setSelected?: any;
 }
 
@@ -52,14 +53,14 @@ export const SubMenuBar = ({ selected, setSelected }: BarProp) => {
         {subMenu[0].list.map((el, idx) => (
           <Sub
             onClick={() => {
-              setSelected(el.title);
+              setSelected({ menu: el.title });
             }}
             key={idx}
           >
             {el.title}
           </Sub>
         ))}
-        <button onClick={() => console.log(selected)}>클릭하면</button>
+        <button onClick={() => console.log(selected.menu)}>메뉴</button>
       </MenuBinding>
     </>
   );
@@ -69,15 +70,26 @@ export const ItemListMenuBar = ({ selected, setSelected }: BarProp) => {
   return (
     <>
       <MenuBinding margin={DEFAULT.MENU_MARGIN}>
-        {itemList[1].list.map((el, idx) => (
-          <Sub2 key={idx}>{el.item}</Sub2>
+        {itemList[0].list.map((el, idx) => (
+          <Sub2
+            onClick={() => {
+              setSelected({ menu: el.item });
+              // console.log(el.item)
+            }}
+            key={idx}
+          >
+            {el.item}
+          </Sub2>
         ))}
+        <button onClick={() => setSelected({ menu: '1', item: '3' })}>
+          ex
+        </button>
 
-        <button onClick={() => console.log(selected)}>클릭</button>
+        <button onClick={() => console.log(selected.item)}>클릭</button>
       </MenuBinding>
-      {itemList.map((el) => {
+      {/* {itemList.map((el) => {
         if (el.title === selected) console.log(el.list);
-      })}
+      })} */}
     </>
   );
 };
