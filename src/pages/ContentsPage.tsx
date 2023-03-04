@@ -7,7 +7,7 @@ import { riceCooker } from 'constants/itemText';
 import styled from 'styled-components';
 
 const ContentsPage = () => {
-  const [selected, setSelected] = useState({menu:''});
+  const [selected, setSelected] = useState({ menu: '', item: '', content: '' });
   return (
     <>
       <SubMenuBarSet selected={selected} setSelected={setSelected} />

@@ -16,10 +16,11 @@ interface BarProp {
   display?: string;
   inActivate?: () => void;
   onClick?: (() => void) | undefined;
-  // selected?: string;
   selected?: any;
   setSelected?: any;
 }
+
+
 
 export const MenuBar = () => {
   return (
@@ -53,6 +54,7 @@ export const SubMenuBar = ({ selected, setSelected }: BarProp) => {
         {subMenu[0].list.map((el, idx) => (
           <Sub
             onClick={() => {
+             
               setSelected({ menu: el.title });
             }}
             key={idx}
@@ -73,19 +75,15 @@ export const ItemListMenuBar = ({ selected, setSelected }: BarProp) => {
         {itemList[0].list.map((el, idx) => (
           <Sub2
             onClick={() => {
-              setSelected({ menu: el.item });
-              // console.log(el.item)
+              setSelected({ item: el.item });
             }}
             key={idx}
           >
             {el.item}
           </Sub2>
         ))}
-        <button onClick={() => setSelected({ menu: '1', item: '3' })}>
-          ex
-        </button>
 
-        <button onClick={() => console.log(selected.item)}>클릭</button>
+        <button onClick={() => console.log(selected.item)}>아이템</button>
       </MenuBinding>
       {/* {itemList.map((el) => {
         if (el.title === selected) console.log(el.list);
@@ -99,9 +97,16 @@ export const ContentMenuBar = ({ selected, setSelected }: BarProp) => {
     <>
       <MenuBinding margin={DEFAULT.MENU_MARGIN}>
         {contentList[0].list.map((el, idx) => (
-          <Sub3 key={idx}>{el.content}</Sub3>
+          <Sub3
+            onClick={() => {
+              setSelected({ content: el.content });
+            }}
+            key={idx}
+          >
+            {el.content}
+          </Sub3>
         ))}
-        <button onClick={() => console.log(selected)}>클릭</button>
+        <button onClick={() => console.log(selected.content)}>컨텐츠</button>
       </MenuBinding>
     </>
   );
@@ -111,8 +116,8 @@ export const SubMenuBarSet = ({ selected, setSelected }: BarProp) => {
   return (
     <>
       <SubMenuBar selected={selected} setSelected={setSelected} />
-      <ItemListMenuBar selected={selected} />
-      <ContentMenuBar selected={selected} />
+      <ItemListMenuBar selected={selected} setSelected={setSelected} />
+      <ContentMenuBar selected={selected} setSelected={setSelected} />
     </>
   );
 };
