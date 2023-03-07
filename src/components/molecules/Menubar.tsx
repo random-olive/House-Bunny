@@ -1,13 +1,8 @@
 import { mainMenu, subMenu, itemList, contentList } from 'constants/menuText';
 import { Main, Sub, Sub2, Sub3 } from 'components/atoms/Buttons';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-import {
-  Horizontal,
-  Vertical,
-  HorizontalFlex,
-  MenuBinding,
-} from 'components/atoms/Bindings';
+import { Horizontal, Vertical, MenuBinding } from 'components/atoms/Bindings';
 import { subMenuIdx } from 'constants/menuText';
 import { MenuContainer, LinkContainer } from 'components/atoms/Container';
 import { DEFAULT } from 'constants/styleText';
@@ -16,7 +11,7 @@ interface BarProp {
   display?: string;
   inActivate?: () => void;
   onClick?: (() => void) | undefined;
-  selected?: string;
+  selected?: any;
   setSelected?: any;
 }
 
@@ -46,20 +41,28 @@ export const MenuBar = () => {
 };
 
 export const SubMenuBar = ({ selected, setSelected }: BarProp) => {
+  useEffect(()=>{},[selected.menu])
   return (
     <>
       <MenuBinding margin={DEFAULT.MENU_MARGIN}>
         {subMenu[0].list.map((el, idx) => (
           <Sub
             onClick={() => {
-              setSelected(el.title);
+              setSelected({ menu: el.title });
+              itemList.map((el) => {
+                if (el.title === selected.menu) {
+                  setSelected({ list1: el.list });
+                  console.log(el);
+                }
+              });
             }}
             key={idx}
           >
             {el.title}
           </Sub>
         ))}
-        <button onClick={() => console.log(selected)}>클릭하면</button>
+        <button onClick={() => console.log(selected.menu)}>메뉴</button>
+        <button onClick={() => console.log(selected.list1)}>메뉴</button>
       </MenuBinding>
     </>
   );
@@ -69,15 +72,38 @@ export const ItemListMenuBar = ({ selected, setSelected }: BarProp) => {
   return (
     <>
       <MenuBinding margin={DEFAULT.MENU_MARGIN}>
-        {itemList[1].list.map((el, idx) => (
-          <Sub2 key={idx}>{el.item}</Sub2>
-        ))}
+        {selected.list1 !== undefined &&
+          selected.list1.map((el: any, idx: any) => (
+            <Sub2
+              onClick={() => {
+                // setSelected({ item: el.item });
+              }}
+              key={idx}
+            >
+              {el.item}
+            </Sub2>
+          ))}
 
-        <button onClick={() => console.log(selected)}>클릭</button>
+        <button onClick={() => console.log(selected.item)}>아이템</button>
       </MenuBinding>
-      {itemList.map((el) => {
-        if (el.title === selected) console.log(el.list);
-      })}
+      {/* {itemList.map((el) => {
+        if (el.title === selected.menu) {
+          return(
+            <div>{el.list[0]}</div>
+          )
+        }
+      })} */}
+      {/*그대로 옮김*/}
+      {/* {itemList[0].list.map((el, idx) => (
+          <Sub2
+            onClick={() => {
+              setSelected({ item: el.item });
+            }}
+            key={idx}
+          >
+            {el.item}
+          </Sub2>
+        ))} */}
     </>
   );
 };
@@ -87,9 +113,16 @@ export const ContentMenuBar = ({ selected, setSelected }: BarProp) => {
     <>
       <MenuBinding margin={DEFAULT.MENU_MARGIN}>
         {contentList[0].list.map((el, idx) => (
-          <Sub3 key={idx}>{el.content}</Sub3>
+          <Sub3
+            onClick={() => {
+              setSelected({ content: el.content });
+            }}
+            key={idx}
+          >
+            {el.content}
+          </Sub3>
         ))}
-        <button onClick={() => console.log(selected)}>클릭</button>
+        <button onClick={() => console.log(selected.content)}>컨텐츠</button>
       </MenuBinding>
     </>
   );
@@ -99,8 +132,8 @@ export const SubMenuBarSet = ({ selected, setSelected }: BarProp) => {
   return (
     <>
       <SubMenuBar selected={selected} setSelected={setSelected} />
-      <ItemListMenuBar selected={selected} />
-      <ContentMenuBar selected={selected} />
+      <ItemListMenuBar selected={selected} setSelected={setSelected} />
+      <ContentMenuBar selected={selected} setSelected={setSelected} />
     </>
   );
 };
