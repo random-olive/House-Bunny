@@ -1,6 +1,6 @@
 import { mainMenu, subMenu, itemList, contentList } from 'constants/menuText';
 import { Main, Sub, Sub2, Sub3 } from 'components/atoms/Buttons';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { Horizontal, Vertical, MenuBinding } from 'components/atoms/Bindings';
 import { subMenuIdx } from 'constants/menuText';
@@ -41,6 +41,7 @@ export const MenuBar = () => {
 };
 
 export const SubMenuBar = ({ selected, setSelected }: BarProp) => {
+  useEffect(()=>{},[selected.menu])
   return (
     <>
       <MenuBinding margin={DEFAULT.MENU_MARGIN}>
@@ -51,8 +52,8 @@ export const SubMenuBar = ({ selected, setSelected }: BarProp) => {
               itemList.map((el) => {
                 if (el.title === selected.menu) {
                   setSelected({ list1: el.list });
+                  console.log(el);
                 }
-               
               });
             }}
             key={idx}
@@ -71,16 +72,17 @@ export const ItemListMenuBar = ({ selected, setSelected }: BarProp) => {
   return (
     <>
       <MenuBinding margin={DEFAULT.MENU_MARGIN}>
-        {/* {selected.list1.map((el:any, idx:any) => (
-          <Sub2
-            onClick={() => {
-              setSelected({ item: el.item });
-            }}
-            key={idx}
-          >
-            {el.item}
-          </Sub2>
-        ))} */}
+        {selected.list1 !== undefined &&
+          selected.list1.map((el: any, idx: any) => (
+            <Sub2
+              onClick={() => {
+                // setSelected({ item: el.item });
+              }}
+              key={idx}
+            >
+              {el.item}
+            </Sub2>
+          ))}
 
         <button onClick={() => console.log(selected.item)}>아이템</button>
       </MenuBinding>
