@@ -1,4 +1,4 @@
-import { mainMenu, subMenu, itemList, contentList } from 'constants/menuText';
+import { mainMenu, subMenu } from 'constants/menuText';
 import { Main, Sub, Sub2, Sub3 } from 'components/atoms/Buttons';
 import { useState, useEffect } from 'react';
 
@@ -15,7 +15,7 @@ interface BarProp {
   setSelected?: any;
 }
 
-export const MenuBar = () => {
+export const MenuBar = ({ selected, setSelected }: BarProp) => {
   return (
     <>
       <Horizontal margin={DEFAULT.MENU_MARGIN}>
@@ -41,28 +41,20 @@ export const MenuBar = () => {
 };
 
 export const SubMenuBar = ({ selected, setSelected }: BarProp) => {
-  useEffect(()=>{},[selected.menu])
   return (
     <>
       <MenuBinding margin={DEFAULT.MENU_MARGIN}>
         {subMenu[0].list.map((el, idx) => (
           <Sub
             onClick={() => {
-              setSelected({ menu: el.title });
-              itemList.map((el) => {
-                if (el.title === selected.menu) {
-                  setSelected({ list1: el.list });
-                  console.log(el);
-                }
-              });
+              setSelected({ menu: el.title, list1: el.list1, list2: el.list2 });
             }}
+           
             key={idx}
           >
             {el.title}
           </Sub>
         ))}
-        <button onClick={() => console.log(selected.menu)}>메뉴</button>
-        <button onClick={() => console.log(selected.list1)}>메뉴</button>
       </MenuBinding>
     </>
   );
@@ -77,33 +69,14 @@ export const ItemListMenuBar = ({ selected, setSelected }: BarProp) => {
             <Sub2
               onClick={() => {
                 // setSelected({ item: el.item });
+                console.log(el.item1);
               }}
               key={idx}
             >
-              {el.item}
+              {el.item1}
             </Sub2>
           ))}
-
-        <button onClick={() => console.log(selected.item)}>아이템</button>
       </MenuBinding>
-      {/* {itemList.map((el) => {
-        if (el.title === selected.menu) {
-          return(
-            <div>{el.list[0]}</div>
-          )
-        }
-      })} */}
-      {/*그대로 옮김*/}
-      {/* {itemList[0].list.map((el, idx) => (
-          <Sub2
-            onClick={() => {
-              setSelected({ item: el.item });
-            }}
-            key={idx}
-          >
-            {el.item}
-          </Sub2>
-        ))} */}
     </>
   );
 };
@@ -112,17 +85,18 @@ export const ContentMenuBar = ({ selected, setSelected }: BarProp) => {
   return (
     <>
       <MenuBinding margin={DEFAULT.MENU_MARGIN}>
-        {contentList[0].list.map((el, idx) => (
-          <Sub3
-            onClick={() => {
-              setSelected({ content: el.content });
-            }}
-            key={idx}
-          >
-            {el.content}
-          </Sub3>
-        ))}
-        <button onClick={() => console.log(selected.content)}>컨텐츠</button>
+        {selected.list2 !== undefined &&
+          selected.list2.map((el: any, idx: any) => (
+            <Sub2
+              onClick={() => {
+                console.log(el.item2);
+                // setSelected({ content: el.content });
+              }}
+              key={idx}
+            >
+              {el.item2}
+            </Sub2>
+          ))}
       </MenuBinding>
     </>
   );

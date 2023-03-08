@@ -86,12 +86,11 @@ export const Sub = styled(Base)`
   transition: all 0.3s ease-out;
   color: ${(props) => props.theme.color['--text-light-orange']};
 
- 
-  &:hover {
+  &:focus {
     background: ${(props) => props.theme.color['--pink-selected']};
     color: ${(props) => props.theme.color['--text-orange']};
   }
-  
+
   @media screen and (max-width: ${RESPONSIVE.MENU_PX}) {
     width: 60px;
   }
@@ -100,19 +99,19 @@ export const Sub = styled(Base)`
 export const Sub2 = styled(Sub)`
   background: white;
   height: 30px;
-  &:hover {
+  &:focus {
     background: ${(props) => props.theme.color['--sub-selected']};
     color: ${(props) => props.theme.color['--text-orange']};
   }
 `;
 
 export const Sub3 = styled(Sub2)`
-height: 25px;
-&:hover {
+  height: 25px;
+  &:focus {
     background: ${(props) => props.theme.color['--sub-selected2']};
     color: ${(props) => props.theme.color['--text-orange']};
   }
-`
+`;
 
 export const Square = styled(Base)`
   width: ${BUTTON.SQUARE_SIZE};

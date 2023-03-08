@@ -1,7 +1,15 @@
 interface MenuList {
-  // title: string;
-  // href: string;
-  // list: { title: string; href: string }[];
+  title: string;
+  href: string;
+  list1: { item1: string }[];
+  list2: { item2: string }[];
+}
+
+type Test = {
+  title: string;
+  href: string;
+  list1: { item1: string }[];
+  list2: { item2: string }[];
 }
 
 export const mainMenu = [
@@ -26,12 +34,38 @@ export const subMenu = [
     title: 'carrot',
     href: '/housework',
     list: [
-      { title: '거실', href: '/housework' },
-      { title: '주방', href: '/housework' },
-      { title: '침실', href: '/housework' },
-      { title: '화장실', href: '/housework' },
-      { title: '현관', href: '/housework' },
-      { title: '기타', href: '/housework' },
+      {
+        title: '거실',
+        href: '/housework',
+        list1: [{ item1: 'TV' }, { item1: '에어컨' }, { item1: '실링팬' }],
+        list2: [{ item2: '사용 팁' }, { item2: '관리' }, { item2: '청소' }],
+      },
+      {
+        title: '주방',
+        href: '/housework',
+        list1: [{ item1: '밥솥' }, { item1: '냉장고' }],
+        list2: [{ item2: '사용 팁' }, { item2: '관리' }, { item2: '청소' }],
+      },
+      {
+        title: '침실',
+        href: '/housework',
+        list1: [{ item1: '침대' }, { item1: '붙박이장' }],
+        list2: [{ item2: '사용 팁' }, { item2: '관리' }, { item2: '청소' }],
+      },
+      {
+        title: '화장실',
+        href: '/housework',
+        list1: [{ item1: '변기' }, { item1: '욕조' }],
+        list2: [{ item2: '사용 팁' }, { item2: '관리' }, { item2: '청소' }],
+      },
+      {
+        title: '현관',
+        href: '/housework',
+        list1: [{ item1: '전실' }, { item1: '베란다' }],
+        list2: [{ item2: '사용 팁' }, { item2: '관리' }, { item2: '청소' }],
+      },
+
+      { title: '삭제', href: '/housework'},
     ],
   },
   {
@@ -46,26 +80,24 @@ export const subMenu = [
 
 export const subMenuIdx = Array.from(Array(subMenu.length), (_, i) => i);
 
-export const itemList = [
-  {
-    title: '거실',
-    list: [{ item: 'TV' }, { item: '에어컨' }, { item: '실링팬' }],
-  },
-  {
-    title: '주방',
-    list: [{ item: '밥솥' }, { item: '냉장고' }],
-  },
-];
+// export const itemList = [
+//   {
+//     title: '거실',
+//   },
+//   {
+//     title: '주방',
+//   },
+// ];
 
-export const contentList = [
-  {
-    title: '밥솥',
-    list: [{ content: '사용 팁' }, { content: '관리' }, { content: '청소' }],
-  },
-  {
-    title: '냉장고',
-    list: [{ content: '사용 팁' }, { content: '관리' }, { content: '청소' }],
-  },
-];
+// export const contentList = [
+//   {
+//     title: '밥솥',
+//     list: [{ content: '사용 팁' }, { content: '관리' }, { content: '청소' }],
+//   },
+//   {
+//     title: '냉장고',
+//     list: [{ content: '사용 팁' }, { content: '관리' }, { content: '청소' }],
+//   },
+// ];
 
 //만약 관리 내 컨텐츠가 많으면 세분화
