@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 import { DEFAULT, BUTTON, RESPONSIVE } from '../../constants/styleText';
 
-export const Base = styled.button`
+interface ButtonProps {
+  index?: number;
+}
+
+export const Base = styled.button<ButtonProps>`
   font-family: 'KyoboHand';
   border: none;
   /* border: 3px solid ${(props) => props.theme.color['--menu-selected']}; */
@@ -103,6 +107,9 @@ export const Sub2 = styled(Sub)`
     background: ${(props) => props.theme.color['--sub-selected']};
     color: ${(props) => props.theme.color['--text-orange']};
   }
+
+    background: ${(props) => (props.index  ? 'red' : 'blue')};
+
 `;
 
 export const Sub3 = styled(Sub2)`
