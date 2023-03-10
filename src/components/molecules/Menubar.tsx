@@ -57,7 +57,7 @@ export const SubMenuBar = ({ selected, setSelected }: BarProp) => {
             }}
             style={{
               backgroundColor: selected.idx1 === idx ? '#fce1de' : '',
-              color: selected.idx1 === idx ? '#f9a9a0' : '',
+              color: selected.idx1 === idx ? '#f8b9b2' : '',
             }}
             key={idx}
           >
@@ -81,7 +81,7 @@ export const ItemListMenuBar = ({ selected, setSelected }: BarProp) => {
               }}
               style={{
                 backgroundColor: selected.idx2 === idx ? '#fce1de' : '',
-                color: selected.idx2 === idx ?'#f9a9a0' : '',
+                color: selected.idx2 === idx ?'#f8b9b2' : '',
               }}
               key={idx}
             >
@@ -105,7 +105,7 @@ export const ContentMenuBar = ({ selected, setSelected }: BarProp) => {
               }}
               style={{
                 backgroundColor: selected.idx3 === idx ? '#fce1de' : '',
-                color: selected.idx3 === idx ? '#f9a9a0' : '',
+                color: selected.idx3 === idx ?'#f8b9b2' : '',
               }}
               key={idx}
             >
