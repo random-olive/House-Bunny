@@ -55,6 +55,10 @@ export const SubMenuBar = ({ selected, setSelected }: BarProp) => {
                 idx1: idx,
               });
             }}
+            style={{
+              backgroundColor: selected.idx1 === idx ? '#fce1de' : '',
+              color: selected.idx1 === idx ? '#f9a9a0' : '',
+            }}
             key={idx}
           >
             {el.title}
@@ -75,6 +79,10 @@ export const ItemListMenuBar = ({ selected, setSelected }: BarProp) => {
               onClick={() => {
                 setSelected({ ...selected, idx2: idx });
               }}
+              style={{
+                backgroundColor: selected.idx2 === idx ? '#fce1de' : '',
+                color: selected.idx2 === idx ?'#f9a9a0' : '',
+              }}
               key={idx}
             >
               {el.item1}
@@ -94,6 +102,10 @@ export const ContentMenuBar = ({ selected, setSelected }: BarProp) => {
             <Sub2
               onClick={() => {
                 setSelected({ ...selected, idx3: idx });
+              }}
+              style={{
+                backgroundColor: selected.idx3 === idx ? '#fce1de' : '',
+                color: selected.idx3 === idx ? '#f9a9a0' : '',
               }}
               key={idx}
             >

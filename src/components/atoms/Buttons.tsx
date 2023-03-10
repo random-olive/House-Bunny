@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import { DEFAULT, BUTTON, RESPONSIVE } from '../../constants/styleText';
 
 interface ButtonProps {
-  index?: number;
+  selected?: any;
+  idx2?: number;
 }
 
 export const Base = styled.button<ButtonProps>`
@@ -108,8 +109,8 @@ export const Sub2 = styled(Sub)`
     color: ${(props) => props.theme.color['--text-orange']};
   }
 
-    background: ${(props) => (props.index  ? 'red' : 'blue')};
-
+  /* background: selected.idx2 === idx ? red : salmon; */
+  
 `;
 
 export const Sub3 = styled(Sub2)`
