@@ -56,8 +56,8 @@ export const SubMenuBar = ({ selected, setSelected }: BarProp) => {
               });
             }}
             style={{
-              backgroundColor: selected.idx1 === idx ? '#fce1de' : '',
-              color: selected.idx1 === idx ? '#f8b9b2' : '',
+              backgroundColor: selected.idx1 === idx ? '#f1fcde' : '',
+              color: selected.idx1 === idx ? '#98e886' : '',
             }}
             key={idx}
           >
@@ -80,8 +80,8 @@ export const ItemListMenuBar = ({ selected, setSelected }: BarProp) => {
                 setSelected({ ...selected, idx2: idx });
               }}
               style={{
-                backgroundColor: selected.idx2 === idx ? '#fce1de' : '',
-                color: selected.idx2 === idx ?'#f8b9b2' : '',
+                backgroundColor: selected.idx2 === idx ? '#f4e7fb' : '',
+                color: selected.idx2 === idx ?'#d5b2f8' : '',
               }}
               key={idx}
             >
@@ -104,8 +104,8 @@ export const ContentMenuBar = ({ selected, setSelected }: BarProp) => {
                 setSelected({ ...selected, idx3: idx });
               }}
               style={{
-                backgroundColor: selected.idx3 === idx ? '#fce1de' : '',
-                color: selected.idx3 === idx ?'#f8b9b2' : '',
+                backgroundColor: selected.idx3 === idx ? '#fcf4de' : '',
+                color: selected.idx3 === idx ?'#f6c59b' : '',
               }}
               key={idx}
             >
