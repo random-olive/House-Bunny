@@ -10,7 +10,7 @@ type Test = {
   href: string;
   list1: { item1: string }[];
   list2: { item2: string }[];
-}
+};
 
 export const mainMenu = [
   {
@@ -49,7 +49,7 @@ export const subMenu = [
       {
         title: '침실',
         href: '/housework',
-        list1: [{ item1: '침대' }, { item1: '붙박이장' }],
+        list1: [{ item1: '침대' }, { item1: '장롱' }],
         list2: [{ item2: '사용 팁' }, { item2: '관리' }, { item2: '청소' }],
       },
       {
@@ -65,7 +65,7 @@ export const subMenu = [
         list2: [{ item2: '사용 팁' }, { item2: '관리' }, { item2: '청소' }],
       },
 
-      { title: '삭제', href: '/housework'},
+      { title: 'x', href: '/housework' },
     ],
   },
   {

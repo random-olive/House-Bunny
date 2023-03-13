@@ -31,10 +31,82 @@ export const riceCooker = {
   ],
 };
 
-export const refridgerator = {
+export const refrigerator = {
   name: '냉장고',
   cycle1: cycle.w1,
   cycle2: cycle.w2,
   body1: ['123aasdf', , '23', 'asdfasef'],
   body2: ['asaef'],
+};
+
+export const TV = {
+  name: 'TV',
+  cycle1: cycle.w1,
+  cycle2: cycle.w2,
+  body1: ['123aasdf', , '23', 'asdfasef'],
+  body2: ['asaef'],
+};
+
+export const airConditioner = {
+  name: '에어컨',
+  cycle1: cycle.w1,
+  cycle2: cycle.w2,
+  body1: ['123aasdf', , '23', 'asdfasef'],
+  body2: ['asaef'],
+};
+export const ceilingFan = {
+  name: '실링팬',
+  cycle1: cycle.w1,
+  cycle2: cycle.w2,
+  body1: ['123aasdf', , '23', 'asdfasef'],
+  body2: ['asaef'],
+};
+export const bed = {
+  name: '침대',
+  cycle1: cycle.w1,
+  cycle2: cycle.w2,
+  body1: ['123aasdf', , '23', 'asdfasef'],
+  body2: ['asaef'],
+};
+export const wardrobe = {
+  name: '장롱',
+  cycle1: cycle.w1,
+  cycle2: cycle.w2,
+  body1: ['123aasdf', , '23', 'asdfasef'],
+  body2: ['asaef'],
+};
+export const toilet = {
+  name: '변기',
+  cycle1: cycle.w1,
+  cycle2: cycle.w2,
+  body1: ['123aasdf', , '23', 'asdfasef'],
+  body2: ['asaef'],
+};
+export const bath = {
+  name: '욕조',
+  cycle1: cycle.w1,
+  cycle2: cycle.w2,
+  body1: ['123aasdf', , '23', 'asdfasef'],
+  body2: ['asaef'],
+};
+export const frontRoom = {
+  name: '전실',
+  cycle1: cycle.w1,
+  cycle2: cycle.w2,
+  body1: ['123aasdf', , '23', 'asdfasef'],
+  body2: ['asaef'],
+};
+export const veranda = {
+  name: '베란다',
+  cycle1: cycle.w1,
+  cycle2: cycle.w2,
+  body1: ['123aasdf', , '23', 'asdfasef'],
+  body2: ['asaef'],
+};
+export const notice = {
+  name: '세부 항목을 클릭하세요',
+  cycle1: '',
+  cycle2: '',
+  body1: [''],
+  body2: [''],
 };

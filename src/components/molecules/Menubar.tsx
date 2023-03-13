@@ -28,7 +28,19 @@ export const MenuBar = ({ selected, setSelected }: BarProp) => {
                 (i) =>
                   idx === i &&
                   subMenu[i].list.map((menu, key) => (
-                    <LinkContainer key={key} to={menu.href}>
+                    <LinkContainer
+                      key={key}
+                      to={menu.href}
+                      // onClick={() => {
+                      //   setSelected({
+                      //     menu: menu.title,
+                      //   //   list1: menu.list1,
+                      //   //  list2:menu.list2,
+                      //     idx1: idx,
+                      //   });
+                        
+                      // }}
+                    >
                       <div>{menu.title}</div>
                     </LinkContainer>
                   ))
@@ -44,6 +56,7 @@ export const MenuBar = ({ selected, setSelected }: BarProp) => {
 export const SubMenuBar = ({ selected, setSelected }: BarProp) => {
   return (
     <>
+    <button onClick={()=>{console.log(selected)}}>상태 옮김 확인</button>
       <MenuBinding margin={DEFAULT.MENU_MARGIN}>
         {subMenu[0].list.map((el, idx) => (
           <Sub
@@ -56,8 +69,8 @@ export const SubMenuBar = ({ selected, setSelected }: BarProp) => {
               });
             }}
             style={{
-              backgroundColor: selected.idx1 === idx ? '#f1fcde' : '',
-              color: selected.idx1 === idx ? '#98e886' : '',
+              backgroundColor: selected.idx1 === idx ? '#f4e7fb' : '',
+              color: selected.idx1 === idx ? '#d5b2f8' : '',
             }}
             key={idx}
           >
@@ -80,8 +93,8 @@ export const ItemListMenuBar = ({ selected, setSelected }: BarProp) => {
                 setSelected({ ...selected, idx2: idx });
               }}
               style={{
-                backgroundColor: selected.idx2 === idx ? '#f4e7fb' : '',
-                color: selected.idx2 === idx ?'#d5b2f8' : '',
+                backgroundColor: selected.idx2 === idx ? '#f1fcde' : '',
+                color: selected.idx2 === idx ? '#91dd80' : '',
               }}
               key={idx}
             >
@@ -105,7 +118,7 @@ export const ContentMenuBar = ({ selected, setSelected }: BarProp) => {
               }}
               style={{
                 backgroundColor: selected.idx3 === idx ? '#fcf4de' : '',
-                color: selected.idx3 === idx ?'#f6c59b' : '',
+                color: selected.idx3 === idx ? '#f6c59b' : '',
               }}
               key={idx}
             >
