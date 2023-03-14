@@ -38,7 +38,7 @@ export const MenuBar = ({ selected, setSelected }: BarProp) => {
                       //   //  list2:menu.list2,
                       //     idx1: idx,
                       //   });
-                        
+
                       // }}
                     >
                       <div>{menu.title}</div>
@@ -56,7 +56,13 @@ export const MenuBar = ({ selected, setSelected }: BarProp) => {
 export const SubMenuBar = ({ selected, setSelected }: BarProp) => {
   return (
     <>
-    <button onClick={()=>{console.log(selected)}}>상태 옮김 확인</button>
+      {/* <button
+        onClick={() => {
+          console.log(selected);
+        }}
+      >
+        상태 옮김 확인
+      </button> */}
       <MenuBinding margin={DEFAULT.MENU_MARGIN}>
         {subMenu[0].list.map((el, idx) => (
           <Sub
@@ -64,7 +70,7 @@ export const SubMenuBar = ({ selected, setSelected }: BarProp) => {
               setSelected({
                 menu: el.title,
                 list1: el.list1,
-                list2: el.list2,
+                // list2: el.list2,
                 idx1: idx,
               });
             }}
@@ -106,36 +112,36 @@ export const ItemListMenuBar = ({ selected, setSelected }: BarProp) => {
   );
 };
 
-export const ContentMenuBar = ({ selected, setSelected }: BarProp) => {
-  return (
-    <>
-      <MenuBinding margin={DEFAULT.MENU_MARGIN}>
-        {selected.list2 !== undefined &&
-          selected.list2.map((el: any, idx: number) => (
-            <Sub2
-              onClick={() => {
-                setSelected({ ...selected, idx3: idx });
-              }}
-              style={{
-                backgroundColor: selected.idx3 === idx ? '#fcf4de' : '',
-                color: selected.idx3 === idx ? '#f6c59b' : '',
-              }}
-              key={idx}
-            >
-              {el.item2}
-            </Sub2>
-          ))}
-      </MenuBinding>
-    </>
-  );
-};
+// export const ContentMenuBar = ({ selected, setSelected }: BarProp) => {
+//   return (
+//     <>
+//       <MenuBinding margin={DEFAULT.MENU_MARGIN}>
+//         {selected.list2 !== undefined &&
+//           selected.list2.map((el: any, idx: number) => (
+//             <Sub2
+//               onClick={() => {
+//                 setSelected({ ...selected, idx3: idx });
+//               }}
+//               style={{
+//                 backgroundColor: selected.idx3 === idx ? '#fcf4de' : '',
+//                 color: selected.idx3 === idx ? '#f6c59b' : '',
+//               }}
+//               key={idx}
+//             >
+//               {el.item2}
+//             </Sub2>
+//           ))}
+//       </MenuBinding>
+//     </>
+//   );
+// };
 
 export const SubMenuBarSet = ({ selected, setSelected }: BarProp) => {
   return (
     <>
       <SubMenuBar selected={selected} setSelected={setSelected} />
       <ItemListMenuBar selected={selected} setSelected={setSelected} />
-      <ContentMenuBar selected={selected} setSelected={setSelected} />
+      {/* <ContentMenuBar selected={selected} setSelected={setSelected} /> */}
     </>
   );
 };

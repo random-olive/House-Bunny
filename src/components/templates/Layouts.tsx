@@ -1,16 +1,19 @@
 import { DropdownHeader } from '../organisms/LogoAndSearch';
-import { Outlet } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 import { MenuBar } from 'components/molecules/MenuBar';
 import styled from 'styled-components';
 import Footer from 'components/atoms/Footer';
-import { SubMenuContainer } from 'components/atoms/Container';
+import { LinkContainer, SubMenuContainer } from 'components/atoms/Container';
 import { Tip } from 'components/atoms/Buttons';
 import { RESPONSIVE } from 'constants/styleText';
 import { HorizontalFlex } from 'components/atoms/Bindings';
-import { ContentsBody } from 'components/organisms/Contents';
+import { ContentsBody, TipBody } from 'components/organisms/Contents';
 import { menu } from 'constants/itemText';
 import { H1 } from 'components/atoms/Text';
-import { HelpIcon, StickyIcon } from 'components/atoms/Icons';
+import { useState } from 'react';
+import { ContentsBinding, PartBinding } from 'components/atoms/Bindings';
+import { BackIcon, HelpIcon, StickyIcon } from 'components/atoms/Icons';
+import PATH from 'constants/routePath';
 
 interface LayoutProps {
   children?: React.ReactNode;
@@ -44,18 +47,18 @@ export const ContentsLayout = ({ item }: LayoutProps) => {
   return (
     <>
       <Tip>
-        <div>기본 팁</div>
+        <LinkContainer to={PATH.TIPS}>기본 팁</LinkContainer>
       </Tip>
       <H1>{item.name}</H1>
-      <Contents>
-        <Part>
+      <ContentsBinding>
+        <PartBinding>
           <h2>{menu[0]}</h2> <h3>{item.cycle1}</h3>
-        </Part>
+        </PartBinding>
 
-        <Part>
+        <PartBinding>
           <h2>{menu[1]}</h2> <h3>{item.cycle2}</h3>
-        </Part>
-      </Contents>
+        </PartBinding>
+      </ContentsBinding>
       <HorizontalFlex>
         <ContentsBody body1={item.body1} body2={item.body2} />
       </HorizontalFlex>
@@ -63,29 +66,29 @@ export const ContentsLayout = ({ item }: LayoutProps) => {
   );
 };
 
-const Contents = styled.div`
-  display: flex;
-  h3 {
-    margin-top: 23px;
-    margin-right: 210px;
-    @media screen and (max-width: ${RESPONSIVE.SMALL_PX}) {
-      margin-right: 20vw;
-    } 
-  }
-`;
-
-const Part = styled.div`
-  display: flex;
-
-  h2 {
-    margin-right: 10px;
-    color: ${(props) => props.theme.color['--text-light-orange']};
-  }
-  h3 {
-    color: ${(props) => props.theme.color['--text']};
-  }
-`;
-
-//카테고리 내부 클릭시 템플릿(컨텐츠 페이지의 템플릿) : +세부메뉴바, (x정리탭x), +컨텐츠
-
-//로고 157px
+export const TipLayout = ({ item }: LayoutProps) => {
+  return (
+    <>
+      <H1>{item.name}</H1>
+      <ContentsBinding>
+        <PartBinding>
+          <ul>
+            {item.tip.map((el: any, idx: number) => (
+              <li key={idx}>
+                <LinkContainer to={PATH.TIPS}>
+                  <h2>{el}</h2>
+                </LinkContainer>
+              </li>
+            ))}
+          </ul>
+        </PartBinding>
+      </ContentsBinding>
+      <HorizontalFlex>
+        <TipBody body1={item.body1} />
+      </HorizontalFlex>
+      <LinkContainer to={PATH.HOUSE_WORK}>
+        <BackIcon />
+      </LinkContainer>
+    </>
+  );
+};

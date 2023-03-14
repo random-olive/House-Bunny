@@ -1,11 +1,11 @@
 import {
   SubMenuBar,
   ItemListMenuBar,
-  ContentMenuBar,
+  // ContentMenuBar,
 } from 'components/molecules/MenuBar';
 
 export const subMenuList = [
   <SubMenuBar />,
   <ItemListMenuBar />,
-  <ContentMenuBar />,
+  // <ContentMenuBar />,
 ];

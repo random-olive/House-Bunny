@@ -1,5 +1,6 @@
 import iconPath from '../../assets/icons.png';
 import styled from 'styled-components';
+import { TbArrowBigLeftFilled } from 'react-icons/tb';
 import { ICON_SIZE } from 'constants/styleText';
 
 type BackType = {
@@ -8,6 +9,11 @@ type BackType = {
   background?: string;
   width?: string;
   height?: string;
+};
+
+type RIType = {
+  size?: number | undefined;
+  fill?: string | undefined;
 };
 
 const BaseIcon = styled.div`
@@ -35,7 +41,7 @@ const TitleIcon = styled.div<BackType>`
   height: ${(props) => props.height};
 `;
 
-export const BackIcon = styled(TitleIcon)`
+export const BackgroundIcon = styled(TitleIcon)`
   background: white;
 `;
 
@@ -72,3 +78,7 @@ export const HelpIcon = styled(StickyIcon)`
   background-position: 130px 55px;
   margin: 0;
 `;
+
+export const BackIcon = ({ size, fill }: RIType) => {
+  return <TbArrowBigLeftFilled size={size || 35} color={fill || '#f0ae9e'} />;
+};

@@ -49,3 +49,12 @@ export const ContentsBody = ({ body1, body2 }: ContentsBodyType) => {
     </>
   );
 };
+
+export const TipBody = ({ body1}: ContentsBodyType) => {
+  return (
+    <>
+      <Paragraph title={'팁'} contentsList={body1} />
+    
+    </>
+  );
+};

@@ -8,7 +8,7 @@ import {
   ContentSectionFrame,
 } from 'components/atoms/SectionFrame';
 
-import { ContentsLayout } from 'components/templates/Layouts';
+import { ContentsLayout, TipLayout } from 'components/templates/Layouts';
 import { HotTitle, MoreTitle } from './TitleIcon';
 import { SECTION, CONDITION } from 'constants/styleText';
 
@@ -58,11 +58,21 @@ export const MoreSection = () => {
   );
 };
 
-export const ContentSection = ({ item }:SectionProps) => {
+export const ContentSection = ({ item }: SectionProps) => {
   return (
     <>
       <ContentSectionFrame>
         <ContentsLayout item={item} />
+      </ContentSectionFrame>
+    </>
+  );
+};
+
+export const TipSection = ({ item }: SectionProps) => {
+  return (
+    <>
+      <ContentSectionFrame>
+        <TipLayout item={item}/>
       </ContentSectionFrame>
     </>
   );

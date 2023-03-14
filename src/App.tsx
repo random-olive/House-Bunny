@@ -40,6 +40,8 @@ function App() {
             <Route element={<BasicLayout />}>
               <Route path={PATH.MAIN} element={<LandingPage />} />
               <Route path={PATH.HOUSE_WORK} element={<ContentsPage />} />
+              <Route path={PATH.TIPS} element={<ContentsPage />} />
+          
             </Route>
           </Routes>
         </Suspense>

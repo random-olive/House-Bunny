@@ -39,3 +39,26 @@ export const MenuBinding = styled(HorizontalFlex)<BindingType>`
     width: ${RESPONSIVE.ADV_WIDTH};
   }
 `;
+
+export const ContentsBinding = styled.div`
+  display: flex;
+  h3 {
+    margin-top: 23px;
+    margin-right: 210px;
+    @media screen and (max-width: ${RESPONSIVE.SMALL_PX}) {
+      margin-right: 20vw;
+    }
+  }
+`;
+
+export const PartBinding = styled.div`
+  display: flex;
+  text-align: left;
+  h2 {
+    margin-right: 10px;
+    color: ${(props) => props.theme.color['--text-light-orange']};
+  }
+  h3 {
+    color: ${(props) => props.theme.color['--text']};
+  }
+`;
