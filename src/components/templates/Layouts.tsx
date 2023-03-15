@@ -67,6 +67,7 @@ export const ContentsLayout = ({ item }: LayoutProps) => {
 };
 
 export const TipLayout = ({ item }: LayoutProps) => {
+  const [tip, setTip] = useState({ title: '', idx: -1});
   return (
     <>
       <H1>{item.name}</H1>
@@ -75,7 +76,10 @@ export const TipLayout = ({ item }: LayoutProps) => {
           <ul>
             {item.tip.map((el: any, idx: number) => (
               <li key={idx}>
-                <LinkContainer to={PATH.TIPS}>
+                <LinkContainer
+                  to={PATH.TIPS}
+                  onClick={() => setTip({ title: el, idx: idx })}
+                >
                   <h2>{el}</h2>
                 </LinkContainer>
               </li>
@@ -84,7 +88,7 @@ export const TipLayout = ({ item }: LayoutProps) => {
         </PartBinding>
       </ContentsBinding>
       <HorizontalFlex>
-        <TipBody body1={item.body1} />
+        <TipBody title={tip.title} body1={item.body[tip.idx]||[]} />
       </HorizontalFlex>
       <LinkContainer to={PATH.HOUSE_WORK}>
         <BackIcon />

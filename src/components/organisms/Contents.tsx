@@ -4,6 +4,7 @@ import { menu } from 'constants/itemText';
 type ContentsBodyType = {
   title?: string;
   contentsList?: string[] | any;
+  tipTitle?: string;
   body1?: any;
   body2?: any;
 };
@@ -50,11 +51,10 @@ export const ContentsBody = ({ body1, body2 }: ContentsBodyType) => {
   );
 };
 
-export const TipBody = ({ body1}: ContentsBodyType) => {
+export const TipBody = ({ title, body1 }: ContentsBodyType) => {
   return (
     <>
-      <Paragraph title={'팁'} contentsList={body1} />
-    
+      <Paragraph title={title} contentsList={body1} />
     </>
   );
 };

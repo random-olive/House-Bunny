@@ -118,6 +118,6 @@ export const notice = {
 
 export const tipList = {
   name: '팁 리스트',
-  tip: ['조리도구 관리', '등등 등등 등등 등등 등등'],
-  body1: ['123aasdf', '23', 'asdfasef'],
+  tip: ['조리도구 관리', '두번째 팁'],
+  body: [['11', '11', '11f'],['22', '22', '22f']],
 };
