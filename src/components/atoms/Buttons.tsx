@@ -3,7 +3,8 @@ import { DEFAULT, BUTTON, RESPONSIVE } from '../../constants/styleText';
 
 interface ButtonProps {
   selected?: any;
-  idx2?: number;
+  idx?: number;
+  
 }
 
 export const Base = styled.button<ButtonProps>`
@@ -23,21 +24,22 @@ export const Circle = styled(Base)`
   width: ${BUTTON.CIRCLE_SIZE};
 `;
 
-export const Main = styled(Base)`
+export const Main = styled(Base)<ButtonProps>`
   background: ${(props) => props.theme.color['--menu']};
   color: ${(props) => props.theme.color['--text-selected']};
+
   border-radius: 1px;
   margin: 5px 0 0 0;
 
   &:hover {
     background: ${(props) => props.theme.color['--menu-selected']};
-    color: ${(props) => props.theme.color['--text']};
+    color: ${(props) => (props.idx === 1 ? props.theme.color['--icon-heart-warm'] : props.theme.color['--text'])};
     cursor: pointer;
     transition: all 0.3s ease-out;
   }
 
   @media screen and (max-width: ${RESPONSIVE.SMALL_PX}) {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 100vw;
@@ -67,6 +69,7 @@ export const Main = styled(Base)`
     transition: all 0.3s ease-out;
     color: ${(props) => props.theme.color['--text-light-orange']};
     z-index: 1000;
+
     div {
       display: flex;
       justify-content: center;
@@ -110,7 +113,6 @@ export const Sub2 = styled(Sub)`
   }
 
   /* background: selected.idx2 === idx ? red : salmon; */
-  
 `;
 
 export const Sub3 = styled(Sub2)`

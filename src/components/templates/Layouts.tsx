@@ -13,6 +13,8 @@ import { H1 } from 'components/atoms/Text';
 import { useState } from 'react';
 import { ContentsBinding, PartBinding } from 'components/atoms/Bindings';
 import { BackIcon, HelpIcon, StickyIcon } from 'components/atoms/Icons';
+import { debounce } from 'lodash';
+import { useEffect } from 'react';
 import PATH from 'constants/routePath';
 
 interface LayoutProps {
@@ -20,12 +22,12 @@ interface LayoutProps {
   item?: any;
 }
 
-export const BasicLayout = () => {
+export const BasicLayout = ({ windowSize }: any) => {
   return (
     <>
       {/*member 관련 컴포넌트*/}
       <DropdownHeader />
-      {window.outerWidth < 768 ? '' : <MenuBar />}
+      {windowSize < 768 ? '' : <MenuBar />}
       <Outlet />
       <StickyIcon />
       <Footer />
@@ -67,7 +69,7 @@ export const ContentsLayout = ({ item }: LayoutProps) => {
 };
 
 export const TipLayout = ({ item }: LayoutProps) => {
-  const [tip, setTip] = useState({ title: '', idx: -1});
+  const [tip, setTip] = useState({ title: '', idx: -1 });
   return (
     <>
       <H1>{item.name}</H1>
@@ -88,7 +90,7 @@ export const TipLayout = ({ item }: LayoutProps) => {
         </PartBinding>
       </ContentsBinding>
       <HorizontalFlex>
-        <TipBody title={tip.title} body1={item.body[tip.idx]||[]} />
+        <TipBody title={tip.title} body1={item.body[tip.idx] || []} />
       </HorizontalFlex>
       <LinkContainer to={PATH.HOUSE_WORK}>
         <BackIcon />

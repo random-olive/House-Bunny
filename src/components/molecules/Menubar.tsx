@@ -21,7 +21,7 @@ export const MenuBar = ({ selected, setSelected }: BarProp) => {
     <>
       <Horizontal margin={DEFAULT.MENU_MARGIN}>
         {mainMenu[0].list.map((el, idx) => (
-          <Main key={idx}>
+          <Main key={idx} idx={idx}>
             {el.title}
             <div className='sub'>
               {subMenuIdx.map(
@@ -31,15 +31,12 @@ export const MenuBar = ({ selected, setSelected }: BarProp) => {
                     <LinkContainer
                       key={key}
                       to={menu.href}
-                      // onClick={() => {
-                      //   setSelected({
-                      //     menu: menu.title,
-                      //   //   list1: menu.list1,
-                      //   //  list2:menu.list2,
-                      //     idx1: idx,
-                      //   });
-
-                      // }}
+                      onClick={() => {
+                        setSelected({
+                          menu: menu.title,
+                          idx1: key,
+                        });
+                      }}
                     >
                       <div>{menu.title}</div>
                     </LinkContainer>
@@ -107,6 +104,7 @@ export const ItemListMenuBar = ({ selected, setSelected }: BarProp) => {
               {el.item1}
             </Sub2>
           ))}
+        {/* <button onClick={()=>console.log(selected)}>kclick</button> */}
       </MenuBinding>
     </>
   );

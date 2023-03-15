@@ -1,3 +1,5 @@
+
+
 interface MenuList {
   title: string;
   href: string;
@@ -17,8 +19,8 @@ export const mainMenu = [
     title: 'main',
     href: '/home',
     list: [
-      { title: 'carrot', href: '/housework' },
-      { title: 'w&b', href: '/wandb' },
+      { title: '🐰', href: '/housework' },
+      { title: '♥️🐇', href: '/wandb' },
       { title: '레시피', href: '/address' },
       { title: '취 미', href: '/address' },
       { title: '파 티', href: '/address' },
@@ -72,8 +74,8 @@ export const subMenu = [
     title: 'event',
     href: '/event',
     list: [
-      { title: '💍', href: '/address' },
-      { title: '👶🏻', href: '/address' },
+      { title: '결혼', href: '/address' },
+      { title: '육아', href: '/address' },
     ],
   },
 ];
