@@ -24,7 +24,7 @@ declare module 'styled-components' {
       '--pink-selected': string;
 
       '--menu': string;
-      '--menu--deep':string;
+      '--menu-deep':string;
       '--menu-selected': string; //+ line, submenu text
       '--menu-pick': string;
 

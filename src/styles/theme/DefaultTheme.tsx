@@ -22,7 +22,7 @@ const myTheme: DefaultTheme = {
     '--pink-selected': '#fce1de',
     
     '--menu':'#e1c5bb',
-    '--menu--deep':'#a79189',
+    '--menu-deep':'#a79189',
     '--menu-selected': '#edd3ca',
     '--menu-pick':'#fde1d5 ', //#c5f4c8 //#fdd5e0 //#fde8d5 //#fde1d5
 

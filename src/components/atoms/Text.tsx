@@ -5,5 +5,5 @@ type TextType = {
 };
 
 export const H1 = styled.h1<TextType>`
-  color: ${(props) => props.color || props.theme.color['--menu--deep']};
+  color: ${(props) => props.color || props.theme.color['--menu-deep']};
 `;
