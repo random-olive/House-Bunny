@@ -82,3 +82,17 @@ export const HelpIcon = styled(StickyIcon)`
 export const BackIcon = ({ size, fill }: RIType) => {
   return <TbArrowBigLeftFilled size={size || 35} color={fill || '#f0ae9e'} />;
 };
+
+export const UpIcon = styled(StickyIcon)`
+  top: 86.5%;
+  left: 89%;
+  width: 15px;
+  height: 15px;
+  background-position: 80px 36px;
+  transform: rotate(0.5turn);
+`;
+
+export const DownIcon = styled(UpIcon)`
+  top: 89%;
+  transform: rotate(0turn);
+`;

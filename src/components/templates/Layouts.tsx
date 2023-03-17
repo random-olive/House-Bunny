@@ -12,7 +12,13 @@ import { menu } from 'constants/itemText';
 import { H1 } from 'components/atoms/Text';
 import { useState } from 'react';
 import { ContentsBinding, PartBinding } from 'components/atoms/Bindings';
-import { BackIcon, HelpIcon, StickyIcon } from 'components/atoms/Icons';
+import {
+  BackIcon,
+  DownIcon,
+  HelpIcon,
+  StickyIcon,
+  UpIcon,
+} from 'components/atoms/Icons';
 import { debounce } from 'lodash';
 import { useEffect } from 'react';
 import PATH from 'constants/routePath';
@@ -30,6 +36,8 @@ export const BasicLayout = ({ windowSize }: any) => {
       {windowSize < 768 ? '' : <MenuBar />}
       <Outlet />
       <StickyIcon />
+      <UpIcon />
+      <DownIcon />
       <Footer />
     </>
   );
