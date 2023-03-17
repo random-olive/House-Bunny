@@ -29,7 +29,7 @@ export const ContentsBind = styled.div`
     }
   }
   .tip-title {
-    margin-top: 15px;
+    margin-top: 20px;
     font-weight: 600;
     color: ${(props) => props.theme.color['--text']};
   }
@@ -57,7 +57,7 @@ export const TipParagraph = ({ title, contentsList }: ContentsBodyType) => {
           <div key={i}>
             <div className='tip-title'>{el}</div>
             <ul>
-             {contentsList[1][i].map((el:string,i:number)=>(
+             {contentsList[1][i]&&contentsList[1][i].map((el:string,i:number)=>(
                 <li key={i}>{el}</li>
               ))}
             </ul>
