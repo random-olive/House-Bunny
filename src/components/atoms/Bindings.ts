@@ -62,3 +62,13 @@ export const PartBinding = styled.div`
     color: ${(props) => props.theme.color['--text']};
   }
 `;
+
+export const IconBinding = styled.div`
+  position: absolute;
+  border: 1px solid blue;
+  bottom: 1%;
+  right: 14.2%;
+  width: 70px;
+  height: 100%;
+`;
+

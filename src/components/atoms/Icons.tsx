@@ -58,7 +58,7 @@ export const MoreIcon = styled(TitleIcon)`
 `;
 
 export const StickyIcon = styled(TitleIcon)`
-  position: fixed;
+  position: absolute;
   top: 85%;
   left: 85%;
   z-index: 1000;
@@ -85,7 +85,7 @@ export const BackIcon = ({ size, fill }: RIType) => {
 
 export const UpIcon = styled(StickyIcon)`
   top: 86.5%;
-  left: 89%;
+  left: 170%;
   width: 15px;
   height: 15px;
   background-position: 80px 36px;
@@ -93,6 +93,6 @@ export const UpIcon = styled(StickyIcon)`
 `;
 
 export const DownIcon = styled(UpIcon)`
-  top: 89%;
+  top: 90.5%;
   transform: rotate(0turn);
 `;

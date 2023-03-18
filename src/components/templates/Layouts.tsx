@@ -6,7 +6,7 @@ import Footer from 'components/atoms/Footer';
 import { LinkContainer, SubMenuContainer } from 'components/atoms/Container';
 import { Tip } from 'components/atoms/Buttons';
 import { RESPONSIVE } from 'constants/styleText';
-import { HorizontalFlex } from 'components/atoms/Bindings';
+import { HorizontalFlex, IconBinding } from 'components/atoms/Bindings';
 import { ContentsBody, TipBody } from 'components/organisms/Contents';
 import { menu } from 'constants/itemText';
 import { H1 } from 'components/atoms/Text';
@@ -35,9 +35,12 @@ export const BasicLayout = ({ windowSize }: any) => {
       <DropdownHeader />
       {windowSize < 768 ? '' : <MenuBar />}
       <Outlet />
-      <StickyIcon />
-      <UpIcon />
-      <DownIcon />
+      <IconBinding>
+        <StickyIcon />
+        <UpIcon />
+        <DownIcon />
+      </IconBinding>
+
       <Footer />
     </>
   );
