@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { menu } from 'constants/itemText';
+import { A } from 'components/atoms/Buttons';
 
 type ContentsBodyType = {
   title?: string;
@@ -57,9 +58,18 @@ export const TipParagraph = ({ title, contentsList }: ContentsBodyType) => {
           <div key={i}>
             <div className='tip-title'>{el}</div>
             <ul>
-             {contentsList[1][i]&&contentsList[1][i].map((el:string,i:number)=>(
-                <li key={i}>{el}</li>
-              ))}
+              {contentsList[1][i] &&
+                contentsList[1][i].map((el: string, i: number) => (
+                  <li key={i}>
+                    {el.includes('http') ? ( //여기에 이미지도 추가 + 그 외에 뭐 할수잇는지
+                      <A href={el} target='_blank' rel='noreferrer'>
+                        {el}
+                      </A>
+                    ) : (
+                      el
+                    )}
+                  </li>
+                ))}
             </ul>
           </div>
         ))}

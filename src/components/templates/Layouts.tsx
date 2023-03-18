@@ -109,9 +109,3 @@ export const TipLayout = ({ item }: LayoutProps) => {
   );
 };
 
-const Box = styled.div`
-  position: fixed;
-  width: 70px;
-  height: 70px;
-  border: 1px solid red;
-`;

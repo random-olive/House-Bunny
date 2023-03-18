@@ -4,7 +4,6 @@ import { DEFAULT, BUTTON, RESPONSIVE } from '../../constants/styleText';
 interface ButtonProps {
   selected?: any;
   idx?: number;
-  
 }
 
 export const Base = styled.button<ButtonProps>`
@@ -33,7 +32,10 @@ export const Main = styled(Base)<ButtonProps>`
 
   &:hover {
     background: ${(props) => props.theme.color['--menu-selected']};
-    color: ${(props) => (props.idx === 1 ? props.theme.color['--icon-heart-warm'] : props.theme.color['--text'])};
+    color: ${(props) =>
+      props.idx === 1
+        ? props.theme.color['--icon-heart-warm']
+        : props.theme.color['--text']};
     cursor: pointer;
     transition: all 0.3s ease-out;
   }
@@ -150,5 +152,14 @@ export const Tip = styled.div`
       font-weight: 700;
       cursor: pointer;
     }
+  }
+`;
+
+export const A = styled.a`
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    color: ${(props) => props.theme.color['--text-orange']};
+    font-weight: 700;
   }
 `;
