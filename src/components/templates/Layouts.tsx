@@ -6,7 +6,7 @@ import Footer from 'components/atoms/Footer';
 import { LinkContainer, SubMenuContainer } from 'components/atoms/Container';
 import { Tip } from 'components/atoms/Buttons';
 import { RESPONSIVE } from 'constants/styleText';
-import { HorizontalFlex, IconBinding } from 'components/atoms/Bindings';
+import { HorizontalFlex } from 'components/atoms/Bindings';
 import { ContentsBody, TipBody } from 'components/organisms/Contents';
 import { menu } from 'constants/itemText';
 import { H1 } from 'components/atoms/Text';
@@ -19,8 +19,7 @@ import {
   StickyIcon,
   UpIcon,
 } from 'components/atoms/Icons';
-import { debounce } from 'lodash';
-import { useEffect } from 'react';
+
 import PATH from 'constants/routePath';
 
 interface LayoutProps {
@@ -35,11 +34,11 @@ export const BasicLayout = ({ windowSize }: any) => {
       <DropdownHeader />
       {windowSize < 768 ? '' : <MenuBar />}
       <Outlet />
-      <IconBinding>
-        <StickyIcon />
+
+      <StickyIcon>
         <UpIcon />
         <DownIcon />
-      </IconBinding>
+      </StickyIcon>
 
       <Footer />
     </>
@@ -109,3 +108,10 @@ export const TipLayout = ({ item }: LayoutProps) => {
     </>
   );
 };
+
+const Box = styled.div`
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  border: 1px solid red;
+`;

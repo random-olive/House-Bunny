@@ -26,6 +26,7 @@ export const Vertical = styled(Horizontal)`
   display: flex;
   flex-direction: column;
   margin: 0;
+
 `;
 
 export const VerticalFlex = styled(Vertical)`
@@ -63,12 +64,4 @@ export const PartBinding = styled.div`
   }
 `;
 
-export const IconBinding = styled.div`
-  position: absolute;
-  border: 1px solid blue;
-  bottom: 1%;
-  right: 14.2%;
-  width: 70px;
-  height: 100%;
-`;
 

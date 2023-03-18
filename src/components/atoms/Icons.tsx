@@ -58,7 +58,7 @@ export const MoreIcon = styled(TitleIcon)`
 `;
 
 export const StickyIcon = styled(TitleIcon)`
-  position: absolute;
+  position: fixed;
   top: 85%;
   left: 85%;
   z-index: 1000;
@@ -67,6 +67,9 @@ export const StickyIcon = styled(TitleIcon)`
   cursor: pointer;
   background-position: 195px 59px;
   margin: 0 0 70px 0;
+  @media screen and (max-height: 584px) {
+    top: 83%;
+  }
 `;
 
 export const HelpIcon = styled(StickyIcon)`
@@ -84,15 +87,20 @@ export const BackIcon = ({ size, fill }: RIType) => {
 };
 
 export const UpIcon = styled(StickyIcon)`
-  top: 86.5%;
-  left: 170%;
+  position: absolute;
+  top: 9px;
+  left: 65px;
   width: 15px;
   height: 15px;
   background-position: 80px 36px;
   transform: rotate(0.5turn);
+  @media screen and (max-width: 584px) {
+    top: 13px;
+    left: -20px;
+  }
 `;
 
 export const DownIcon = styled(UpIcon)`
-  top: 90.5%;
+  top: 35px;
   transform: rotate(0turn);
 `;
