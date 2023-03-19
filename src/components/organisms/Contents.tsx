@@ -70,7 +70,9 @@ export const TipParagraph = ({ title, contentsList }: ContentsBodyType) => {
                         {el.split('📄')[0]}
                       </A>
                     ) : el.includes('🖼') ? (
-                      <img alt={el.split('🖼')[0]} src={el.split('🖼')[1]} />
+                      <A href={el.split('🖼')[2]} target='_blank'>
+                        <img alt={el.split('🖼')[0]} src={el.split('🖼')[1]} />
+                      </A>
                     ) : (
                       el
                     )}

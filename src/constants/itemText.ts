@@ -198,7 +198,7 @@ export const tipList = {
         ],
         [
           '🏠 폐가전제품 배출예약시스템 / 📞 1599 - 0903 📄https://15990903.or.kr/portal/main/main.do',
-          '그림 🖼https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350'
+          '그림 🖼https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350 🖼https://naver.com',
         ],
       ],
     ],
