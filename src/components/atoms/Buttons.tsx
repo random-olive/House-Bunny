@@ -4,6 +4,7 @@ import { DEFAULT, BUTTON, RESPONSIVE } from '../../constants/styleText';
 interface ButtonProps {
   selected?: any;
   idx?: number;
+  linkable?: boolean;
 }
 
 export const Base = styled.button<ButtonProps>`
@@ -155,11 +156,13 @@ export const Tip = styled.div`
   }
 `;
 
-export const A = styled.a`
+export const A = styled.a<ButtonProps>`
   color: inherit;
   text-decoration: none;
   &:hover {
     color: ${(props) => props.theme.color['--text-orange']};
     font-weight: 700;
   }
+  pointer-events: ${(props) => (props.linkable ? 'inherit' : 'none')};
+/* pointer-events:inherit; */
 `;
