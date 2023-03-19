@@ -61,9 +61,13 @@ export const TipParagraph = ({ title, contentsList }: ContentsBodyType) => {
               {contentsList[1][i] &&
                 contentsList[1][i].map((el: string, i: number) => (
                   <li key={i}>
-                    {el.includes('http') ? ( //여기에 이미지도 추가 + 그 외에 뭐 할수잇는지
-                      <A href={el} target='_blank' rel='noreferrer'>
-                        {el}
+                    {el.includes('🏠') ? ( //여기에 이미지도 추가 + 그 외에 뭐 할수잇는지
+                      <A
+                        href={el.split('📄')[1]}
+                        target='_blank'
+                        rel='noreferrer'
+                      >
+                        {el.split('📄')[0]}
                       </A>
                     ) : (
                       el
