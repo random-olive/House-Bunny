@@ -36,8 +36,16 @@ export const BasicLayout = ({ windowSize }: any) => {
       <Outlet />
 
       <StickyIcon>
-        <UpIcon />
-        <DownIcon />
+        <UpIcon
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+        />
+        <DownIcon
+          onClick={() => {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+          }}
+        />
       </StickyIcon>
 
       <Footer />
@@ -108,4 +116,3 @@ export const TipLayout = ({ item }: LayoutProps) => {
     </>
   );
 };
-
