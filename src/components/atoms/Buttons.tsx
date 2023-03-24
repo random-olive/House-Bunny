@@ -5,6 +5,7 @@ interface ButtonProps {
   selected?: any;
   idx?: number;
   linkable?: boolean;
+  LS?: string;
 }
 
 export const Base = styled.button<ButtonProps>`
@@ -163,6 +164,10 @@ export const A = styled.a<ButtonProps>`
     color: ${(props) => props.theme.color['--text-orange']};
     font-weight: 700;
   }
+
   pointer-events: ${(props) => (props.linkable ? 'inherit' : 'none')};
-/* pointer-events:inherit; */
+`;
+
+export const Li = styled.li<ButtonProps>`
+  list-style: ${(props) => props.LS || 'disc'};
 `;

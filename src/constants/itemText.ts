@@ -119,9 +119,10 @@ export const notice = {
 
 export const tipList = {
   name: 'Tip',
-  tip: ['가전제품 팁', '조리도구 팁'],
+  tip: ['가전제품 팁', '조리도구 팁', '세탁 팁'],
   body: [
     [
+      //section
       [
         //title
         '[기본사항]',
@@ -201,7 +202,6 @@ export const tipList = {
         ],
         [
           '🏠 폐가전제품 배출예약시스템 / 📞 1599 - 0903 📄https://15990903.or.kr/portal/main/main.do',
-          // '그림 🖼https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350 🖼',
         ],
       ],
     ],
@@ -218,6 +218,19 @@ export const tipList = {
         [
           '스테인리스 기구일 경우 연마제 재질의 녹색, 청색 수세미, 철, 스텐 등 금속성 재질 수세미를 사용해도 좋다.',
           '하지만 그 외는 보통은 부드러운 면, 스펀지, 극세사, 망사, 코팅용기용 수세미 등 코팅을 보호할 수 있는 수세미를 사용한다.',
+        ],
+      ],
+    ],
+    [
+      ['[기본적인 주의사항]', '1', '2'],
+      [
+        [
+          '알트 내용 🖼https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350 🖼https://naver.com',
+          '이 냥이는 당신을 노려보고 있다.',
+        ],
+        ['귀여움 +1 증가'],
+        [
+          '내용'
         ],
       ],
     ],

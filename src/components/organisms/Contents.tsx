@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { menu } from 'constants/itemText';
-import { A } from 'components/atoms/Buttons';
+import { A, Li } from 'components/atoms/Buttons';
 
 type ContentsBodyType = {
   title?: string;
@@ -60,8 +60,8 @@ export const TipParagraph = ({ title, contentsList }: ContentsBodyType) => {
             <ul>
               {contentsList[1][i] &&
                 contentsList[1][i].map((el: string, i: number) => (
-                  <li key={i}>
-                    {el.includes('🏠') ? ( //여기에 이미지도 추가 + 그 외에 뭐 할수잇는지
+                  <Li key={i} LS={el.includes('🖼') ?'none':'inherit'}>
+                    {el.includes('🏠') ? (
                       <A
                         href={el.split('📄')[1]}
                         target='_blank'
@@ -71,17 +71,19 @@ export const TipParagraph = ({ title, contentsList }: ContentsBodyType) => {
                         {el.split('📄')[0]}
                       </A>
                     ) : el.includes('🖼') ? (
-                      <A
-                        href={el.split('🖼')[2]}
-                        target='_blank'
-                        linkable={el.split('🖼')[2] === '' ? false : true}
-                      >
-                        <img alt={el.split('🖼')[0]} src={el.split('🖼')[1]} />
-                      </A>
+                      <>
+                        <A
+                          href={el.split('🖼')[2]}
+                          target='_blank'
+                          linkable={el.split('🖼')[2] === '' ? false : true}
+                        >
+                          <img alt={el.split('🖼')[0]} src={el.split('🖼')[1]} />
+                        </A>
+                      </>
                     ) : (
                       el
                     )}
-                  </li>
+                  </Li>
                 ))}
             </ul>
           </div>
