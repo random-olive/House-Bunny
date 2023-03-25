@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import "./locales"
 
 import { ThemeProvider } from 'styled-components';
 import { myTheme } from 'styles/theme/DefaultTheme';
