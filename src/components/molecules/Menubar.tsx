@@ -14,6 +14,7 @@ interface BarProp {
   onClick?: (() => void) | undefined;
   selected?: any;
   setSelected?: any;
+ 
 }
 
 export const MenuBar = ({ selected, setSelected }: BarProp) => {

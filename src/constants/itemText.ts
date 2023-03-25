@@ -228,10 +228,8 @@ export const tipList = {
           '알트 내용 🖼https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350 🖼https://naver.com',
           '이 냥이는 당신을 노려보고 있다.',
         ],
-        ['귀여움 +1 증가'],
-        [
-          '내용'
-        ],
+        ['귀여움 +1'],
+        ['저항력 -1'],
       ],
     ],
   ],

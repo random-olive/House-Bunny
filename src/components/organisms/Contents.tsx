@@ -60,7 +60,7 @@ export const TipParagraph = ({ title, contentsList }: ContentsBodyType) => {
             <ul>
               {contentsList[1][i] &&
                 contentsList[1][i].map((el: string, i: number) => (
-                  <Li key={i} LS={el.includes('🖼') ?'none':'inherit'}>
+                  <Li key={i} listStyle={el.includes('🖼') ?'none':'inherit'}>
                     {el.includes('🏠') ? (
                       <A
                         href={el.split('📄')[1]}
