@@ -2,10 +2,9 @@ import { Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import {} from 'firebase/firestore';
-
+import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 import { useState, useEffect } from 'react';
-import { Member, Sticky } from 'components/atoms/Buttons';
 
 import { BasicLayout } from 'components/templates/Layouts';
 
@@ -23,6 +22,8 @@ function App() {
     setWindowSize(window.outerWidth);
   }, 1000);
 
+  const { t } = useTranslation();
+
   useEffect(() => {
     window.addEventListener('resize', handleResize);
     return () => {
@@ -32,17 +33,17 @@ function App() {
 
   return (
     <>
-    
       <div className='App'>
         <Suspense fallback={<LoadingBunny />}>
           <Routes>
-            <Route element={<BasicLayout windowSize={windowSize}/>}>
+            <Route element={<BasicLayout windowSize={windowSize} />}>
               <Route path={PATH.MAIN} element={<LandingPage />} />
               <Route path={PATH.HOUSE_WORK} element={<ContentsPage />} />
               <Route path={PATH.TIPS} element={<ContentsPage />} />
             </Route>
           </Routes>
         </Suspense>
+        <>{t("main:test")}</>
       </div>
     </>
   );
