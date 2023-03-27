@@ -11,7 +11,7 @@ interface ClickProp {
   onClick?: () => void;
 }
 
-export const Header = () => {
+export const BarSet = () => {
   return (
     <Horizontal>
       <HomeLogo />
@@ -20,7 +20,7 @@ export const Header = () => {
   );
 };
 
-export const DropdownHeader = (props: ClickProp) => {
+export const DropdownBarSet = (props: ClickProp) => {
   const [menuActive, setMenuActive] = useState<boolean>(false);
   const toggle = () => {
     setMenuActive(!menuActive);
@@ -48,6 +48,7 @@ export const DropdownHeader = (props: ClickProp) => {
           ''
         )}
       </LogoContainer>
+
       <Searchbar />
     </Vertical>
   );

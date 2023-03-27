@@ -14,7 +14,6 @@ interface BarProp {
   onClick?: (() => void) | undefined;
   selected?: any;
   setSelected?: any;
- 
 }
 
 export const MenuBar = ({ selected, setSelected }: BarProp) => {
@@ -105,7 +104,6 @@ export const ItemListMenuBar = ({ selected, setSelected }: BarProp) => {
               {el.item1}
             </Sub2>
           ))}
-        {/* <button onClick={()=>console.log(selected)}>kclick</button> */}
       </MenuBinding>
     </>
   );

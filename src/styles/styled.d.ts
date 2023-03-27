@@ -35,6 +35,7 @@ declare module 'styled-components' {
       '--logo-sub': string;
       '--logo-main': string;
 
+
       '--section-line': string;
       '--section-header': string;
       '--font': string;

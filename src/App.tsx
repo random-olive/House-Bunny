@@ -44,26 +44,23 @@ function App() {
       <div className='App'>
         <Suspense fallback={<LoadingBunny />}>
           <Routes>
-            <Route element={<BasicLayout windowSize={windowSize} />}>
+            <Route
+              element={
+                <BasicLayout
+                  windowSize={windowSize}
+                  toggleLocales={toggleLocales}
+                />
+              }
+            >
               <Route path={PATH.MAIN} element={<LandingPage />} />
               <Route path={PATH.HOUSE_WORK} element={<ContentsPage />} />
               <Route path={PATH.TIPS} element={<ContentsPage />} />
             </Route>
           </Routes>
         </Suspense>
-        <>{t('main:test')}</>
-        <button
-          style={{ margin: '100px' }}
-          onClick={() => toggleLocales('en-US')}
-        >
-          en
-        </button>
-        <button
-          style={{ margin: '100px' }}
-          onClick={() => toggleLocales('ko-KR')}
-        >
-          ko
-        </button>
+        <div style={{marginBottom:'100px'}}>{t('main:test')}</div>
+      
+   
       </div>
     </>
   );

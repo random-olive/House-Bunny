@@ -32,6 +32,7 @@ const myTheme: DefaultTheme = {
 
     '--logo-sub': '#e1c5bb',
     '--logo-main': '#b79686',
+  
 
     '--section-line': '#f2c2bd',
     '--section-header': '#b79585',

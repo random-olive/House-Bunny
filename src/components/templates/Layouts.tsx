@@ -1,8 +1,8 @@
-import { DropdownHeader } from '../organisms/LogoAndSearch';
+import { DropdownBarSet, BarSet } from '../organisms/LogoAndSearch';
 import { Outlet, Link } from 'react-router-dom';
 import { MenuBar } from 'components/molecules/MenuBar';
 import styled from 'styled-components';
-import Footer from 'components/atoms/Footer';
+import { Header, Footer } from 'components/atoms/NavBar';
 import { LinkContainer, SubMenuContainer } from 'components/atoms/Container';
 import { Tip } from 'components/atoms/Buttons';
 import { RESPONSIVE } from 'constants/styleText';
@@ -27,11 +27,11 @@ interface LayoutProps {
   item?: any;
 }
 
-export const BasicLayout = ({ windowSize }: any) => {
+export const BasicLayout = ({ windowSize, toggleLocales }: any) => {
   return (
     <>
-      {/*member 관련 컴포넌트*/}
-      <DropdownHeader />
+      <Header toggleLocales={toggleLocales} />
+      <DropdownBarSet />
       {windowSize < 768 ? '' : <MenuBar />}
       <Outlet />
 
@@ -43,7 +43,10 @@ export const BasicLayout = ({ windowSize }: any) => {
         />
         <DownIcon
           onClick={() => {
-            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+            window.scrollTo({
+              top: document.body.scrollHeight,
+              behavior: 'smooth',
+            });
           }}
         />
       </StickyIcon>

@@ -171,3 +171,16 @@ export const A = styled.a<ButtonProps>`
 export const Li = styled.li<ButtonProps>`
   list-style: ${(props) => props.listStyle || 'disc'};
 `;
+
+export const Clear = styled.button`
+  border: none;
+  background: none;
+  margin-left: 5px;
+  border-radius: 100%;
+  cursor: pointer;
+  &:hover {
+  
+    transition: 0.3s all ease-out;
+    box-shadow : 1px 2px 2px ${(props) => props.theme.color['--member-icon-bunny']};
+  }
+`;
