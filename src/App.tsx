@@ -4,13 +4,14 @@ import './App.css';
 import {} from 'firebase/firestore';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 import { BasicLayout } from 'components/templates/Layouts';
 
 import PATH from 'constants/routePath';
 import { LoadingBunny } from 'components/atoms/Loading';
 import { debounce } from 'lodash';
+import i18next from 'i18next';
 
 const LandingPage = lazy(() => import('pages/LandingPage'));
 const ContentsPage = lazy(() => import('pages/ContentsPage'));
@@ -22,7 +23,14 @@ function App() {
     setWindowSize(window.outerWidth);
   }, 1000);
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const toggleLocales = useCallback(
+    (locale: string) => {
+      i18next.changeLanguage(locale);
+    },
+    [i18n]
+  );
 
   useEffect(() => {
     window.addEventListener('resize', handleResize);
@@ -43,7 +51,19 @@ function App() {
             </Route>
           </Routes>
         </Suspense>
-        <>{t("main:test")}</>
+        <>{t('main:test')}</>
+        <button
+          style={{ margin: '100px' }}
+          onClick={() => toggleLocales('en-US')}
+        >
+          en
+        </button>
+        <button
+          style={{ margin: '100px' }}
+          onClick={() => toggleLocales('ko-KR')}
+        >
+          ko
+        </button>
       </div>
     </>
   );
