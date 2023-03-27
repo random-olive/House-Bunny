@@ -43,7 +43,7 @@ export const Main = styled(Base)<ButtonProps>`
   }
 
   @media screen and (max-width: ${RESPONSIVE.SMALL_PX}) {
-    display: none;
+    display: block;
     justify-content: center;
     align-items: center;
     width: 100vw;

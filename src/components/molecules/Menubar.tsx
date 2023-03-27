@@ -153,6 +153,7 @@ export const DropdownBar = ({ display, inActivate }: BarProp) => {
           </LinkContainer>
         ))}
       </MenuContainer>
+      {console.log(mainMenu[0])}
     </Vertical>
   );
 };
