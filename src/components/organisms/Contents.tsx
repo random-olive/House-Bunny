@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { menu } from 'constants/itemText';
-import { A, Li } from 'components/atoms/Buttons';
+import { A, Li, Img } from 'components/atoms/Buttons';
 
 type ContentsBodyType = {
   title?: string;
@@ -77,7 +77,7 @@ export const TipParagraph = ({ title, contentsList }: ContentsBodyType) => {
                           target='_blank'
                           linkable={el.split('🖼')[2] === '' ? false : true}
                         >
-                          <img alt={el.split('🖼')[0]} src={el.split('🖼')[1]} />
+                          <Img alt={el.split('🖼')[0]} src={el.split('🖼')[1]} />
                         </A>
                       </>
                     ) : (

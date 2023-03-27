@@ -179,8 +179,12 @@ export const Clear = styled.button`
   border-radius: 100%;
   cursor: pointer;
   &:hover {
-  
     transition: 0.3s all ease-out;
-    box-shadow : 1px 2px 2px ${(props) => props.theme.color['--member-icon-bunny']};
+    box-shadow: 1px 2px 2px
+      ${(props) => props.theme.color['--member-icon-bunny']};
   }
+`;
+
+export const Img = styled.img`
+  width: 100%;
 `;

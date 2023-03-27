@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Clear } from './Buttons';
+import { RESPONSIVE } from 'constants/styleText';
 
 export const Header = ({ toggleLocales }: any) => {
   return (
@@ -37,6 +38,9 @@ const HeaderBack = styled(BackGround)`
   opacity: 0.6;
   top: 0;
   z-index: 2000;
+  @media screen and (max-width: ${RESPONSIVE.SMALL_PX}) {
+    background: ${(props) => props.theme.color['--pink-back-light']};
+  }
 `;
 
 const FooterBack = styled(BackGround)``;

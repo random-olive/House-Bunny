@@ -9,12 +9,14 @@ type ContainerType = {
 export const LogoContainer = styled.div`
   display: flex;
   justify-content: center;
+
   width: 100%;
   height: 100%;
 
   @media screen and (max-width: ${RESPONSIVE.SMALL_PX}) {
     justify-content: space-between;
     width: ${RESPONSIVE.MENU_WIDTH};
+    margin-top: 32px;
     background: ${(props) => props.theme.color['--pink-back-light']};
     border: 4px solid ${(props) => props.theme.color['--pink-back-light']};
 
@@ -33,7 +35,6 @@ export const MenuContainer = styled.div<ContainerType>`
   z-index: 1000;
   transition: all 0.3s ease-in-out;
 `;
-
 
 export const SubMenuContainer = styled.div`
   display: flex;
