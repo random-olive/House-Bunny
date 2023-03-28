@@ -34,11 +34,11 @@ function App() {
 
   //constants: group together after global store
   const pMainMenu = JSON.parse(
-    JSON.stringify(t('main:mainMenu', { returnObjects: true }))
+    JSON.stringify(t('menu:mainMenu', { returnObjects: true }))
   );
 
   const pSubMenu = JSON.parse(
-    JSON.stringify(t('main:subMenu', { returnObjects: true }))
+    JSON.stringify(t('menu:subMenu', { returnObjects: true }))
   );
 
   const subMenuIdx = Array.from(Array(pSubMenu.length), (_, i) => i);
@@ -67,12 +67,17 @@ function App() {
               }
             >
               <Route path={PATH.MAIN} element={<LandingPage />} />
-              <Route path={PATH.HOUSE_WORK} element={<ContentsPage pSubMenu={pSubMenu}/>} />
-              <Route path={PATH.TIPS} element={<ContentsPage />} />
+              <Route
+                path={PATH.HOUSE_WORK}
+                element={<ContentsPage pSubMenu={pSubMenu} />}
+              />
+              <Route
+                path={PATH.TIPS}
+                element={<ContentsPage pSubMenu={pSubMenu} />}
+              />
             </Route>
           </Routes>
         </Suspense>
-        <div style={{ marginBottom: '100px' }}>{t('main:test')}</div>
       </div>
     </>
   );

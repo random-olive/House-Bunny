@@ -1,5 +1,4 @@
 {
-  "test": "안녕",
   "mainMenu": {
     "title": "category",
     "href": "/home",
@@ -11,7 +10,7 @@
       { "title": "파 티", "href": "/address" },
       { "title": "여 행", "href": "/address" },
       { "title": "커뮤니티", "href": "/address" },
-      { "title": "Store", "href": "/address" }
+      { "title": "스토어", "href": "/address" }
     ]
   },
   "subMenu": [
@@ -77,8 +76,6 @@
             { "item2": "청소" }
           ]
         }
-
-       
       ]
     },
     {

@@ -1,5 +1,5 @@
 
-import main from './main.json';
-import about from './about.json';
+import menu from './menu.json';
+import content from './content.json';
 
-export { main, about };
+export { menu, content };
