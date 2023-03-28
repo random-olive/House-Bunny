@@ -1,66 +1,68 @@
-export const dummy = '';
-// interface MenuList {
-//   title: string;
-//   href: string;
-//   list1: { item1: string }[];
-//   list2: { item2: string }[];
-// }
 
-// type Test = {
-//   title: string;
-//   href: string;
-//   list1: { item1: string }[];
-//   list2: { item2: string }[];
-// };
 
-// export const subMenu = [
-//   {
-//     title: 'carrot',
-//     href: '/housework',
-//     list: [
-//       {
-//         title: '거실',
-//         href: '/housework',
-//         list1: [{ item1: 'TV' }, { item1: '에어컨' }, { item1: '실링팬' }],
-//         list2: [{ item2: '사용 팁' }, { item2: '관리' }, { item2: '청소' }],
-//       },
-//       {
-//         title: '주방',
-//         href: '/housework',
-//         list1: [{ item1: '밥솥' }, { item1: '냉장고' }],
-//         list2: [{ item2: '사용 팁' }, { item2: '관리' }, { item2: '청소' }],
-//       },
-//       {
-//         title: '방',
-//         href: '/housework',
-//         list1: [{ item1: '침대' }, { item1: '장롱' },{ item1: '와인셀러' }],
-//         list2: [{ item2: '사용 팁' }, { item2: '관리' }, { item2: '청소' }],
-//       },
-//       {
-//         title: '화장실',
-//         href: '/housework',
-//         list1: [{ item1: '변기' }, { item1: '욕조' }],
-//         list2: [{ item2: '사용 팁' }, { item2: '관리' }, { item2: '청소' }],
-//       },
-//       {
-//         title: '현관',
-//         href: '/housework',
-//         list1: [{ item1: '전실' }, { item1: '베란다' }],
-//         list2: [{ item2: '사용 팁' }, { item2: '관리' }, { item2: '청소' }],
-//       },
+interface MenuList {
+  title: string;
+  href: string;
+  list1: { item1: string }[];
+  list2: { item2: string }[];
+}
 
-//       { title: 'x', href: '/housework' },
-//     ],
-//   },
-//   {
-//     title: 'event',
-//     href: '/event',
-//     list: [
-//       { title: '결혼', href: '/address' },
-//       { title: '육아', href: '/address' },
-//     ],
-//   },
-// ];
+type Test = {
+  title: string;
+  href: string;
+  list1: { item1: string }[];
+  list2: { item2: string }[];
+};
+
+
+export const subMenu = [
+  {
+    title: 'carrot',
+    href: '/housework',
+    list: [
+      {
+        title: '거실',
+        href: '/housework',
+        list1: [{ item1: 'TV' }, { item1: '에어컨' }, { item1: '실링팬' }],
+        list2: [{ item2: '사용 팁' }, { item2: '관리' }, { item2: '청소' }],
+      },
+      {
+        title: '주방',
+        href: '/housework',
+        list1: [{ item1: '밥솥' }, { item1: '냉장고' }],
+        list2: [{ item2: '사용 팁' }, { item2: '관리' }, { item2: '청소' }],
+      },
+      {
+        title: '방',
+        href: '/housework',
+        list1: [{ item1: '침대' }, { item1: '장롱' },{ item1: '와인셀러' }],
+        list2: [{ item2: '사용 팁' }, { item2: '관리' }, { item2: '청소' }],
+      },
+      {
+        title: '화장실',
+        href: '/housework',
+        list1: [{ item1: '변기' }, { item1: '욕조' }],
+        list2: [{ item2: '사용 팁' }, { item2: '관리' }, { item2: '청소' }],
+      },
+      {
+        title: '현관',
+        href: '/housework',
+        list1: [{ item1: '전실' }, { item1: '베란다' }],
+        list2: [{ item2: '사용 팁' }, { item2: '관리' }, { item2: '청소' }],
+      },
+
+      { title: 'x', href: '/housework' },
+    ],
+  },
+  {
+    title: 'event',
+    href: '/event',
+    list: [
+      { title: '결혼', href: '/address' },
+      { title: '육아', href: '/address' },
+    ],
+  },
+];
 
 // export const subMenuIdx = Array.from(Array(subMenu.length), (_, i) => i);
 

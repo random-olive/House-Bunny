@@ -1,4 +1,4 @@
-
+import { subMenu } from 'constants/menuText';
 import { Main, Sub, Sub2, Sub3 } from 'components/atoms/Buttons';
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
@@ -70,7 +70,7 @@ export const SubMenuBar = ({ selected, setSelected, pSubMenu }: BarProp) => {
         상태 옮김 확인
       </button> */}
       <MenuBinding margin={DEFAULT.MENU_MARGIN}>
-        {pSubMenu[0].list.map((el: any, idx: number) => (
+        {subMenu[0].list.map((el: any, idx: number) => ( //이 부분을 pSubMenu로 변경
           <Sub
             onClick={() => {
               setSelected({
