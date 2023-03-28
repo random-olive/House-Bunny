@@ -1,5 +1,3 @@
-
-
 interface MenuList {
   title: string;
   href: string;
@@ -13,7 +11,6 @@ type Test = {
   list1: { item1: string }[];
   list2: { item2: string }[];
 };
-
 
 export const subMenu = [
   {
@@ -35,7 +32,7 @@ export const subMenu = [
       {
         title: '방',
         href: '/housework',
-        list1: [{ item1: '침대' }, { item1: '장롱' },{ item1: '와인셀러' }],
+        list1: [{ item1: '침대' }, { item1: '장롱' }, { item1: '와인셀러' }],
         list2: [{ item2: '사용 팁' }, { item2: '관리' }, { item2: '청소' }],
       },
       {
@@ -50,8 +47,6 @@ export const subMenu = [
         list1: [{ item1: '전실' }, { item1: '베란다' }],
         list2: [{ item2: '사용 팁' }, { item2: '관리' }, { item2: '청소' }],
       },
-
-      { title: 'x', href: '/housework' },
     ],
   },
   {

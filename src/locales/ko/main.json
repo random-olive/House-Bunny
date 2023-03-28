@@ -76,9 +76,9 @@
             { "item2": "관리" },
             { "item2": "청소" }
           ]
-        },
+        }
 
-        { "title": "x", "href": "/housework" }
+       
       ]
     },
     {

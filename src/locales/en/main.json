@@ -1,21 +1,19 @@
 {
   "test": "Helo",
-  "mainMenu": 
-    {
-      "title": "category",
-      "href": "/home",
-      "list": [
-        { "title": "🐰", "href": "/housework" },
-        { "title": "♥️🐇", "href": "/wandb" },
-        { "title": "recipe", "href": "/address" },
-        { "title": "hobby", "href": "/address" },
-        { "title": "party", "href": "/address" },
-        { "title": "travel", "href": "/address" },
-        { "title": "talk", "href": "/address" },
-        { "title": "store", "href": "/address" }
-      ]
-    }
-  ,
+  "mainMenu": {
+    "title": "category",
+    "href": "/home",
+    "list": [
+      { "title": "🐰", "href": "/housework" },
+      { "title": "♥️🐇", "href": "/wandb" },
+      { "title": "recipe", "href": "/address" },
+      { "title": "hobby", "href": "/address" },
+      { "title": "party", "href": "/address" },
+      { "title": "travel", "href": "/address" },
+      { "title": "talk", "href": "/address" },
+      { "title": "store", "href": "/address" }
+    ]
+  },
   "subMenu": [
     {
       "title": "byRoom",
@@ -78,9 +76,7 @@
             { "item2": "Management" },
             { "item2": "Cleaning" }
           ]
-        },
-
-        { "title": "x", "href": "/housework" }
+        }
       ]
     },
     {

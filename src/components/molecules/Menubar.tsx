@@ -70,7 +70,7 @@ export const SubMenuBar = ({ selected, setSelected, pSubMenu }: BarProp) => {
         상태 옮김 확인
       </button> */}
       <MenuBinding margin={DEFAULT.MENU_MARGIN}>
-        {subMenu[0].list.map((el: any, idx: number) => ( //이 부분을 pSubMenu로 변경
+        {pSubMenu[0].list.map((el: any, idx: number) => ( //이 부분을 pSubMenu로 변경
           <Sub
             onClick={() => {
               setSelected({

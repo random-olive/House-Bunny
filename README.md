@@ -41,7 +41,7 @@
 - 다국어 지원 [x] : base
 - small size_dropdown bar 안되는 문제 해결 [x]
 - 내용 정리 : 한, 영, 일, 중, 베트남, 태국 [ ]
-- x 버튼 없애기 [ ]
+- x 버튼 없애기 [ ] : 없애고나서 subMenu menuText 파일 삭제하기
 
 
 - 컨텐츠 채우기 : 세탁 [ ]
