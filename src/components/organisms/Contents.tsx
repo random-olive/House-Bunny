@@ -8,6 +8,7 @@ type ContentsBodyType = {
   tipTitle?: string;
   body1?: any;
   body2?: any;
+  mcMenu?:any;
 };
 
 export const ContentsBind = styled.div`
@@ -92,11 +93,11 @@ export const TipParagraph = ({ title, contentsList }: ContentsBodyType) => {
   );
 };
 
-export const ContentsBody = ({ body1, body2 }: ContentsBodyType) => {
+export const ContentsBody = ({ body1, body2, mcMenu }: ContentsBodyType) => {
   return (
     <>
-      <Paragraph title={menu[0]} contentsList={body1} />
-      <Paragraph title={menu[1]} contentsList={body2} />
+      <Paragraph title={mcMenu[0]} contentsList={body1} />
+      <Paragraph title={mcMenu[1]} contentsList={body2} />
     </>
   );
 };

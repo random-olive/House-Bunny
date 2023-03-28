@@ -25,14 +25,29 @@ import PATH from 'constants/routePath';
 interface LayoutProps {
   children?: React.ReactNode;
   item?: any;
+  mcMenu?: any;
 }
 
-export const BasicLayout = ({ windowSize, toggleLocales, pMainMenu, pSubMenu, subMenuIdx }: any) => {
+export const BasicLayout = ({
+  windowSize,
+  toggleLocales,
+  pMainMenu,
+  pSubMenu,
+  subMenuIdx,
+}: any) => {
   return (
     <>
       <Header toggleLocales={toggleLocales} />
-      <DropdownBarSet pMainMenu={pMainMenu}/>
-      {windowSize < 768 ? '' : <MenuBar pMainMenu={pMainMenu} pSubMenu={pSubMenu} subMenuIdx={subMenuIdx}/>}
+      <DropdownBarSet pMainMenu={pMainMenu} />
+      {windowSize < 768 ? (
+        ''
+      ) : (
+        <MenuBar
+          pMainMenu={pMainMenu}
+          pSubMenu={pSubMenu}
+          subMenuIdx={subMenuIdx}
+        />
+      )}
       <Outlet />
 
       <StickyIcon>
@@ -66,7 +81,7 @@ export const SubMenuLayout = (props: LayoutProps) => {
   );
 };
 
-export const ContentsLayout = ({ item }: LayoutProps) => {
+export const ContentsLayout = ({ item, mcMenu }: LayoutProps) => {
   return (
     <>
       <Tip>
@@ -75,15 +90,15 @@ export const ContentsLayout = ({ item }: LayoutProps) => {
       <H1>{item.name}</H1>
       <ContentsBinding>
         <PartBinding>
-          <h2>{menu[0]}</h2> <h3>{item.cycle1}</h3>
+          <h2>{mcMenu[0]}</h2> <h3>{item.cycle1}</h3>
         </PartBinding>
 
         <PartBinding>
-          <h2>{menu[1]}</h2> <h3>{item.cycle2}</h3>
+          <h2>{mcMenu[1]}</h2> <h3>{item.cycle2}</h3>
         </PartBinding>
       </ContentsBinding>
       <HorizontalFlex>
-        <ContentsBody body1={item.body1} body2={item.body2} />
+        <ContentsBody body1={item.body1} body2={item.body2} mcMenu={mcMenu} />
       </HorizontalFlex>
     </>
   );

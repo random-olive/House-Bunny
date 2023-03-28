@@ -9,6 +9,7 @@ export const cycle = {
   m3: '3달',
 };
 
+//item
 export const riceCooker = {
   name: '밥솥',
   cycle1: cycle.day,
@@ -117,6 +118,7 @@ export const notice = {
   body2: [''],
 };
 
+//tiplist
 export const tipList = {
   name: 'Tip',
   tip: ['가전제품 팁', '조리도구 팁', '세탁 팁'],

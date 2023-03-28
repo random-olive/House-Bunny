@@ -18,6 +18,7 @@ interface SectionProps {
   width?: string;
   height?: string;
   item?: any;
+  mcMenu?: any;
 }
 
 export const HotSection = () => {
@@ -58,21 +59,21 @@ export const MoreSection = () => {
   );
 };
 
-export const ContentSection = ({ item }: SectionProps) => {
+export const ContentSection = ({ item, mcMenu }: SectionProps) => {
   return (
     <>
       <ContentSectionFrame>
-        <ContentsLayout item={item} />
+        <ContentsLayout item={item} mcMenu={mcMenu}/>
       </ContentSectionFrame>
     </>
   );
 };
 
-export const TipSection = ({ item }: SectionProps) => {
+export const TipSection = ({ item, }: SectionProps) => {
   return (
     <>
       <ContentSectionFrame>
-        <TipLayout item={item}/>
+        <TipLayout item={item} />
       </ContentSectionFrame>
     </>
   );

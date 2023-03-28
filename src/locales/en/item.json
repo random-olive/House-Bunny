@@ -1,0 +1,127 @@
+{
+  "menu": ["check", "cleaning"],
+  "cycle": {
+    "day": "everyday",
+    "w1": "once a week",
+    "w2": "once every 2 weeks",
+    "w3": "once every 3 weeks",
+    "m1": "once a month",
+    "m3": "3 times a month"
+  },
+  
+  "riceCooker": {
+    "name": "rice cooker",
+    "cycle1": "everyday",
+    "cycle2": "once a week",
+    "body1": [
+      "If you don't clean the rice cooker, it may smell while keeping warm, so check it every day and clean it from time to time.",
+      "When washing rice, put it in a separate container to prevent scratches.",
+      "Replace Internal rubber packets every 1-3 years"
+    ],
+    "body2": [
+      "Using the automatic cleaning function of the rice cooker, remove the parts and clean them.",
+      "Clean with: Water + 1 tablespoon vinegar + automatic cleaning",
+      "After automatic cleaning is completed, disconnect the power plug to clean the parts and cool the main body.",
+      "Remove only the removable parts and wash them all (check the separable parts are indicated in the manual or on the rice cooker).",
+      "When washing, wash with a neutral detergent, soft sponge, water and finish with a dishcloth that has been drained.",
+      "If the yellow stain does not disappear, rub it with water on the magic block.",
+      "NEVER USE to clean inside of the rice cooker: Benzene, Thinner, Clorox, Chlorine Detergent"
+    ]
+  },
+
+  "refrigerator": {
+    "name": "refrigerator",
+    "cycle1": "-",
+    "cycle2": "-",
+    "body1": ["-", "-", "-"],
+    "body2": ["-", "-"]
+  },
+
+  "tv": {
+    "name": "TV",
+    "cycle1": "-",
+    "cycle2": "-",
+    "body1": ["-", "-", "-"],
+    "body2": ["-", "-"]
+  },
+
+  "airConditioner": {
+    "name": "air conditioner",
+    "cycle1": "-",
+    "cycle2": "-",
+    "body1": ["-", "-", "-"],
+    "body2": ["-", "-"]
+  },
+
+  "ceilingFan": {
+    "name": "ceiling fan",
+    "cycle1": "-",
+    "cycle2": "-",
+    "body1": ["-", "-", "-"],
+    "body2": ["-", "-"]
+  },
+
+  "bed": {
+    "name": "bed",
+    "cycle1": "-",
+    "cycle2": "-",
+    "body1": ["-", "-", "-"],
+    "body2": ["-", "-"]
+  },
+
+  "wardrobe": {
+    "name": "wardrobe",
+    "cycle1": "-",
+    "cycle2": "-",
+    "body1": ["-", "-", "-"],
+    "body2": ["-", "-"]
+  },
+
+  "wineCellar": {
+    "name": "wine cellar",
+    "cycle1": "-",
+    "cycle2": "-",
+    "body1": ["-", "-", "-"],
+    "body2": ["-", "-"]
+  },
+
+  "toilet": {
+    "name": "toilet",
+    "cycle1": "-",
+    "cycle2": "-",
+    "body1": ["-", "-", "-"],
+    "body2": ["-", "-"]
+  },
+
+  "bath": {
+    "name": "bath",
+    "cycle1": "-",
+    "cycle2": "-",
+    "body1": ["-", "-", "-"],
+    "body2": ["-", "-"]
+  },
+
+  "frontRoom": {
+    "name": "front room",
+    "cycle1": "-",
+    "cycle2": "-",
+    "body1": ["-", "-", "-"],
+    "body2": ["-", "-"]
+  },
+
+  "veranda": {
+    "name": "veranda",
+    "cycle1": "-",
+    "cycle2": "-",
+    "body1": ["-", "-", "-"],
+    "body2": ["-", "-"]
+  },
+
+  "notice": {
+    "name": "Click Details",
+    "cycle1": "",
+    "cycle2": "",
+    "body1": [""],
+    "body2": [""]
+  }
+}

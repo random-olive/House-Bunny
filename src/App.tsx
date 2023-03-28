@@ -43,6 +43,58 @@ function App() {
 
   const subMenuIdx = Array.from(Array(pSubMenu.length), (_, i) => i);
 
+  const mcMenu = JSON.parse(
+    JSON.stringify(t('item:menu', { returnObjects: true }))
+  );
+
+  const cycleMenu = JSON.parse(
+    JSON.stringify(t('item:cycle', { returnObjects: true }))
+  );
+
+  const riceCooker = JSON.parse(
+    JSON.stringify(t('item:riceCooker', { returnObjects: true }))
+  );
+
+  const refrigerator = JSON.parse(
+    JSON.stringify(t('item:refrigerator', { returnObjects: true }))
+  );
+
+  const tv = JSON.parse(JSON.stringify(t('item:tv', { returnObjects: true })));
+  const airConditioner = JSON.parse(
+    JSON.stringify(t('item:airConditioner', { returnObjects: true }))
+  );
+  const ceilingFan = JSON.parse(
+    JSON.stringify(t('item:ceilingFan', { returnObjects: true }))
+  );
+  const bed = JSON.parse(
+    JSON.stringify(t('item:bed', { returnObjects: true }))
+  );
+  const wardrobe = JSON.parse(
+    JSON.stringify(t('item:wardrobe', { returnObjects: true }))
+  );
+  const wineCellar = JSON.parse(
+    JSON.stringify(t('item:wineCellar', { returnObjects: true }))
+  );
+  const toilet = JSON.parse(
+    JSON.stringify(t('item:toilet', { returnObjects: true }))
+  );
+  const bath = JSON.parse(
+    JSON.stringify(t('item:bath', { returnObjects: true }))
+  );
+  const frontRoom = JSON.parse(
+    JSON.stringify(t('item:frontRoom', { returnObjects: true }))
+  );
+  const veranda = JSON.parse(
+    JSON.stringify(t('item:veranda', { returnObjects: true }))
+  );
+  const notice = JSON.parse(
+    JSON.stringify(t('item:notice', { returnObjects: true }))
+  );
+
+  const tipMenu = JSON.parse(
+    JSON.stringify(t('tip:tipList', { returnObjects: true }))
+  );
+
   useEffect(() => {
     window.addEventListener('resize', handleResize);
     return () => {
@@ -69,14 +121,59 @@ function App() {
               <Route path={PATH.MAIN} element={<LandingPage />} />
               <Route
                 path={PATH.HOUSE_WORK}
-                element={<ContentsPage pSubMenu={pSubMenu} />}
+                element={
+                  <ContentsPage
+                    pSubMenu={pSubMenu}
+                    mcMenu={mcMenu}
+                    riceCooker={riceCooker}
+                    refrigerator={refrigerator}
+                    tv={tv}
+                    airConditioner={airConditioner}
+                    ceilingFan={ceilingFan}
+                    bed={bed}
+                    wardrobe={wardrobe}
+                    wineCellar={wineCellar}
+                    toilet={toilet}
+                    bath={bath}
+                    frontRoom={frontRoom}
+                    veranda={veranda}
+                    notice={notice}
+                    
+                  />
+                }
               />
               <Route
                 path={PATH.TIPS}
-                element={<ContentsPage pSubMenu={pSubMenu} />}
+                element={
+                  <ContentsPage
+                    pSubMenu={pSubMenu}
+                    mcMenu={mcMenu}
+                    riceCooker={riceCooker}
+                    refrigerator={refrigerator}
+                    tv={tv}
+                    airConditioner={airConditioner}
+                    ceilingFan={ceilingFan}
+                    bed={bed}
+                    wardrobe={wardrobe}
+                    wineCellar={wineCellar}
+                    toilet={toilet}
+                    bath={bath}
+                    frontRoom={frontRoom}
+                    veranda={veranda}
+                    notice={notice}
+                  />
+                }
               />
             </Route>
           </Routes>
+          <button
+            style={{ margin: '100px' }}
+            onClick={() => {
+              console.log(cycleMenu);
+            }}
+          >
+            클릭
+          </button>
         </Suspense>
       </div>
     </>

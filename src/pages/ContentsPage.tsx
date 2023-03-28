@@ -7,10 +7,15 @@ import {
 import { useState } from 'react';
 import { SubMenuBarSet } from 'components/molecules/MenuBar';
 import { SubMenuLayout } from 'components/templates/Layouts';
-import {
+import { tipList } from 'constants/itemText';
+import PATH from 'constants/routePath';
+
+const ContentsPage = ({
+  pSubMenu,
+  mcMenu,
   riceCooker,
   refrigerator,
-  TV,
+  tv,
   airConditioner,
   ceilingFan,
   bed,
@@ -21,11 +26,8 @@ import {
   frontRoom,
   veranda,
   notice,
-  tipList,
-} from 'constants/itemText';
-import PATH from 'constants/routePath';
 
-const ContentsPage = ({ pSubMenu }: any) => {
+}: any) => {
   const [selected, setSelected] = useState({
     menu: '',
     item: '',
@@ -38,13 +40,18 @@ const ContentsPage = ({ pSubMenu }: any) => {
   });
   return (
     <>
-      <SubMenuBarSet selected={selected} setSelected={setSelected} pSubMenu={pSubMenu}/>
+      <SubMenuBarSet
+        selected={selected}
+        setSelected={setSelected}
+        pSubMenu={pSubMenu}
+      />
       <AdvSection />
       {window.location.pathname === PATH.HOUSE_WORK ? (
         <ContentSection
+          mcMenu={mcMenu}
           item={
             selected.idx1 === 0 && selected.idx2 === 0
-              ? TV
+              ? tv
               : selected.idx1 === 0 && selected.idx2 === 1
               ? airConditioner
               : selected.idx1 === 0 && selected.idx2 === 2
