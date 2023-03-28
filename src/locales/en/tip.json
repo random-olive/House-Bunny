@@ -1,3 +1,118 @@
 {
-    "test":"he"
-}
+    "tipList": {
+      "name": "Tips for",
+      "tip": ["home appliances", "cookware", "laundry"],
+      "body": [
+        [
+          [
+            "[Basics]",
+            "[⚠️ Safety precautions]",
+            "❗️ heat, fire, chemicals, dust",
+            "❗️ water",
+            "❗️ conductor",
+            "❗️ electricity",
+            "❗️ pressure",
+            "[Installation]",
+            "[Management]",
+            "[Disposal]",
+            "[Contant]"
+          ],
+          [
+            [
+              "Use it according to the purpose of the product :use of household products for other purposes may cause electric shock or fire depending on the environment.",
+              "Use only at a specified voltage and current. If you want to change it, check the manual or service center to see if it is possible to change it.",
+              "Use an extension outlet with a ground when using an extension outlet.",
+              "Preferably, use an outlet alone rather than a multi-tap.",
+              "When using a plug, there should be no water or dust at the end of the plug, and use it by inserting it all the way.",
+              "When unplugging and plugging it back in, wait for more than 5 minutes before plugging in."
+            ],
+            [
+              "If power cords, plugs, outlets, parts, etc. are damaged, do not use them and contact the service center.",
+              "If any abnormal sounds, smells, or smoke occur during use, immediately stop the product and remove the plug. If there is internal pressure, remove completely.",
+              "Use it carefully next time. In particular, be more careful about electronic components, plugs, and outlets made of conductors."
+            ],
+            [
+              "Do not use or store below:",
+              "firearms (gas stoves, lighters, heaters, wind furnaces)",
+              "chemicals that are liable to catch fire (ethers, benzene, alcohols, chemicals, gases, flammable sprays, cosmetics, etc.) nearby.",
+              "Because this could cause fire or explosion and the material may damage the insulation of electrical components, causing electric shock."
+            ],
+            [
+              "Do not allow water to come into contact with the electronic components in the product. If water or foreign substances get on the electronic components, stop the product immediately, unplug it using towels that are not wet, and contact the customer center.",
+              "Touching products/parts with wet hands poses a risk of electric shock."
+            ],
+            [
+              "Do not put metallic materials and conductors into the product. There is a risk of electric shock.",
+              "Do not press the cover of the power cord and plug.",
+              "When unplugging the power, hold the plug, not the wire, and unplug it."
+            ],
+            [
+              "Ensure grounding to prevent electric shock :if not grounded, you can feel fine vibration and static when touched by hand.",
+              "If the outlet has a grounding terminal, it is not necessary to ground it separately, but if necessary, follow the manual depending on the environment.",
+              "Magnetic fields can also affect the human body, so it is recommended to stay more than 30cm away while operating home appliances."
+            ],
+            [
+              "Products with hot steam are used in open spaces.",
+              "Do not place anything in the outlet of the steam. There is a risk of explosion due to pressure if the outlet is blocked.",
+              "Do not release the pressure lock under high pressure. After stopping the high-pressure state, slightly open the outlet to discharge steam or open the lid after a certain period of time.",
+              "For products that use gas, be sure to familiarize yourself with how to prepare for gas leakage in the manual. Ventilate immediately if possible and avoid touching products, outlets, etc."
+            ],
+            [
+              "NO: Place with direct sunlight, humid environments (water-accessible environments), chemicals, close to fire, too cold or hot",
+              "OK: Place where the floor is strong and horizontal, where the cord is easy to pull out",
+              "If the front is low because it is not leveled, the door may not close well.",
+              "Home appliances and walls should be kept at appropriate intervals around them. If it is too narrow, performance can be reduced and electricity bills can be high.",
+              "It is better not to keep the same electronics close to each other. They can influence each other by magnetic fields.",
+              "Do not place other electronics, iron plates, electric pads, foil, floorboards, cushions, etc. under the product."
+            ],
+            [
+              "Remove the power plug during thunder, lightning, or long periods of non-use.",
+              "When cleaning and replacing parts, remove the plug from the outlet and proceed in case of electrical shock.",
+              "Do not place objects on top of appliances as much as possible, especially heavy or dangerous items.",
+              "Do not use candles, dryers, etc. in the product."
+            ],
+            [
+              "In the case of products that children can enter, remove the rubber packing of the door and discard it.",
+              "If the product to be discarded is fixed at home in a built-in form such as a wall hanging, it is demolished in advance.",
+              "Ask the manager or management office of your place of residence how to dispose of it :waste appliance collection box, substitute disposal, waste sticker, etc. If you need a waste sticker, ask for a purchase method nearby. If it is a detached house, use the community center collection box.",
+              "Or check with the community center or district office in your area by phone or website. Usually, it is the same as below, but each local government has a different method, so make sure to ask.",
+              "When disposal small waste and less than 1m in height: waste under the relevant conditions such as rice cookers, microwave ovens, and fans can be discharged like recycled products.",
+              "When disposal waste over 1m in height: use Free door-to-door collection service: contact the local dong office or use the waste home appliance discharge reservation system. Large ones can be collected in a single way, but small waste appliances may be subject to simultaneous discharge, so check them.",
+              "Be sure to check if it is non-collectible: damaged products (cooler damaged refrigerator, motor damaged washing machine, disassembled product, etc.), custom built-in appliances, massage chairs, etc"
+            ],
+            [
+              "🏠 Waste home appliance discharge reservation system / 📞 1599 - 0903 📄https://15990903.or.kr/portal/main/main.do"
+            ]
+          ]
+        ],
+        [
+          ["[Basics]", "🥄 material", "🧽 cleaning"],
+          [
+            [
+              "Cookware is usually coated, so keep in mind to use it while protecting the coating.",
+              "If the coating is damaged, harmful substances may come out, and it is not recommended to use it because it does not function properly."
+            ],
+            [
+              "Use plastic, wood and silicone cookware with less scratch risk for coating damage."
+            ],
+            [
+              "In the case of coated stainless steel equipment, metallic scrubbers such as green, blue, iron, and stainless steel, which are made of abrasives, may be used.",
+              "However, in the case of the rest, use scrubbers that can protect the coating, such as soft cotton, sponge, microfiber, mesh, and scrubber for coating containers"
+            ]
+          ]
+        ],
+        [
+          ["[Basics]", "1", "2"],
+          [
+            [
+              "alt 🖼https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350 🖼https://naver.com",
+              "This cat is after you."
+            ],
+            ["Cuteness +1"],
+            ["Resistance -1"]
+          ]
+        ]
+      ]
+    }
+  }
+  

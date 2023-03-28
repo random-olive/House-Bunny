@@ -82,8 +82,8 @@
       "title": "event",
       "href": "/event",
       "list": [
-        { "title": "결혼", "href": "/address" },
-        { "title": "육아", "href": "/address" }
+        { "title": "wedding", "href": "/address" },
+        { "title": "baby", "href": "/address" }
       ]
     }
   ]

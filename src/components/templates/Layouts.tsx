@@ -85,7 +85,7 @@ export const ContentsLayout = ({ item, mcMenu }: LayoutProps) => {
   return (
     <>
       <Tip>
-        <LinkContainer to={PATH.TIPS}>기본 팁</LinkContainer>
+        <LinkContainer to={PATH.TIPS}>Tips</LinkContainer>
       </Tip>
       <H1>{item.name}</H1>
       <ContentsBinding>

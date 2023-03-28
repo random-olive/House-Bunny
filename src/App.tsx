@@ -138,7 +138,7 @@ function App() {
                     frontRoom={frontRoom}
                     veranda={veranda}
                     notice={notice}
-                    
+                    tipMenu={tipMenu}
                   />
                 }
               />
@@ -161,6 +161,7 @@ function App() {
                     frontRoom={frontRoom}
                     veranda={veranda}
                     notice={notice}
+                    tipMenu={tipMenu}
                   />
                 }
               />
@@ -169,7 +170,7 @@ function App() {
           <button
             style={{ margin: '100px' }}
             onClick={() => {
-              console.log(cycleMenu);
+              console.log(tipMenu);
             }}
           >
             클릭

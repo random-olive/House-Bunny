@@ -26,7 +26,7 @@ const ContentsPage = ({
   frontRoom,
   veranda,
   notice,
-
+  tipMenu,
 }: any) => {
   const [selected, setSelected] = useState({
     menu: '',
@@ -78,7 +78,7 @@ const ContentsPage = ({
           }
         />
       ) : (
-        <TipSection item={tipList} />
+        <TipSection item={tipMenu} />
       )}
     </>
   );

@@ -3,6 +3,7 @@ import { Clear } from './Buttons';
 import { RESPONSIVE } from 'constants/styleText';
 
 export const Header = ({ toggleLocales }: any) => {
+  //상태 기억
   return (
     <HeaderBack>
       <Clear onClick={() => toggleLocales('ko-KR')}>🇰🇷</Clear>
