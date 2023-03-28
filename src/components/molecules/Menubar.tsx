@@ -1,13 +1,12 @@
-import { mainMenu, subMenu } from 'constants/menuText';
+
 import { Main, Sub, Sub2, Sub3 } from 'components/atoms/Buttons';
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 import { Horizontal, Vertical, MenuBinding } from 'components/atoms/Bindings';
-import { subMenuIdx } from 'constants/menuText';
+
 import { MenuContainer, LinkContainer } from 'components/atoms/Container';
 import { DEFAULT } from 'constants/styleText';
-import { useTranslation } from 'react-i18next';
 
 interface BarProp {
   display?: string;
@@ -15,21 +14,29 @@ interface BarProp {
   onClick?: (() => void) | undefined;
   selected?: any;
   setSelected?: any;
-  parsedMainMenu?: any;
+  pMainMenu?: any;
+  pSubMenu?: any;
+  subMenuIdx?: any;
 }
 
-export const MenuBar = ({ selected, setSelected, parsedMainMenu }: BarProp) => {
+export const MenuBar = ({
+  selected,
+  setSelected,
+  pMainMenu,
+  pSubMenu,
+  subMenuIdx,
+}: BarProp) => {
   return (
     <>
       <Horizontal margin={DEFAULT.MENU_MARGIN}>
-        {parsedMainMenu.list.map((el: any, idx: number) => (
+        {pMainMenu.list.map((el: any, idx: number) => (
           <Main key={idx} idx={idx}>
             {el.title}
             <div className='sub'>
               {subMenuIdx.map(
-                (i) =>
+                (i: number) =>
                   idx === i &&
-                  subMenu[i].list.map((menu, key) => (
+                  pSubMenu[i].list.map((menu: any, key: number) => (
                     <LinkContainer
                       key={key}
                       to={menu.href}
@@ -52,7 +59,7 @@ export const MenuBar = ({ selected, setSelected, parsedMainMenu }: BarProp) => {
   );
 };
 
-export const SubMenuBar = ({ selected, setSelected }: BarProp) => {
+export const SubMenuBar = ({ selected, setSelected, pSubMenu }: BarProp) => {
   return (
     <>
       {/* <button
@@ -63,7 +70,7 @@ export const SubMenuBar = ({ selected, setSelected }: BarProp) => {
         상태 옮김 확인
       </button> */}
       <MenuBinding margin={DEFAULT.MENU_MARGIN}>
-        {subMenu[0].list.map((el, idx) => (
+        {pSubMenu[0].list.map((el: any, idx: number) => (
           <Sub
             onClick={() => {
               setSelected({
@@ -135,25 +142,25 @@ export const ItemListMenuBar = ({ selected, setSelected }: BarProp) => {
 //   );
 // };
 
-export const SubMenuBarSet = ({ selected, setSelected }: BarProp) => {
+export const SubMenuBarSet = ({ selected, setSelected, pSubMenu }: BarProp) => {
   return (
     <>
-      <SubMenuBar selected={selected} setSelected={setSelected} />
+      <SubMenuBar
+        selected={selected}
+        setSelected={setSelected}
+        pSubMenu={pSubMenu}
+      />
       <ItemListMenuBar selected={selected} setSelected={setSelected} />
       {/* <ContentMenuBar selected={selected} setSelected={setSelected} /> */}
     </>
   );
 };
 
-export const DropdownBar = ({
-  display,
-  inActivate,
-  parsedMainMenu,
-}: BarProp) => {
+export const DropdownBar = ({ display, inActivate, pMainMenu }: BarProp) => {
   return (
     <Vertical>
       <MenuContainer display={display}>
-        {parsedMainMenu.list.map((el: any, idx: number) => (
+        {pMainMenu.list.map((el: any, idx: number) => (
           <LinkContainer key={idx} to={el.href} onClick={inActivate}>
             <Main>{el.title}</Main>
           </LinkContainer>

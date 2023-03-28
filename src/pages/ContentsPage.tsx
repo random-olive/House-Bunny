@@ -3,7 +3,7 @@ import {
   ContentSection,
   TipSection,
 } from 'components/molecules/Section';
-import { subMenuList } from 'constants/dataComponent';
+
 import { useState } from 'react';
 import { SubMenuBarSet } from 'components/molecules/MenuBar';
 import { SubMenuLayout } from 'components/templates/Layouts';
@@ -25,7 +25,7 @@ import {
 } from 'constants/itemText';
 import PATH from 'constants/routePath';
 
-const ContentsPage = () => {
+const ContentsPage = ({ pSubMenu }: any) => {
   const [selected, setSelected] = useState({
     menu: '',
     item: '',
@@ -38,7 +38,7 @@ const ContentsPage = () => {
   });
   return (
     <>
-      <SubMenuBarSet selected={selected} setSelected={setSelected} />
+      <SubMenuBarSet selected={selected} setSelected={setSelected} pSubMenu={pSubMenu}/>
       <AdvSection />
       {window.location.pathname === PATH.HOUSE_WORK ? (
         <ContentSection

@@ -2,7 +2,7 @@
   "test": "Helo",
   "mainMenu": 
     {
-      "title": "main",
+      "title": "category",
       "href": "/home",
       "list": [
         { "title": "🐰", "href": "/housework" },
@@ -15,5 +15,81 @@
         { "title": "store", "href": "/address" }
       ]
     }
-  
+  ,
+  "subMenu": [
+    {
+      "title": "byRoom",
+      "href": "/housework",
+      "list": [
+        {
+          "title": "living room",
+          "href": "/housework",
+          "list1": [
+            { "item1": "TV" },
+            { "item1": "air conditioner" },
+            { "item1": "ceilling fan" }
+          ],
+          "list2": [
+            { "item2": "Tips" },
+            { "item2": "Management" },
+            { "item2": "Cleaning" }
+          ]
+        },
+        {
+          "title": "kitchen",
+          "href": "/housework",
+          "list1": [{ "item1": "rice cooker" }, { "item1": "refrigerator" }],
+          "list2": [
+            { "item2": "Tips" },
+            { "item2": "Management" },
+            { "item2": "Cleaning" }
+          ]
+        },
+        {
+          "title": "room",
+          "href": "/housework",
+          "list1": [
+            { "item1": "bed" },
+            { "item1": "wardrobe" },
+            { "item1": "wine cellar" }
+          ],
+          "list2": [
+            { "item2": "Tips" },
+            { "item2": "Management" },
+            { "item2": "Cleaning" }
+          ]
+        },
+        {
+          "title": "bath room",
+          "href": "/housework",
+          "list1": [{ "item1": "toilet" }, { "item1": "bathtub" }],
+          "list2": [
+            { "item2": "Tips" },
+            { "item2": "Management" },
+            { " item2": "Cleaning" }
+          ]
+        },
+        {
+          "title": "etc",
+          "href": "/housework",
+          "list1": [{ "item1": "former room" }, { "item1": "Veranda" }],
+          "list2": [
+            { "item2": "Tips" },
+            { "item2": "Management" },
+            { "item2": "Cleaning" }
+          ]
+        },
+
+        { "title": "x", "href": "/housework" }
+      ]
+    },
+    {
+      "title": "event",
+      "href": "/event",
+      "list": [
+        { "title": "결혼", "href": "/address" },
+        { "title": "육아", "href": "/address" }
+      ]
+    }
+  ]
 }

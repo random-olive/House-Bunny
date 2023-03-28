@@ -32,9 +32,16 @@ function App() {
     [i18n]
   );
 
-  const parsedMainMenu = JSON.parse(
+  //constants: group together after global store
+  const pMainMenu = JSON.parse(
     JSON.stringify(t('main:mainMenu', { returnObjects: true }))
   );
+
+  const pSubMenu = JSON.parse(
+    JSON.stringify(t('main:subMenu', { returnObjects: true }))
+  );
+
+  const subMenuIdx = Array.from(Array(pSubMenu.length), (_, i) => i);
 
   useEffect(() => {
     window.addEventListener('resize', handleResize);
@@ -53,12 +60,14 @@ function App() {
                 <BasicLayout
                   windowSize={windowSize}
                   toggleLocales={toggleLocales}
-                  parsedMainMenu={parsedMainMenu}
+                  pMainMenu={pMainMenu}
+                  pSubMenu={pSubMenu}
+                  subMenuIdx={subMenuIdx}
                 />
               }
             >
               <Route path={PATH.MAIN} element={<LandingPage />} />
-              <Route path={PATH.HOUSE_WORK} element={<ContentsPage />} />
+              <Route path={PATH.HOUSE_WORK} element={<ContentsPage pSubMenu={pSubMenu}/>} />
               <Route path={PATH.TIPS} element={<ContentsPage />} />
             </Route>
           </Routes>
