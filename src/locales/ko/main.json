@@ -1,3 +1,17 @@
 {
-  "test": "안녕"
+  "test": "안녕",
+  "mainMenu": {
+    "title": "main",
+    "href": "/home",
+    "list": [
+      { "title": "🐰", "href": "/housework" },
+      { "title": "♥️🐇", "href": "/wandb" },
+      { "title": "레시피", "href": "/address" },
+      { "title": "취 미", "href": "/address" },
+      { "title": "파 티", "href": "/address" },
+      { "title": "여 행", "href": "/address" },
+      { "title": "커뮤니티", "href": "/address" },
+      { "title": "Store", "href": "/address" }
+    ]
+  }
 }

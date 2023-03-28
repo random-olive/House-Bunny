@@ -1,4 +1,19 @@
 {
-    "test": "Helo"
-  }
+  "test": "Helo",
+  "mainMenu": 
+    {
+      "title": "main",
+      "href": "/home",
+      "list": [
+        { "title": "🐰", "href": "/housework" },
+        { "title": "♥️🐇", "href": "/wandb" },
+        { "title": "recipe", "href": "/address" },
+        { "title": "hobby", "href": "/address" },
+        { "title": "party", "href": "/address" },
+        { "title": "travel", "href": "/address" },
+        { "title": "talk", "href": "/address" },
+        { "title": "store", "href": "/address" }
+      ]
+    }
   
+}

@@ -27,12 +27,12 @@ interface LayoutProps {
   item?: any;
 }
 
-export const BasicLayout = ({ windowSize, toggleLocales }: any) => {
+export const BasicLayout = ({ windowSize, toggleLocales, parsedMainMenu }: any) => {
   return (
     <>
       <Header toggleLocales={toggleLocales} />
-      <DropdownBarSet />
-      {windowSize < 768 ? '' : <MenuBar />}
+      <DropdownBarSet parsedMainMenu={parsedMainMenu}/>
+      {windowSize < 768 ? '' : <MenuBar parsedMainMenu={parsedMainMenu}/>}
       <Outlet />
 
       <StickyIcon>

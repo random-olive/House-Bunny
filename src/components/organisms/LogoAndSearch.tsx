@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 
 interface ClickProp {
   onClick?: () => void;
+  parsedMainMenu?: any;
 }
 
 export const BarSet = () => {
@@ -20,7 +21,7 @@ export const BarSet = () => {
   );
 };
 
-export const DropdownBarSet = (props: ClickProp) => {
+export const DropdownBarSet = ({ parsedMainMenu }: ClickProp) => {
   const [menuActive, setMenuActive] = useState<boolean>(false);
   const toggle = () => {
     setMenuActive(!menuActive);
@@ -44,6 +45,7 @@ export const DropdownBarSet = (props: ClickProp) => {
           <DropdownBar
             display={menuActive ? 'block' : 'none'}
             inActivate={inActivate}
+            parsedMainMenu={parsedMainMenu}
           />
         ) : (
           ''

@@ -5,8 +5,8 @@ import { RESPONSIVE } from 'constants/styleText';
 export const Header = ({ toggleLocales }: any) => {
   return (
     <HeaderBack>
-      <Clear onClick={() => toggleLocales('en-US')}>🇺🇸</Clear>
       <Clear onClick={() => toggleLocales('ko-KR')}>🇰🇷</Clear>
+      <Clear onClick={() => toggleLocales('en-US')}>🇺🇸</Clear>
     </HeaderBack>
   );
 };

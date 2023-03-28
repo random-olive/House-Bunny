@@ -32,6 +32,10 @@ function App() {
     [i18n]
   );
 
+  const parsedMainMenu = JSON.parse(
+    JSON.stringify(t('main:mainMenu', { returnObjects: true }))
+  );
+
   useEffect(() => {
     window.addEventListener('resize', handleResize);
     return () => {
@@ -49,6 +53,7 @@ function App() {
                 <BasicLayout
                   windowSize={windowSize}
                   toggleLocales={toggleLocales}
+                  parsedMainMenu={parsedMainMenu}
                 />
               }
             >
@@ -58,9 +63,7 @@ function App() {
             </Route>
           </Routes>
         </Suspense>
-        <div style={{marginBottom:'100px'}}>{t('main:test')}</div>
-      
-   
+        <div style={{ marginBottom: '100px' }}>{t('main:test')}</div>
       </div>
     </>
   );

@@ -7,6 +7,7 @@ import { Horizontal, Vertical, MenuBinding } from 'components/atoms/Bindings';
 import { subMenuIdx } from 'constants/menuText';
 import { MenuContainer, LinkContainer } from 'components/atoms/Container';
 import { DEFAULT } from 'constants/styleText';
+import { useTranslation } from 'react-i18next';
 
 interface BarProp {
   display?: string;
@@ -14,13 +15,14 @@ interface BarProp {
   onClick?: (() => void) | undefined;
   selected?: any;
   setSelected?: any;
+  parsedMainMenu?: any;
 }
 
-export const MenuBar = ({ selected, setSelected }: BarProp) => {
+export const MenuBar = ({ selected, setSelected, parsedMainMenu }: BarProp) => {
   return (
     <>
       <Horizontal margin={DEFAULT.MENU_MARGIN}>
-        {mainMenu[0].list.map((el, idx) => (
+        {parsedMainMenu.list.map((el: any, idx: number) => (
           <Main key={idx} idx={idx}>
             {el.title}
             <div className='sub'>
@@ -143,17 +145,20 @@ export const SubMenuBarSet = ({ selected, setSelected }: BarProp) => {
   );
 };
 
-export const DropdownBar = ({ display, inActivate }: BarProp) => {
+export const DropdownBar = ({
+  display,
+  inActivate,
+  parsedMainMenu,
+}: BarProp) => {
   return (
     <Vertical>
       <MenuContainer display={display}>
-        {mainMenu[0].list.map((el, idx) => (
+        {parsedMainMenu.list.map((el: any, idx: number) => (
           <LinkContainer key={idx} to={el.href} onClick={inActivate}>
             <Main>{el.title}</Main>
           </LinkContainer>
         ))}
       </MenuContainer>
-      {console.log(mainMenu[0])}
     </Vertical>
   );
 };
