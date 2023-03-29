@@ -110,7 +110,7 @@ export const Sub = styled(Base)`
 
 export const Sub2 = styled(Sub)`
   background: white;
-  height: 30px;
+  height: 40px;
   &:focus {
     background: ${(props) => props.theme.color['--sub-selected']};
     color: ${(props) => props.theme.color['--text-orange']};
