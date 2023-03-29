@@ -46,6 +46,7 @@ export const ContentsBinding = styled.div`
   h3 {
     margin-top: 23px;
     margin-right: 210px;
+   
     @media screen and (max-width: ${RESPONSIVE.SMALL_PX}) {
       margin-right: 20vw;
     }

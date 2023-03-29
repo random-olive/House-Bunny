@@ -94,7 +94,7 @@ export const ContentsLayout = ({ item, mcMenu }: LayoutProps) => {
         </PartBinding>
 
         <PartBinding>
-          <h2>{mcMenu[1]}</h2> <h3>{item.cycle2}</h3>
+          <h2>{mcMenu[1]}</h2> <h3 style={{marginRight:'0px'}}>{item.cycle2}</h3>
         </PartBinding>
       </ContentsBinding>
       <HorizontalFlex>

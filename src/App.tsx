@@ -47,9 +47,9 @@ function App() {
     JSON.stringify(t('item:menu', { returnObjects: true }))
   );
 
-  const cycleMenu = JSON.parse(
-    JSON.stringify(t('item:cycle', { returnObjects: true }))
-  );
+  // const cycleMenu = JSON.parse(
+  //   JSON.stringify(t('item:cycle', { returnObjects: true }))
+  // );
 
   const riceCooker = JSON.parse(
     JSON.stringify(t('item:riceCooker', { returnObjects: true }))
