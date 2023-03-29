@@ -26,7 +26,6 @@ export const Vertical = styled(Horizontal)`
   display: flex;
   flex-direction: column;
   margin: 0;
-
 `;
 
 export const VerticalFlex = styled(Vertical)`
@@ -46,7 +45,7 @@ export const ContentsBinding = styled.div`
   h3 {
     margin-top: 23px;
     margin-right: 210px;
-   
+
     @media screen and (max-width: ${RESPONSIVE.SMALL_PX}) {
       margin-right: 20vw;
     }
@@ -63,6 +62,7 @@ export const PartBinding = styled.div`
   h3 {
     color: ${(props) => props.theme.color['--text']};
   }
+  h3.end {
+    margin-right: 0px;
+  }
 `;
-
-

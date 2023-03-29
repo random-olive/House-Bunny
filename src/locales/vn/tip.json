@@ -1,118 +1,117 @@
 {
-    "tipList": {
-      "name": "tiền boa",
-      "tip": ["đồ điện gia dụng", "dụng cụ nấu ăn", "giặt"],
-      "body": [
+  "tipList": {
+    "name": "tiền boa",
+    "tip": ["đồ điện gia dụng", "dụng cụ nấu ăn", "giặt"],
+    "body": [
+      [
+        [
+          "[hạng mục cơ bản]",
+          "[⚠️ điều cần lưu ý về an toàn]",
+          "❗️ Nhiệt, lửa, hóa chất, bụi",
+          "❗️ nước",
+          "❗️ Chất dẫn điện (kim loại)",
+          "❗️ lời mở đầu",
+          "❗️ áp lực",
+          "[việc lắp đặt]",
+          "[sự quản lý]",
+          "[bỏ đi]",
+          "[Số điện thoại]"
+        ],
         [
           [
-            "[hạng mục cơ bản]",
-            "[⚠️ điều cần lưu ý về an toàn]",
-            "❗️ Nhiệt, lửa, hóa chất, bụi",
-            "❗️ nước",
-            "❗️ Chất dẫn điện (kim loại)",
-            "❗️ lời mở đầu",
-            "❗️ áp lực",
-            "[việc lắp đặt]",
-            "[sự quản lý]",
-            "[bỏ đi]",
-            "[Số điện thoại]"
+            "Sử dụng nó phù hợp với mục đích của sản phẩm : sử dụng các sản phẩm gia dụng cho các mục đích khác có thể gây ra điện giật hoặc hỏa hoạn tùy thuộc vào môi trường.",
+            "Chỉ sử dụng ở một điện áp và dòng điện được chỉ định. Nếu bạn muốn thay đổi nó, hãy kiểm tra hướng dẫn sử dụng hoặc trung tâm dịch vụ để xem liệu có thể thay đổi nó hay không.",
+            "Sử dụng ổ cắm điện có mặt đất khi sử dụng ổ cắm điện.",
+            "Tốt nhất, nên sử dụng một ổ cắm điện riêng thay vì một ổ cắm đa năng.",
+            "Khi sử dụng phích cắm, không nên có nước hoặc bụi ở cuối phích cắm, và sử dụng nó bằng cách chèn tất cả các cách.",
+            "Khi rút phích cắm và cắm lại, hãy đợi hơn 5 phút trước khi cắm."
           ],
           [
-            [
-              "Sử dụng nó phù hợp với mục đích của sản phẩm : sử dụng các sản phẩm gia dụng cho các mục đích khác có thể gây ra điện giật hoặc hỏa hoạn tùy thuộc vào môi trường.",
-              "Chỉ sử dụng ở một điện áp và dòng điện được chỉ định. Nếu bạn muốn thay đổi nó, hãy kiểm tra hướng dẫn sử dụng hoặc trung tâm dịch vụ để xem liệu có thể thay đổi nó hay không.",
-              "Sử dụng ổ cắm điện có mặt đất khi sử dụng ổ cắm điện.",
-              "Tốt nhất, nên sử dụng một ổ cắm điện riêng thay vì một ổ cắm đa năng.",
-              "Khi sử dụng phích cắm, không nên có nước hoặc bụi ở cuối phích cắm, và sử dụng nó bằng cách chèn tất cả các cách.",
-              "Khi rút phích cắm và cắm lại, hãy đợi hơn 5 phút trước khi cắm."
-            ],
-            [
-              "Nếu dây điện, phích cắm, ổ cắm, bộ phận… bị hư hỏng, không được sử dụng và liên hệ với trung tâm dịch vụ.",
-              "Nếu có bất kỳ âm thanh, mùi hoặc khói bất thường nào xảy ra trong quá trình sử dụng, hãy ngay lập tức dừng sản phẩm và tháo phích cắm ra. Nếu có áp lực bên trong, hãy loại bỏ hoàn toàn.",
-              "Lần sau dùng cẩn thận nhé. Đặc biệt, hãy cẩn thận hơn với các linh kiện điện tử, phích cắm và ổ cắm điện làm bằng chất dẫn."
-            ],
-            [
-              "Không sử dụng hoặc lưu trữ bên dưới:",
-              "súng (đèn gas, bật lửa, lò sưởi, lò luyện gió)",
-              "các hoá chất dễ bắt lửa (Ether, benzen, alcohol, hóa chất, khí, phun dễ cháy, mỹ phẩm, v.v.) gần đó.",
-              "Bởi vì điều này có thể gây cháy hoặc nổ và vật liệu có thể làm hỏng việc cách điện các thành phần điện, gây ra điện giật."
-            ],
-            [
-              "Không cho phép nước tiếp xúc với các linh kiện điện tử trong sản phẩm. Nếu nước hoặc chất lạ tràn vào các linh kiện điện tử, hãy dừng sản phẩm ngay lập tức, tháo phích cắm bằng khăn không ướt và liên hệ với trung tâm khách hàng.",
-              "Việc chạm vào các sản phẩm/phụ tùng với bàn tay ướt có nguy cơ bị điện giật."
-            ],
-            [
-              "Không đặt vật liệu kim loại và chất dẫn vào sản phẩm. Có nguy cơ bị điện giật.",
-              "Đừng ấn nắp dây điện và phích cắm.",
-              "Khi rút điện, hãy giữ chặt phích cắm chứ không phải dây điện, và rút phích cắm ra."
-            ],
-            [
-              "Đảm bảo mặt đất để tránh điện giật : nếu không tiếp đất, bạn có thể cảm thấy rung động và tĩnh điện nhỏ khi chạm vào bằng tay.",
-              "Nếu ổ cắm có thiết bị đầu cuối mặt đất thì không cần phải tiếp đất riêng, nhưng nếu cần, hãy làm theo hướng dẫn sử dụng tùy theo môi trường.",
-              "Từ trường cũng có thể ảnh hưởng đến cơ thể con người, vì vậy người ta khuyến nghị nên ở cách xa hơn 30 cm trong khi vận hành các thiết bị gia dụng."
-            ],
-            [
-              "Các sản phẩm có hơi nước nóng được sử dụng trong không gian mở.",
-              "Đừng đặt bất cứ thứ gì vào ống xả hơi nước. Có nguy cơ nổ do áp lực nếu lối thoát bị chặn.",
-              "Không mở khóa áp suất dưới áp suất cao. Sau khi dừng trạng thái áp suất cao, hãy mở nhẹ lối thoát để xả hơi hoặc mở nắp sau một khoảng thời gian nhất định.",
-              "Đối với các sản phẩm sử dụng khí ga, hãy chắc chắn làm quen với cách chuẩn bị cho việc rò rỉ khí ga trong hướng dẫn sử dụng. Thông gió ngay lập tức nếu có thể và tránh chạm vào sản phẩm, ổ cắm điện, v.v."
-            ],
-            [
-              "NO: Nơi có ánh nắng trực tiếp, môi trường ẩm ướt (môi trường có thể tiếp cận với nước), hóa chất, gần lửa, quá lạnh hoặc nóng",
-              "OK: Nơi mà sàn là mạnh mẽ và nằm ngang, nơi dây là dễ dàng để kéo ra",
-              "Nếu phía trước thấp vì không san bằng, cửa có thể không đóng đúng cách.",
-              "Các thiết bị gia dụng và tường nên được bảo quản ở khoảng cách thích hợp xung quanh chúng. Nếu quá hẹp, hiệu suất có thể bị giảm và hóa đơn tiền điện có thể cao.",
-              "Tốt hơn là không nên để cùng một thiết bị điện tử gần nhau. Chúng có thể ảnh hưởng lẫn nhau bởi từ trường.",
-              "Không đặt các thiết bị điện tử khác, tấm sắt, miếng đệm điện, giấy bạc, sàn nhà, đệm… dưới sản phẩm."
-            ],
-            [
-              "Tháo phích cắm điện trong thời gian sấm sét, sét hoặc không sử dụng trong một thời gian dài.",
-              "Khi làm sạch và thay thế các bộ phận, hãy tháo phích cắm ra khỏi ổ cắm và tiến hành trong trường hợp điện giật.",
-              "Không đặt các đối tượng lên trên các thiết bị càng nhiều càng tốt, đặc biệt là các vật nặng hoặc nguy hiểm.",
-              "Không sử dụng nến, máy sấy, v.v. trong sản phẩm."
-            ],
-            [
-              "Đối với các sản phẩm mà trẻ em có thể vào, hãy tháo bao cao su của cửa ra và bỏ đi.",
-              "Nếu sản phẩm bị bỏ được cố định tại nhà dưới dạng tích hợp như treo tường, nó sẽ bị phá hủy trước.",
-              "Hỏi người quản lý hoặc văn phòng quản lý nơi cư trú của bạn cách xử lý nó : hộp đựng dụng cụ xử lý rác thải, xử lý thay thế, dán nhãn thải, v.v. Nếu bạn cần một nhãn dán bỏ hoang, hãy yêu cầu một phương pháp mua hàng gần đó. Nếu đó là một ngôi nhà riêng, hãy sử dụng hộp sưu tập của trung tâm cộng đồng.",
-              "Hoặc kiểm tra với trung tâm cộng đồng hoặc văn phòng quận trong khu vực của bạn bằng điện thoại hoặc trang web. Thông thường, nó giống như dưới đây, nhưng mỗi chính quyền địa phương có một phương pháp khác nhau, vì vậy hãy chắc chắn hỏi.",
-              "Khi xử lý rác thải nhỏ và chiều cao dưới 1 m: chất thải trong các điều kiện liên quan như nồi cơm, lò vi sóng, quạt có thể được thải ra như các sản phẩm tái chế.",
-              "Khi xử lý chất thải cao hơn 1 m: sử dụng dịch vụ thu gom từ nhà đến nhà miễn phí: liên hệ với văn phòng phường địa phương hoặc sử dụng hệ thống đặt trước xả thiết bị gia dụng thải. Các thiết bị lớn có thể được thu gom theo một cách duy nhất, nhưng các thiết bị rác thải nhỏ có thể bị thải ra đồng thời, vì vậy hãy kiểm tra chúng.",
-              "Đảm bảo kiểm tra xem nó có phải là không thể thu thập được không: các sản phẩm bị hư hỏng ( tủ lạnh bị hỏng, máy giặt hỏng động cơ, sản phẩm tháo rời, v.v.) thiết bị tích hợp tùy chỉnh, ghế mát xa, v.v."
-            ],
-            [
-              "🏠 Hệ thống đặt trước xả thiết bị gia dụng lãng phí / 📞 1599 - 0903 📄https://15990903.or.kr/portal/main/main.do"
-            ]
-          ]
-        ],
-        [
-          ["[hạng mục cơ bản]", "🥄 chất liệu", "🧽 sự dọn dẹp"],
+            "Nếu dây điện, phích cắm, ổ cắm, bộ phận… bị hư hỏng, không được sử dụng và liên hệ với trung tâm dịch vụ.",
+            "Nếu có bất kỳ âm thanh, mùi hoặc khói bất thường nào xảy ra trong quá trình sử dụng, hãy ngay lập tức dừng sản phẩm và tháo phích cắm ra. Nếu có áp lực bên trong, hãy loại bỏ hoàn toàn.",
+            "Lần sau dùng cẩn thận nhé. Đặc biệt, hãy cẩn thận hơn với các linh kiện điện tử, phích cắm và ổ cắm điện làm bằng chất dẫn."
+          ],
           [
-            [
-              "Dụng cụ nấu ăn thường được phủ lên, vì vậy hãy nhớ sử dụng nó trong khi bảo vệ lớp phủ.",
-              "Nếu lớp phủ bị hư hỏng, các chất độc hại có thể xuất hiện và không nên sử dụng vì lớp phủ không hoạt động đúng cách."
-            ],
-            [
-              "Sử dụng đồ dùng nấu ăn bằng nhựa, gỗ và silicon có ít nguy cơ trầy xước hơn khi bị hư hại lớp phủ."
-            ],
-            [
-              "Trong trường hợp thiết bị thép không gỉ phủ, có thể sử dụng các loại scrub kim loại như xanh lá cây, xanh dương, sắt và thép không gỉ được làm từ chất mài mòn.",
-              "Tuy nhiên, trong trường hợp còn lại, hãy sử dụng các bộ lọc có thể bảo vệ lớp phủ, chẳng hạn như bông mềm, bọt biển, sợi siêu nhỏ, lưới và bộ lọc cho các thùng chứa phủ."
-            ]
-          ]
-        ],
-        [
-          ["[hạng mục cơ bản]", "1", "2"],
+            "Không sử dụng hoặc lưu trữ bên dưới:",
+            "súng (đèn gas, bật lửa, lò sưởi, lò luyện gió)",
+            "các hoá chất dễ bắt lửa (Ether, benzen, alcohol, hóa chất, khí, phun dễ cháy, mỹ phẩm, v.v.) gần đó.",
+            "Bởi vì điều này có thể gây cháy hoặc nổ và vật liệu có thể làm hỏng việc cách điện các thành phần điện, gây ra điện giật."
+          ],
           [
-            [
-              "hình ảnh 🖼https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350 🖼https://naver.com",
-              "Con mèo này đang nhắm vào bạn."
-            ],
-            ["Cuteness +1"],
-            ["Resistance -1"]
+            "Không cho phép nước tiếp xúc với các linh kiện điện tử trong sản phẩm. Nếu nước hoặc chất lạ tràn vào các linh kiện điện tử, hãy dừng sản phẩm ngay lập tức, tháo phích cắm bằng khăn không ướt và liên hệ với trung tâm khách hàng.",
+            "Việc chạm vào các sản phẩm/phụ tùng với bàn tay ướt có nguy cơ bị điện giật."
+          ],
+          [
+            "Không đặt vật liệu kim loại và chất dẫn vào sản phẩm. Có nguy cơ bị điện giật.",
+            "Đừng ấn nắp dây điện và phích cắm.",
+            "Khi rút điện, hãy giữ chặt phích cắm chứ không phải dây điện, và rút phích cắm ra."
+          ],
+          [
+            "Đảm bảo mặt đất để tránh điện giật : nếu không tiếp đất, bạn có thể cảm thấy rung động và tĩnh điện nhỏ khi chạm vào bằng tay.",
+            "Nếu ổ cắm có thiết bị đầu cuối mặt đất thì không cần phải tiếp đất riêng, nhưng nếu cần, hãy làm theo hướng dẫn sử dụng tùy theo môi trường.",
+            "Từ trường cũng có thể ảnh hưởng đến cơ thể con người, vì vậy người ta khuyến nghị nên ở cách xa hơn 30 cm trong khi vận hành các thiết bị gia dụng."
+          ],
+          [
+            "Các sản phẩm có hơi nước nóng được sử dụng trong không gian mở.",
+            "Đừng đặt bất cứ thứ gì vào ống xả hơi nước. Có nguy cơ nổ do áp lực nếu lối thoát bị chặn.",
+            "Không mở khóa áp suất dưới áp suất cao. Sau khi dừng trạng thái áp suất cao, hãy mở nhẹ lối thoát để xả hơi hoặc mở nắp sau một khoảng thời gian nhất định.",
+            "Đối với các sản phẩm sử dụng khí ga, hãy chắc chắn làm quen với cách chuẩn bị cho việc rò rỉ khí ga trong hướng dẫn sử dụng. Thông gió ngay lập tức nếu có thể và tránh chạm vào sản phẩm, ổ cắm điện, v.v."
+          ],
+          [
+            "NO: Nơi có ánh nắng trực tiếp, môi trường ẩm ướt (môi trường có thể tiếp cận với nước), hóa chất, gần lửa, quá lạnh hoặc nóng",
+            "OK: Nơi mà sàn là mạnh mẽ và nằm ngang, nơi dây là dễ dàng để kéo ra",
+            "Nếu phía trước thấp vì không san bằng, cửa có thể không đóng đúng cách.",
+            "Các thiết bị gia dụng và tường nên được bảo quản ở khoảng cách thích hợp xung quanh chúng. Nếu quá hẹp, hiệu suất có thể bị giảm và hóa đơn tiền điện có thể cao.",
+            "Tốt hơn là không nên để cùng một thiết bị điện tử gần nhau. Chúng có thể ảnh hưởng lẫn nhau bởi từ trường.",
+            "Không đặt các thiết bị điện tử khác, tấm sắt, miếng đệm điện, giấy bạc, sàn nhà, đệm… dưới sản phẩm."
+          ],
+          [
+            "Tháo phích cắm điện trong thời gian sấm sét, sét hoặc không sử dụng trong một thời gian dài.",
+            "Khi làm sạch và thay thế các bộ phận, hãy tháo phích cắm ra khỏi ổ cắm và tiến hành trong trường hợp điện giật.",
+            "Không đặt các đối tượng lên trên các thiết bị càng nhiều càng tốt, đặc biệt là các vật nặng hoặc nguy hiểm.",
+            "Không sử dụng nến, máy sấy, v.v. trong sản phẩm."
+          ],
+          [
+            "Đối với các sản phẩm mà trẻ em có thể vào, hãy tháo bao cao su của cửa ra và bỏ đi.",
+            "Nếu sản phẩm bị bỏ được cố định tại nhà dưới dạng tích hợp như treo tường, nó sẽ bị phá hủy trước.",
+            "Hỏi người quản lý hoặc văn phòng quản lý nơi cư trú của bạn cách xử lý nó : hộp đựng dụng cụ xử lý rác thải, xử lý thay thế, dán nhãn thải, v.v. Nếu bạn cần một nhãn dán bỏ hoang, hãy yêu cầu một phương pháp mua hàng gần đó. Nếu đó là một ngôi nhà riêng, hãy sử dụng hộp sưu tập của trung tâm cộng đồng.",
+            "Hoặc kiểm tra với trung tâm cộng đồng hoặc văn phòng quận trong khu vực của bạn bằng điện thoại hoặc trang web. Thông thường, nó giống như dưới đây, nhưng mỗi chính quyền địa phương có một phương pháp khác nhau, vì vậy hãy chắc chắn hỏi.",
+            "Khi xử lý rác thải nhỏ và chiều cao dưới 1 m: chất thải trong các điều kiện liên quan như nồi cơm, lò vi sóng, quạt có thể được thải ra như các sản phẩm tái chế.",
+            "Khi xử lý chất thải cao hơn 1 m: sử dụng dịch vụ thu gom từ nhà đến nhà miễn phí: liên hệ với văn phòng phường địa phương hoặc sử dụng hệ thống đặt trước xả thiết bị gia dụng thải. Các thiết bị lớn có thể được thu gom theo một cách duy nhất, nhưng các thiết bị rác thải nhỏ có thể bị thải ra đồng thời, vì vậy hãy kiểm tra chúng.",
+            "Đảm bảo kiểm tra xem nó có phải là không thể thu thập được không: các sản phẩm bị hư hỏng ( tủ lạnh bị hỏng, máy giặt hỏng động cơ, sản phẩm tháo rời, v.v.) thiết bị tích hợp tùy chỉnh, ghế mát xa, v.v."
+          ],
+          [
+            "🏠 Hệ thống đặt trước xả thiết bị gia dụng lãng phí / 📞 1599 - 0903 📄https://15990903.or.kr/portal/main/main.do"
           ]
         ]
+      ],
+      [
+        ["[hạng mục cơ bản]", "🥄 chất liệu", "🧽 sự dọn dẹp"],
+        [
+          [
+            "Dụng cụ nấu ăn thường được phủ lên, vì vậy hãy nhớ sử dụng nó trong khi bảo vệ lớp phủ.",
+            "Nếu lớp phủ bị hư hỏng, các chất độc hại có thể xuất hiện và không nên sử dụng vì lớp phủ không hoạt động đúng cách."
+          ],
+          [
+            "Sử dụng đồ dùng nấu ăn bằng nhựa, gỗ và silicon có ít nguy cơ trầy xước hơn khi bị hư hại lớp phủ."
+          ],
+          [
+            "Trong trường hợp thiết bị thép không gỉ phủ, có thể sử dụng các loại scrub kim loại như xanh lá cây, xanh dương, sắt và thép không gỉ được làm từ chất mài mòn.",
+            "Tuy nhiên, trong trường hợp còn lại, hãy sử dụng các bộ lọc có thể bảo vệ lớp phủ, chẳng hạn như bông mềm, bọt biển, sợi siêu nhỏ, lưới và bộ lọc cho các thùng chứa phủ."
+          ]
+        ]
+      ],
+      [
+        ["[hạng mục cơ bản]", "1", "2"],
+        [
+          [
+            "hình ảnh 🖼https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350 🖼https://naver.com",
+            "Con mèo này đang nhắm vào bạn."
+          ],
+          ["Cuteness +1"],
+          ["Resistance -1"]
+        ]
       ]
-    }
+    ]
   }
-  
+}
