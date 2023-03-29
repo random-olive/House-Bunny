@@ -1,0 +1,90 @@
+{
+  "mainMenu": {
+    "title": "category",
+    "href": "/home",
+    "list": [
+      { "title": "🐰", "href": "/housework" },
+      { "title": "♥️🐇", "href": "/wandb" },
+      { "title": "công thức", "href": "/address" },
+      { "title": "sở thích", "href": "/address" },
+      { "title": "đảng phái", "href": "/address" },
+      { "title": "đi du lịch", "href": "/address" },
+      { "title": "nói chuyện", "href": "/address" },
+      { "title": "tích trữ", "href": "/address" }
+    ]
+  },
+  "subMenu": [
+    {
+      "title": "byRoom",
+      "href": "/housework",
+      "list": [
+        {
+          "title": "phòng khách",
+          "href": "/housework",
+          "list1": [
+            { "item1": "truyền hình" },
+            { "item1": "máy điều hoà không khí" },
+            { "item1": "quạt trần" }
+          ],
+          "list2": [
+            { "item2": "tiền boa" },
+            { "item2": "sự quản lý" },
+            { "item2": "sự dọn dẹp" }
+          ]
+        },
+        {
+          "title": "nhà bếp",
+          "href": "/housework",
+          "list1": [{ "item1": "nồi cơm" }, { "item1": "tủ lạnh" }],
+          "list2": [
+            { "item2": "tiền boa" },
+            { "item2": "sự quản lý" },
+            { "item2": "sự dọn dẹp" }
+          ]
+        },
+        {
+          "title": "phòng",
+          "href": "/housework",
+          "list1": [
+            { "item1": "đặt vào giường ngủ" },
+            { "item1": "tủ quần áo" },
+            { "item1": "hầm rượu" }
+          ],
+          "list2": [
+            { "item2": "tiền boa" },
+            { "item2": "sự quản lý" },
+            { "item2": "sự dọn dẹp" }
+          ]
+        },
+        {
+          "title": "phòng tắm",
+          "href": "/housework",
+          "list1": [{ "item1": "nhà vệ sinh" }, { "item1": "bồn tắm" }],
+          "list2": [
+            { "item2": "tiền boa" },
+            { "item2": "sự quản lý" },
+            { "item2": "sự dọn dẹp" }
+          ]
+        },
+        {
+          "title": "vân vân",
+          "href": "/housework",
+          "list1": [{ "item1": "phòng trước" }, { "item1": "ban công" }],
+          "list2": [
+            { "item2": "tiền boa" },
+            { "item2": "sự quản lý" },
+            { "item2": "sự dọn dẹp" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "sự kiện",
+      "href": "/event",
+      "list": [
+        { "title": "lễ cưới", "href": "/address" },
+        { "title": "em bé", "href": "/address" }
+      ]
+    }
+  ]
+}

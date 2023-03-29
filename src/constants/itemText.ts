@@ -89,7 +89,7 @@ export const toilet = {
   body1: ['123aasdf', '23', 'asdfasef'],
   body2: ['asaef'],
 };
-export const bath = {
+export const bathtub = {
   name: '욕조',
   cycle1: cycle.w1,
   cycle2: cycle.w2,

@@ -22,7 +22,7 @@ const ContentsPage = ({
   wardrobe,
   wineCellar,
   toilet,
-  bath,
+  bathtub,
   frontRoom,
   veranda,
   notice,
@@ -69,7 +69,7 @@ const ContentsPage = ({
               : selected.idx1 === 3 && selected.idx2 === 0
               ? toilet
               : selected.idx1 === 3 && selected.idx2 === 1
-              ? bath
+              ? bathtub
               : selected.idx1 === 4 && selected.idx2 === 0
               ? frontRoom
               : selected.idx1 === 4 && selected.idx2 === 1

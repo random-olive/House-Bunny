@@ -4,6 +4,10 @@ import { initReactI18next } from 'react-i18next';
 
 import * as en from './en';
 import * as ko from './ko';
+import * as cn from './cn';
+import * as jp from './jp';
+import * as th from './th';
+import * as vn from './vn';
 
 const resources: Resource = {
   'en-US': {
@@ -11,6 +15,18 @@ const resources: Resource = {
   },
   'ko-KR': {
     ...ko,
+  },
+  'zh-CN': {
+    ...cn,
+  },
+  'ja-JP': {
+    ...jp,
+  },
+  'th-TH': {
+    ...th,
+  },
+  'vi-VN': {
+    ...vn,
   },
 } as const;
 
@@ -20,6 +36,10 @@ i18next.use(initReactI18next).init({
   fallbackLng: {
     'en-US': ['en-US'],
     default: ['ko-KR'],
+    'zh-CN': ['zh-CN'],
+    'ja-JP': ['ja-JP'],
+    'th-TH': ['th-TH'],
+    'vi-VN': ['vi-VN'],
   },
   debug: true,
   keySeparator: false,

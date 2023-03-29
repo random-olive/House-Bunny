@@ -78,8 +78,8 @@ function App() {
   const toilet = JSON.parse(
     JSON.stringify(t('item:toilet', { returnObjects: true }))
   );
-  const bath = JSON.parse(
-    JSON.stringify(t('item:bath', { returnObjects: true }))
+  const bathtub = JSON.parse(
+    JSON.stringify(t('item:bathtub', { returnObjects: true }))
   );
   const frontRoom = JSON.parse(
     JSON.stringify(t('item:frontRoom', { returnObjects: true }))
@@ -134,7 +134,7 @@ function App() {
                     wardrobe={wardrobe}
                     wineCellar={wineCellar}
                     toilet={toilet}
-                    bath={bath}
+                    bathtub={bathtub}
                     frontRoom={frontRoom}
                     veranda={veranda}
                     notice={notice}
@@ -157,7 +157,7 @@ function App() {
                     wardrobe={wardrobe}
                     wineCellar={wineCellar}
                     toilet={toilet}
-                    bath={bath}
+                    bathtub={bathtub}
                     frontRoom={frontRoom}
                     veranda={veranda}
                     notice={notice}

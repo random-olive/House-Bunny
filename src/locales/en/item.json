@@ -6,7 +6,7 @@
     "w2": "once every 2 weeks",
     "w3": "once every 3 weeks",
     "m1": "once a month",
-    "m3": "3 times a month"
+    "m3": "once every three months"
   },
   
   "riceCooker": {
@@ -93,8 +93,8 @@
     "body2": ["-", "-"]
   },
 
-  "bath": {
-    "name": "bath",
+  "bathtub": {
+    "name": "bathtub",
     "cycle1": "-",
     "cycle2": "-",
     "body1": ["-", "-", "-"],

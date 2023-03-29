@@ -1,0 +1,90 @@
+{
+  "mainMenu": {
+    "title": "category",
+    "href": "/home",
+    "list": [
+      { "title": "🐰", "href": "/housework" },
+      { "title": "♥️🐇", "href": "/wandb" },
+      { "title": "秘方", "href": "/address" },
+      { "title": "爱好", "href": "/address" },
+      { "title": "派对", "href": "/address" },
+      { "title": "旅行", "href": "/address" },
+      { "title": "社区", "href": "/address" },
+      { "title": "商店", "href": "/address" }
+    ]
+  },
+  "subMenu": [
+    {
+      "title": "byRoom",
+      "href": "/housework",
+      "list": [
+        {
+          "title": "客厅",
+          "href": "/housework",
+          "list1": [
+            { "item1": "电视" },
+            { "item1": "冷气机" },
+            { "item1": "顶棚风扇" }
+          ],
+          "list2": [
+            { "item2": "贴士" },
+            { "item2": "管理" },
+            { "item2": "清扫" }
+          ]
+        },
+        {
+          "title": "厨房",
+          "href": "/housework",
+          "list1": [{ "item1": "电饭锅" }, { "item1": "电冰箱" }],
+          "list2": [
+            { "item2": "贴士" },
+            { "item2": "管理" },
+            { "item2": "清扫" }
+          ]
+        },
+        {
+          "title": "房屋",
+          "href": "/housework",
+          "list1": [
+            { "item1": "床" },
+            { "item1": "衣柜" },
+            { "item1": "酒窖" }
+          ],
+          "list2": [
+            { "item2": "贴士" },
+            { "item2": "管理" },
+            { "item2": "清扫" }
+          ]
+        },
+        {
+          "title": "浴室",
+          "href": "/housework",
+          "list1": [{ "item1": "马桶" }, { "item1": "沐浴" }],
+          "list2": [
+            { "item2": "贴士" },
+            { "item2": "管理" },
+            { " item2": "清扫" }
+          ]
+        },
+        {
+          "title": "其他",
+          "href": "/housework",
+          "list1": [{ "item1": "前厅" }, { "item1": "阳台" }],
+          "list2": [
+            { "item2": "贴士" },
+            { "item2": "管理" },
+            { "item2": "清扫" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "活动",
+      "href": "/event",
+      "list": [
+        { "title": "结婚", "href": "/address" },
+        { "title": "育儿", "href": "/address" }
+      ]
+    }
+  ]
+}

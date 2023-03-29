@@ -1,0 +1,90 @@
+{
+  "mainMenu": {
+    "title": "category",
+    "href": "/home",
+    "list": [
+      { "title": "🐰", "href": "/housework" },
+      { "title": "♥️🐇", "href": "/wandb" },
+      { "title": "レシピ", "href": "/address" },
+      { "title": "趣味", "href": "/address" },
+      { "title": "パーティー", "href": "/address" },
+      { "title": "旅行", "href": "/address" },
+      { "title": "トーク", "href": "/address" },
+      { "title": "ストア", "href": "/address" }
+    ]
+  },
+  "subMenu": [
+    {
+      "title": "byRoom",
+      "href": "/housework",
+      "list": [
+        {
+          "title": "居間",
+          "href": "/housework",
+          "list1": [
+            { "item1": "テレビ" },
+            { "item1": "エアコン" },
+            { "item1": "シーリングファン" }
+          ],
+          "list2": [
+            { "item2": "チップ" },
+            { "item2": "管理" },
+            { "item2": "清掃" }
+          ]
+        },
+        {
+          "title": "厨房",
+          "href": "/housework",
+          "list1": [{ "item1": "飯釜" }, { "item1": "フリーザー" }],
+          "list2": [
+            { "item2": "チップ" },
+            { "item2": "管理" },
+            { "item2": "清掃" }
+          ]
+        },
+        {
+          "title": "部屋",
+          "href": "/housework",
+          "list1": [
+            { "item1": "ベッド" },
+            { "item1": "たんす" },
+            { "item1": "ワインセラー" }
+          ],
+          "list2": [
+            { "item2": "チップ" },
+            { "item2": "管理" },
+            { "item2": "清掃" }
+          ]
+        },
+        {
+          "title": "浴室",
+          "href": "/housework",
+          "list1": [{ "item1": "おまる" }, { "item1": "バスタブ" }],
+          "list2": [
+            { "item2": "チップ" },
+            { "item2": "管理" },
+            { " item2": "清掃" }
+          ]
+        },
+        {
+          "title": "その他",
+          "href": "/housework",
+          "list1": [{ "item1": "フロント·ルーム" }, { "item1": "ベランダ" }],
+          "list2": [
+            { "item2": "チップ" },
+            { "item2": "管理" },
+            { "item2": "清掃" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "イベント",
+      "href": "/event",
+      "list": [
+        { "title": "ウエディング", "href": "/address" },
+        { "title": "育児", "href": "/address" }
+      ]
+    }
+  ]
+}
