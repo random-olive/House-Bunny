@@ -81,8 +81,8 @@ export const SubMenuBar = ({ selected, setSelected, pSubMenu }: BarProp) => {
               });
             }}
             style={{
-              backgroundColor: selected.idx1 === idx ? '#f4e7fb' : '',
-              color: selected.idx1 === idx ? '#d5b2f8' : '',
+              backgroundColor: selected.idx1 === idx ? '#fbf7d5' : '',
+              color: selected.idx1 === idx ? '#faccbb' : '',
             }}
             key={idx}
           >
@@ -105,8 +105,8 @@ export const ItemListMenuBar = ({ selected, setSelected }: BarProp) => {
                 setSelected({ ...selected, idx2: idx });
               }}
               style={{
-                backgroundColor: selected.idx2 === idx ? '#f1fcde' : '',
-                color: selected.idx2 === idx ? '#91dd80' : '',
+                backgroundColor: selected.idx2 === idx ? '#fbe6ee' : '',
+                color: selected.idx2 === idx ? '#eeb0b0' : '',
               }}
               key={idx}
             >
