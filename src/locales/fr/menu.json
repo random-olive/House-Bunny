@@ -1,0 +1,93 @@
+{
+  "mainMenu": {
+    "title": "category",
+    "href": "/home",
+    "list": [
+      { "title": "🐰", "href": "/housework" },
+      { "title": "♥️🐇", "href": "/wandb" },
+      { "title": "recette", "href": "/address" },
+      { "title": "passe-temps", "href": "/address" },
+      { "title": "la fête", "href": "/address" },
+      { "title": "voyages", "href": "/address" },
+      { "title": "parler", "href": "/address" },
+      { "title": "magasin", "href": "/address" }
+    ]
+  },
+  "subMenu": [
+    {
+      "title": "byRoom",
+      "href": "/housework",
+      "list": [
+        {
+          "title": "salon",
+          "href": "/housework",
+          "list1": [
+            { "item1": "télévision" },
+            { "item1": "climatiseur" },
+            { "item1": "ventilateur de plafond" }
+          ],
+          "list2": [
+            { "item2": "Pourboire" },
+            { "item2": "Vérification" },
+            { "item2": "Nettoyage" }
+          ]
+        },
+        {
+          "title": "cuisine",
+          "href": "/housework",
+          "list1": [
+            { "item1": "cuisinière à riz" },
+            { "item1": "réfrigérateur" }
+          ],
+          "list2": [
+            { "item2": "Pourboire" },
+            { "item2": "Vérification" },
+            { "item2": "Nettoyage" }
+          ]
+        },
+        {
+          "title": "chambre",
+          "href": "/housework",
+          "list1": [
+            { "item1": "au lit" },
+            { "item1": "garde-robe" },
+            { "item1": "cave à vin" }
+          ],
+          "list2": [
+            { "item2": "Pourboire" },
+            { "item2": "Vérification" },
+            { "item2": "Nettoyage" }
+          ]
+        },
+        {
+          "title": "salle de bain",
+          "href": "/housework",
+          "list1": [{ "item1": "toilettes" }, { "item1": "baignoire" }],
+          "list2": [
+            { "item2": "Pourboire" },
+            { "item2": "Vérification" },
+            { "item2": "Nettoyage" }
+          ]
+        },
+        {
+          "title": "etc",
+          "href": "/housework",
+          "list1": [{ "item1": "chambre d'entrée" }, { "item1": "véranda" }],
+          "list2": [
+            { "item2": "Pourboire" },
+            { "item2": "Vérification" },
+            { "item2": "Nettoyage" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "événement",
+      "href": "/event",
+      "list": [
+        { "title": "mariage", "href": "/address" },
+        { "title": "l'éducation parentale", "href": "/address" }
+      ]
+    }
+  ]
+}

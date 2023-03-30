@@ -8,6 +8,7 @@ import * as cn from './cn';
 import * as jp from './jp';
 import * as th from './th';
 import * as vn from './vn';
+import * as fr from './fr';
 
 const resources: Resource = {
   'en-US': {
@@ -15,6 +16,9 @@ const resources: Resource = {
   },
   'ko-KR': {
     ...ko,
+  },
+  'fr-FR': {
+    ...fr,
   },
   'zh-CN': {
     ...cn,
@@ -36,6 +40,7 @@ i18next.use(initReactI18next).init({
   fallbackLng: {
     'en-US': ['en-US'],
     default: ['ko-KR'],
+    'fr-FR': ['fr-FR'],
     'zh-CN': ['zh-CN'],
     'ja-JP': ['ja-JP'],
     'th-TH': ['th-TH'],

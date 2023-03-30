@@ -1,3 +1,5 @@
+//추후 삭제 예정
+
 interface MenuList {
   title: string;
   href: string;
@@ -32,7 +34,7 @@ export const subMenu = [
       {
         title: '방',
         href: '/housework',
-        list1: [{ item1: '침대' }, { item1: '장롱' }, { item1: '와인셀러' }],
+        list1: [{ item1: '침대' }, { item1: '옷장' }, { item1: '와인셀러' }],
         list2: [{ item2: '사용 팁' }, { item2: '관리' }, { item2: '청소' }],
       },
       {

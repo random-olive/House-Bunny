@@ -1,3 +1,5 @@
+//추후 삭제 예정
+
 export const menu = ['관리', '청소'];
 
 export const cycle = {
@@ -68,7 +70,7 @@ export const bed = {
   body2: ['asaef'],
 };
 export const wardrobe = {
-  name: '장롱',
+  name: '옷장',
   cycle1: cycle.w1,
   cycle2: cycle.w2,
   body1: ['123aasdf', '23', 'asdfasef'],

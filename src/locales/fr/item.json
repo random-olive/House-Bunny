@@ -1,0 +1,127 @@
+{
+  "menu": ["Vérification", "Nettoyage"],
+  "cycle": {
+    "day": "tous les jours",
+    "w1": "une fois par semaine",
+    "w2": "une fois toutes les deux semaines",
+    "w3": "une fois toutes les 3 semaines",
+    "m1": "une fois par mois",
+    "m3": "une fois tous les trois mois"
+  },
+
+  "riceCooker": {
+    "name": "cuisinière à riz",
+    "cycle1": "everyday",
+    "cycle2": "une fois par semaine",
+    "body1": [
+      "Si vous ne nettoyez pas la cuisinière à riz, elle peut sentir tout en restant au chaud. Vérifiez-la tous les jours et nettoyez-la de temps en temps.",
+      "En lavant le riz, mettez-le dans un récipient séparé pour éviter les égratignures.",
+      "Remplacer les paquets internes de caoutchouc tous les 1 à 3 ans"
+    ],
+    "body2": [
+      "En utilisant la fonction de nettoyage automatique du cuiseur à riz, retirer les pièces et les nettoyer.",
+      "Nettoyer avec: Eau + 1 cuillère à soupe de vinaigre + nettoyage automatique",
+      "Une fois le nettoyage automatique terminé, débranchez la prise d'alimentation pour nettoyer les pièces et refroidir le corps principal.",
+      "Enlever seulement les pièces amovibles et les laver toutes (vérifier que les pièces séparables sont indiquées dans le manuel ou sur le cuiseur à riz).",
+      "Lorsque vous lavez, lavez-vous avec un détergent neutre, une éponge douce, de l'eau et finissez avec une nappe qui a été égouttée.",
+      "Si la tache jaune ne disparaît pas, frottez-la avec de l'eau sur le bloc magique.",
+      "Ne JAMAIS UTILISER pour nettoyer l'intérieur du cuiseur à riz: benzène, diluant, clorox, détergent au chlore"
+    ]
+  },
+
+  "refrigerator": {
+    "name": "réfrigérateur",
+    "cycle1": "-",
+    "cycle2": "-",
+    "body1": ["-", "-", "-"],
+    "body2": ["-", "-"]
+  },
+
+  "tv": {
+    "name": "télévision",
+    "cycle1": "-",
+    "cycle2": "-",
+    "body1": ["-", "-", "-"],
+    "body2": ["-", "-"]
+  },
+
+  "airConditioner": {
+    "name": "climatiseur",
+    "cycle1": "-",
+    "cycle2": "-",
+    "body1": ["-", "-", "-"],
+    "body2": ["-", "-"]
+  },
+
+  "ceilingFan": {
+    "name": "ventilateur de plafond",
+    "cycle1": "-",
+    "cycle2": "-",
+    "body1": ["-", "-", "-"],
+    "body2": ["-", "-"]
+  },
+
+  "bed": {
+    "name": "au lit",
+    "cycle1": "-",
+    "cycle2": "-",
+    "body1": ["-", "-", "-"],
+    "body2": ["-", "-"]
+  },
+
+  "wardrobe": {
+    "name": "garde-robe",
+    "cycle1": "-",
+    "cycle2": "-",
+    "body1": ["-", "-", "-"],
+    "body2": ["-", "-"]
+  },
+
+  "wineCellar": {
+    "name": "cave à vin",
+    "cycle1": "-",
+    "cycle2": "-",
+    "body1": ["-", "-", "-"],
+    "body2": ["-", "-"]
+  },
+
+  "toilet": {
+    "name": "toilettes",
+    "cycle1": "-",
+    "cycle2": "-",
+    "body1": ["-", "-", "-"],
+    "body2": ["-", "-"]
+  },
+
+  "bathtub": {
+    "name": "baignoire",
+    "cycle1": "-",
+    "cycle2": "-",
+    "body1": ["-", "-", "-"],
+    "body2": ["-", "-"]
+  },
+
+  "frontRoom": {
+    "name": "chambre d'entrée",
+    "cycle1": "-",
+    "cycle2": "-",
+    "body1": ["-", "-", "-"],
+    "body2": ["-", "-"]
+  },
+
+  "veranda": {
+    "name": "véranda",
+    "cycle1": "-",
+    "cycle2": "-",
+    "body1": ["-", "-", "-"],
+    "body2": ["-", "-"]
+  },
+
+  "notice": {
+    "name": "Cliquer sur les détails",
+    "cycle1": "",
+    "cycle2": "",
+    "body1": [""],
+    "body2": [""]
+  }
+}

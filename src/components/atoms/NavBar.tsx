@@ -8,6 +8,7 @@ export const Header = ({ toggleLocales }: any) => {
     <HeaderBack>
       <Clear onClick={() => toggleLocales('ko-KR')}>🇰🇷</Clear>
       <Clear onClick={() => toggleLocales('en-US')}>🇺🇸</Clear>
+      <Clear onClick={() => toggleLocales('fr-FR')}>🇫🇷</Clear>
       <Clear onClick={() => toggleLocales('zh-CN')}>🇨🇳</Clear>
       <Clear onClick={() => toggleLocales('ja-JP')}>🇯🇵</Clear>
       <Clear onClick={() => toggleLocales('th-TH')}>🇹🇭</Clear>

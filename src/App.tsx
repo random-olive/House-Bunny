@@ -47,10 +47,6 @@ function App() {
     JSON.stringify(t('item:menu', { returnObjects: true }))
   );
 
-  // const cycleMenu = JSON.parse(
-  //   JSON.stringify(t('item:cycle', { returnObjects: true }))
-  // );
-
   const riceCooker = JSON.parse(
     JSON.stringify(t('item:riceCooker', { returnObjects: true }))
   );
@@ -119,52 +115,34 @@ function App() {
               }
             >
               <Route path={PATH.MAIN} element={<LandingPage />} />
-              <Route
-                path={PATH.HOUSE_WORK}
-                element={
-                  <ContentsPage
-                    pSubMenu={pSubMenu}
-                    mcMenu={mcMenu}
-                    riceCooker={riceCooker}
-                    refrigerator={refrigerator}
-                    tv={tv}
-                    airConditioner={airConditioner}
-                    ceilingFan={ceilingFan}
-                    bed={bed}
-                    wardrobe={wardrobe}
-                    wineCellar={wineCellar}
-                    toilet={toilet}
-                    bathtub={bathtub}
-                    frontRoom={frontRoom}
-                    veranda={veranda}
-                    notice={notice}
-                    tipMenu={tipMenu}
+              {[PATH.HOUSE_WORK, PATH.TIPS].map((path, i) => {
+                return (
+                  <Route
+                    path={path}
+                    key={i}
+                    element={
+                      <ContentsPage
+                        pSubMenu={pSubMenu}
+                        mcMenu={mcMenu}
+                        riceCooker={riceCooker}
+                        refrigerator={refrigerator}
+                        tv={tv}
+                        airConditioner={airConditioner}
+                        ceilingFan={ceilingFan}
+                        bed={bed}
+                        wardrobe={wardrobe}
+                        wineCellar={wineCellar}
+                        toilet={toilet}
+                        bathtub={bathtub}
+                        frontRoom={frontRoom}
+                        veranda={veranda}
+                        notice={notice}
+                        tipMenu={tipMenu}
+                      />
+                    }
                   />
-                }
-              />
-              <Route
-                path={PATH.TIPS}
-                element={
-                  <ContentsPage
-                    pSubMenu={pSubMenu}
-                    mcMenu={mcMenu}
-                    riceCooker={riceCooker}
-                    refrigerator={refrigerator}
-                    tv={tv}
-                    airConditioner={airConditioner}
-                    ceilingFan={ceilingFan}
-                    bed={bed}
-                    wardrobe={wardrobe}
-                    wineCellar={wineCellar}
-                    toilet={toilet}
-                    bathtub={bathtub}
-                    frontRoom={frontRoom}
-                    veranda={veranda}
-                    notice={notice}
-                    tipMenu={tipMenu}
-                  />
-                }
-              />
+                );
+              })}
             </Route>
           </Routes>
           <button

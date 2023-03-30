@@ -1,0 +1,117 @@
+{
+  "tipList": {
+    "name": "Pourboire",
+    "tip": ["Électroménager", "Ustensiles de cuisine", "Lessive"],
+    "body": [
+      [
+        [
+          "[Élément de base]",
+          "[⚠️ Sûreté]",
+          "❗️ chaleur, feu, produits chimiques, poussière",
+          "❗️ de l'eau",
+          "❗️ chef d'orchestre",
+          "❗️ électricité",
+          "❗️ pression",
+          "[Installation]",
+          "[Vérification]",
+          "[Élimination]",
+          "[Contact]"
+        ],
+        [
+          [
+            "L'utiliser selon l'objet du produit : l'utilisation de produits ménagers à d'autres fins peut provoquer un choc électrique ou un incendie selon l'environnement.",
+            "Utiliser uniquement à une tension et un courant spécifiques. Si vous voulez le changer, vérifiez le manuel ou le centre de service pour voir s'il est possible de le changer. ",
+            "Utiliser une sortie d'extension avec un sol lorsqu'elle est utilisée.",
+            "De préférence, utilisez une prise seule plutôt qu'une multi-tape.",
+            "Lorsqu'on utilise une prise, il ne doit pas y avoir d'eau ni de poussière à l'extrémité de la prise, et on doit l'utiliser en l'insérant jusqu'au bout.",
+            "Lorsque vous le débranchez et le branchez à nouveau, attendez plus de 5 minutes avant de le brancher."
+          ],
+          [
+            "Si des câbles d'alimentation, des bouchons, des prises, des pièces, etc., sont endommagés, ne les utilisez pas et communiquez avec le centre de service.",
+            "S'il y a des bruits, des odeurs ou de la fumée anormales pendant l'utilisation, arrêtez immédiatement le produit et retirez le bouchon. S'il y a pression interne, retirer complètement.",
+            "Utilisez-le soigneusement la prochaine fois. En particulier, faites plus attention aux composants électroniques, aux bouchons et aux prises de courant faits de conducteurs."
+            ],
+            [
+            "N'utilisez pas ou n'entreposez pas ci-dessous:",
+            "fourneaux à gaz, briquets, chauffages, fours à vent",
+            "des substances susceptibles de prendre feu (éthers, benzène, alcools, produits chimiques, gaz, sprays inflammables, cosmétiques, etc.) à proximité.",
+            "Parce que cela peut causer des incendies ou des explosions et que le matériau peut endommager l'isolation des composants électriques et provoquer des chocs électriques."
+            ],
+            [
+            "Ne laissez pas l'eau entrer en contact avec les composants électroniques du produit. Si de l'eau ou des substances étrangères se trouvent sur les composants électroniques, arrêtez immédiatement le produit, débranchez-le à l'aide de serviettes qui ne sont pas mouillées et communiquez avec le centre client.",
+            "Toucher des produits/pièces avec les mains mouillées présente un risque de choc électrique."
+            ],
+            [
+            "Ne pas mettre de matériaux métalliques et de conducteurs dans le produit. Il y a un risque de choc électrique.",
+            "N'appuyez pas sur le couvercle du cordon d'alimentation.",
+            "En débranchant l'alimentation, maintenez la prise, pas le fil, et débranchez-la."
+            ],
+            [
+            "S'assurer de la mise à la terre pour éviter les chocs électriques : si vous n'êtes pas immobilisé, vous pouvez ressentir des vibrations fines et statiques lorsque vous êtes touché à la main.",
+            "Si la sortie est munie d'un terminal de mise à la terre, il n'est pas nécessaire de la poser séparément, mais, le cas échéant, de suivre le manuel en fonction de l'environnement.",
+            "Les champs magnétiques peuvent également affecter le corps humain, de sorte qu'il est recommandé de rester à plus de 30 cm de distance pendant l'utilisation des appareils ménagers."
+            ],
+            [
+            "Les produits à vapeur chaude sont utilisés dans les espaces ouverts.",
+            "Ne placez rien dans la sortie de la vapeur. Il y a un risque d'explosion dû à la pression si la sortie est bloquée.",
+            "Ne pas relâcher le verrou de pression sous haute pression. Après avoir arrêté l'état de haute pression, ouvrir légèrement la sortie pour évacuer la vapeur ou ouvrir le couvercle après un certain temps.",
+            "Pour les produits qui utilisent du gaz, assurez-vous de vous familiariser avec la façon de vous préparer aux fuites de gaz dans le manuel. Aérer immédiatement si possible et éviter de toucher les produits, les points de vente, etc."
+            ],
+          [
+            "NO: Placer avec la lumière directe du soleil, les milieux humides (environnements accessibles à l'eau), les produits chimiques, près du feu, trop froid ou trop chaud",
+            "OK: Emplacement où le plancher est solide et horizontal, où le cordon est facile à retirer",
+            "Si l'avant est bas parce qu'il n'est pas nivelé, la porte risque de ne pas bien se fermer.",
+            "Les appareils ménagers et les murs doivent être maintenus à des intervalles appropriés autour d'eux. S'il est trop étroit, le rendement peut être réduit et les factures d'électricité élevées.",
+            "Il est préférable de ne pas garder les mêmes appareils électroniques l'un près de l'autre. Ils peuvent s'influencer mutuellement par des champs magnétiques.",
+            "Ne placez pas d'autres appareils électroniques, plaques de fer, plaquettes électriques, feuilles d'aluminium, planchers, coussins, etc. sous le produit."
+          ],
+          [
+            "Enlever la prise d'alimentation pendant le tonnerre, la foudre ou de longues périodes de non-utilisation.",
+            "Lors du nettoyage et du remplacement des pièces, retirer la prise de la prise et procéder en cas de choc électrique.",
+            "Ne placez pas d'objets sur les appareils autant que possible, en particulier des objets lourds ou dangereux.",
+            "N'utilisez pas de bougies, de séchoirs, etc. dans le produit."
+            ],
+            [
+            "Dans le cas de produits que les enfants peuvent pénétrer, retirer l'emballage en caoutchouc de la porte et la jeter.",
+            "Si le produit à jeter est fixé à la maison sous une forme intégrée, comme un mur suspendu, il est démoli à l'avance.",
+            "Demandez au gestionnaire ou au bureau de gestion de votre lieu de résidence comment s'en débarrasser : boîte de collecte des déchets, élimination de remplacement, autocollant de déchet, etc. Si vous avez besoin d'un autocollant pour les déchets, demandez une méthode d'achat à proximité. S'il s'agit d'une maison individuelle, utilisez la boîte de collecte du centre communautaire.",
+            "Ou consultez le centre communautaire ou le bureau de district de votre région par téléphone ou site Web. Habituellement, c'est la même chose que ci-dessous, mais chaque administration locale a une méthode différente, alors n'oubliez pas de demander.",
+            "Lors de l'élimination de petits déchets de moins d'un mètre de hauteur, les déchets dans les conditions pertinentes telles que les cuiseurs à riz, les fours à micro-ondes et les ventilateurs peuvent être rejetés comme des produits recyclés.",
+            "Lors de l'élimination des déchets de plus d'un mètre de hauteur: utiliser le service gratuit de collecte de porte à porte: contacter le bureau local de dong ou utiliser le système de réservation des déchets ménagers. Les gros peuvent être collectés d'une seule façon, mais les petits appareils à déchets peuvent faire l'objet d'un rejet simultané.",
+            "Vérifiez s'il n'est pas récupérable: produits endommagés (réfrigérateur endommagé par le refroidisseur, machine à laver endommagée par le moteur, produit démonté, etc.), appareils intégrés sur mesure, chaises de massage, etc."
+            ],
+          [
+            "🏠 Système de réservation des rejets d'appareils ménagers usagés / 📞 1599 - 0903 📄https://15990903.or.kr/portal/main/main.do"
+          ]
+        ]
+      ],
+      [
+        ["[Élément de base]", "🥄 Matières", "🧽 Nettoyage"],
+        [
+          [
+            "Les ustensiles de cuisine sont habituellement enduits, donc n'oubliez pas de les utiliser tout en protégeant le revêtement.",
+            "Si le revêtement est endommagé, des substances nocives peuvent apparaître et il n'est pas recommandé de l'utiliser parce qu'il ne fonctionne pas correctement."
+            ],
+            [
+            "Utilisez du plastique, du bois et du silicone avec moins de risques de dommages au revêtement."
+            ],
+            [
+            "Dans le cas d'équipements en acier inoxydable enduits, on peut utiliser des épurateurs métalliques tels que le vert, le bleu, le fer et l'acier inoxydable, en abrasifs.",
+            "Toutefois, dans le cas du reste, utiliser des épurateurs capables de protéger le revêtement, tels que le coton mou, l'éponge, le microfibre, le maillage et l'épurateur pour les contenants de revêtement."
+            ]
+        ]
+      ],
+      [
+        ["[Élément de base]", "1", "2"],
+        [
+          [
+            "alt 🖼https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350 🖼https://naver.com",
+            "Ce chat vous vise."
+          ],
+          ["Cuteness +1"],
+          ["Resistance -1"]
+        ]
+      ]
+    ]
+  }
+}

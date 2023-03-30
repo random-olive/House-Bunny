@@ -44,7 +44,7 @@ export const ContentsBinding = styled.div`
   display: flex;
   h3 {
     margin-top: 23px;
-    margin-right: 210px;
+    margin-right: 210px; //이거 수정
 
     @media screen and (max-width: ${RESPONSIVE.SMALL_PX}) {
       margin-right: 20vw;
