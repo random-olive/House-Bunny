@@ -2,11 +2,13 @@ import { subMenu } from 'constants/menuText';
 import { Main, Sub, Sub2, Sub3 } from 'components/atoms/Buttons';
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 import { Horizontal, Vertical, MenuBinding } from 'components/atoms/Bindings';
 
 import { MenuContainer, LinkContainer } from 'components/atoms/Container';
 import { DEFAULT } from 'constants/styleText';
+import PATH from 'constants/routePath';
 
 interface BarProp {
   display?: string;
@@ -71,23 +73,25 @@ export const SubMenuBar = ({ selected, setSelected, pSubMenu }: BarProp) => {
       </button> */}
       <MenuBinding margin={DEFAULT.MENU_MARGIN}>
         {pSubMenu[0].list.map((el: any, idx: number) => (
-          <Sub
-            onClick={() => {
-              setSelected({
-                menu: el.title,
-                list1: el.list1,
-                // list2: el.list2,
-                idx1: idx,
-              });
-            }}
-            style={{
-              backgroundColor: selected.idx1 === idx ? '#fbf7d5' : '',
-              color: selected.idx1 === idx ? '#faccbb' : '',
-            }}
-            key={idx}
-          >
-            {el.title}
-          </Sub>
+          <LinkContainer to={PATH.HOUSE_WORK}>
+            <Sub
+              onClick={() => {
+                setSelected({
+                  menu: el.title,
+                  list1: el.list1,
+                  // list2: el.list2,
+                  idx1: idx,
+                });
+              }}
+              style={{
+                backgroundColor: selected.idx1 === idx ? '#fbf7d5' : '',
+                color: selected.idx1 === idx ? '#faccbb' : '',
+              }}
+              key={idx}
+            >
+              {el.title}
+            </Sub>
+          </LinkContainer>
         ))}
       </MenuBinding>
     </>
@@ -100,18 +104,20 @@ export const ItemListMenuBar = ({ selected, setSelected }: BarProp) => {
       <MenuBinding margin={DEFAULT.MENU_MARGIN}>
         {selected.list1 !== undefined &&
           selected.list1.map((el: any, idx: any) => (
-            <Sub2
-              onClick={() => {
-                setSelected({ ...selected, idx2: idx });
-              }}
-              style={{
-                backgroundColor: selected.idx2 === idx ? '#fbe6ee' : '',
-                color: selected.idx2 === idx ? '#eeb0b0' : '',
-              }}
-              key={idx}
-            >
-              {el.item1}
-            </Sub2>
+            <LinkContainer to={PATH.HOUSE_WORK}>
+              <Sub2
+                onClick={() => {
+                  setSelected({ ...selected, idx2: idx });
+                }}
+                style={{
+                  backgroundColor: selected.idx2 === idx ? '#fbe6ee' : '',
+                  color: selected.idx2 === idx ? '#eeb0b0' : '',
+                }}
+                key={idx}
+              >
+                {el.item1}
+              </Sub2>
+            </LinkContainer>
           ))}
       </MenuBinding>
     </>
@@ -151,6 +157,7 @@ export const SubMenuBarSet = ({ selected, setSelected, pSubMenu }: BarProp) => {
         pSubMenu={pSubMenu}
       />
       <ItemListMenuBar selected={selected} setSelected={setSelected} />
+
       {/* <ContentMenuBar selected={selected} setSelected={setSelected} /> */}
     </>
   );
