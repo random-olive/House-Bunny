@@ -24,9 +24,11 @@ function App() {
   }, 1000);
 
   const { t, i18n } = useTranslation();
+  const langInfo = localStorage.getItem('lang') || 'ko-KR';
 
   const toggleLocales = useCallback(
     (locale: string) => {
+      localStorage.setItem('lang', locale);
       i18next.changeLanguage(locale);
     },
     [i18n]
@@ -92,11 +94,12 @@ function App() {
   );
 
   useEffect(() => {
+    i18next.changeLanguage(langInfo);
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [langInfo]);
 
   return (
     <>
@@ -145,14 +148,14 @@ function App() {
               })}
             </Route>
           </Routes>
-          <button
+          {/* <button
             style={{ margin: '100px' }}
             onClick={() => {
               console.log(tipMenu);
             }}
           >
             클릭
-          </button>
+          </button> */}
         </Suspense>
       </div>
     </>

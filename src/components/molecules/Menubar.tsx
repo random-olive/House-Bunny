@@ -73,7 +73,7 @@ export const SubMenuBar = ({ selected, setSelected, pSubMenu }: BarProp) => {
       </button> */}
       <MenuBinding margin={DEFAULT.MENU_MARGIN}>
         {pSubMenu[0].list.map((el: any, idx: number) => (
-          <LinkContainer to={PATH.HOUSE_WORK}>
+          <LinkContainer to={PATH.HOUSE_WORK} key={idx}>
             <Sub
               onClick={() => {
                 setSelected({
@@ -87,7 +87,7 @@ export const SubMenuBar = ({ selected, setSelected, pSubMenu }: BarProp) => {
                 backgroundColor: selected.idx1 === idx ? '#fbf7d5' : '',
                 color: selected.idx1 === idx ? '#faccbb' : '',
               }}
-              key={idx}
+      
             >
               {el.title}
             </Sub>
@@ -104,7 +104,7 @@ export const ItemListMenuBar = ({ selected, setSelected }: BarProp) => {
       <MenuBinding margin={DEFAULT.MENU_MARGIN}>
         {selected.list1 !== undefined &&
           selected.list1.map((el: any, idx: any) => (
-            <LinkContainer to={PATH.HOUSE_WORK}>
+            <LinkContainer to={PATH.HOUSE_WORK} key={idx}>
               <Sub2
                 onClick={() => {
                   setSelected({ ...selected, idx2: idx });
@@ -113,7 +113,7 @@ export const ItemListMenuBar = ({ selected, setSelected }: BarProp) => {
                   backgroundColor: selected.idx2 === idx ? '#fbe6ee' : '',
                   color: selected.idx2 === idx ? '#eeb0b0' : '',
                 }}
-                key={idx}
+            
               >
                 {el.item1}
               </Sub2>

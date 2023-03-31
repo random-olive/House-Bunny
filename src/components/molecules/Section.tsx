@@ -11,6 +11,7 @@ import {
 import { ContentsLayout, TipLayout } from 'components/templates/Layouts';
 import { HotTitle, MoreTitle } from './TitleIcon';
 import { SECTION, CONDITION } from 'constants/styleText';
+import { useTranslation } from 'react-i18next';
 
 interface SectionProps {
   img?: string;
@@ -22,11 +23,14 @@ interface SectionProps {
 }
 
 export const HotSection = () => {
+  const { t } = useTranslation();
   return (
     <>
       <HotSectionFrame>
         <HotTitle />
         컨텐츠 내용이 여기에 들어감~~
+        <br />
+        {JSON.stringify(t('item:menu', { returnObjects: true }))}
       </HotSectionFrame>
     </>
   );
@@ -63,13 +67,13 @@ export const ContentSection = ({ item, mcMenu }: SectionProps) => {
   return (
     <>
       <ContentSectionFrame>
-        <ContentsLayout item={item} mcMenu={mcMenu}/>
+        <ContentsLayout item={item} mcMenu={mcMenu} />
       </ContentSectionFrame>
     </>
   );
 };
 
-export const TipSection = ({ item, }: SectionProps) => {
+export const TipSection = ({ item }: SectionProps) => {
   return (
     <>
       <ContentSectionFrame>
