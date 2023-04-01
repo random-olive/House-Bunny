@@ -25,7 +25,7 @@ export const DropdownBarSet = ({pMainMenu}: ClickProp) => {
   const [menuActive, setMenuActive] = useState<boolean>(false);
   const toggle = () => {
     setMenuActive(!menuActive);
-    console.log(menuActive);
+    // console.log(menuActive);
   };
   const inActivate = () => {
     setMenuActive(false);

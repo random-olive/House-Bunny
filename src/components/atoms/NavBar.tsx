@@ -13,7 +13,7 @@ export const Header = ({ toggleLocales }: any) => {
       <Clear onClick={() => toggleLocales('ja-JP')}>🇯🇵</Clear>
       <Clear onClick={() => toggleLocales('th-TH')}>🇹🇭</Clear>
       <Clear onClick={() => toggleLocales('vi-VN')}>🇻🇳</Clear>
-      <button onClick={()=>console.log(localStorage.getItem('lang'))}>clik</button>
+
     </HeaderBack>
   );
 };
